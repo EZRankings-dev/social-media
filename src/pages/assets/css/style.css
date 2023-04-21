@@ -456,7 +456,7 @@ section.form-section .form-control {
     min-height: 55px;
 }
 section.form-section .form-control:focus {
-    background: transparent;
+    background: #000;
     border-radius: 0;
     border: 1px solid #de222d;
     color: #fff !important;

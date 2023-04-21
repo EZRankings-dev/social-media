@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/5lPelhGO9Ev_DUJ-stlnQ/_buildManifest.js",
-    "static/5lPelhGO9Ev_DUJ-stlnQ/_ssgManifest.js"
+    "static/FWI-jgpHDsbC-G0xhVmQ3/_buildManifest.js",
+    "static/FWI-jgpHDsbC-G0xhVmQ3/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -20,13 +20,13 @@
       "static/chunks/278-fca8903fe6b16952.js",
       "static/chunks/583-2ecc85385b951af5.js",
       "static/css/4df78f2cd73d6b26.css",
-      "static/chunks/pages/index-6700fdd1c549daff.js"
+      "static/chunks/pages/index-c0dc7ffeb2ebdfaa.js"
     ],
     "/_app": [
       "static/chunks/webpack-ee7e63bc15b31913.js",
       "static/chunks/framework-2c79e2a64abdb08b.js",
       "static/chunks/main-4dcb7f9b52833aba.js",
-      "static/css/68b23555e2ca1b64.css",
+      "static/css/2fc54282a331d7b7.css",
       "static/chunks/pages/_app-cf8069611b4b16bf.js"
     ],
     "/_error": [
@@ -97,7 +97,7 @@
       "static/chunks/664-8af8765c6fed5950.js",
       "static/chunks/278-fca8903fe6b16952.js",
       "static/css/4df78f2cd73d6b26.css",
-      "static/chunks/pages/components/Home-d60f3cb0d02a3c1f.js"
+      "static/chunks/pages/components/Home-a74fce6685caa744.js"
     ],
     "/components/Navbar": [
       "static/chunks/webpack-ee7e63bc15b31913.js",
@@ -158,7 +158,7 @@
       "static/chunks/675-b14ea55a5544f65b.js",
       "static/chunks/664-8af8765c6fed5950.js",
       "static/chunks/583-2ecc85385b951af5.js",
-      "static/chunks/pages/contact-0bef29c1fa723e7b.js"
+      "static/chunks/pages/contact-618366eadb5faa69.js"
     ],
     "/portfolio": [
       "static/chunks/webpack-ee7e63bc15b31913.js",
@@ -170,7 +170,7 @@
       "static/chunks/278-fca8903fe6b16952.js",
       "static/chunks/583-2ecc85385b951af5.js",
       "static/css/4df78f2cd73d6b26.css",
-      "static/chunks/pages/portfolio-bdd784044bb4dd3e.js"
+      "static/chunks/pages/portfolio-bdf3c586cb512240.js"
     ],
     "/pricing": [
       "static/chunks/webpack-ee7e63bc15b31913.js",
@@ -182,7 +182,7 @@
       "static/chunks/278-fca8903fe6b16952.js",
       "static/chunks/583-2ecc85385b951af5.js",
       "static/css/4df78f2cd73d6b26.css",
-      "static/chunks/pages/pricing-6081a8e2ab4ac40b.js"
+      "static/chunks/pages/pricing-eb822d979e236e14.js"
     ]
   },
   "ampFirstPages": []

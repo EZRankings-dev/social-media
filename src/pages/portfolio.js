@@ -21,9 +21,7 @@ import Footer from './components/Footer';
     <meta property="og:site_name" content="Creative Agency" />
     <meta property="article:modified_time" content="2023-02-27T05:41:03+00:00" />
     <meta name="twitter:card" content="summary_large_image" />
-    <link  href="https://smca.ezrankings.in/react-backend/css/style.css" rel="stylesheet"></link>
-       <link  href="https://smca.ezrankings.in/react-backend/css/responsive.css" rel="stylesheet"></link>
-       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
+
       </Head>
       <Navbar />
       <Portfolio />
