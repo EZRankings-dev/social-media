@@ -3,11 +3,11 @@
     "/components/Home": [],
     "/components/Portfolio": [],
     "/components/PortfolioPageSlider": [],
-    "/components/PortfolioSlider": [],
     "/components/Pricing": [],
+    "/components/PortfolioSlider": [],
     "/": [],
-    "/pricing": [],
-    "/portfolio": []
+    "/portfolio": [],
+    "/pricing": []
   },
   "app": {},
   "appUsingSizeAdjust": false,

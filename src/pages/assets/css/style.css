@@ -206,6 +206,7 @@ section.our-mission-sec  .icon-wrap {
     align-items: center;
     justify-content: center;
     background-color: black;
+    padding: 40px;
 }
 
 section.our-mission-sec .row .col-md-6 {
