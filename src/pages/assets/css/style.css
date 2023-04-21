@@ -452,14 +452,14 @@ section.form-section .form-control {
     background: transparent;
     border-radius: 0;
     border: 1px solid #717171;
-    color: #fff !important;
+    color: #000 !important;
     min-height: 55px;
 }
 section.form-section .form-control:focus {
-    background: #000;
+    background: transparent;
     border-radius: 0;
     border: 1px solid #de222d;
-    color: #fff !important;
+    color: #000 !important;
     padding: 10px 11px;
     box-shadow: 0 0 0 0.25rem #de222d26;
 }
