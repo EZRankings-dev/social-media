@@ -63,7 +63,7 @@ const Home = () => {
       <section className="start-retainership-sec ">
          <div className="continer">
             <div className="title-header">
-               <h2>Lets Start Retainership with us<span><sup>₹</sup>7000<sub>Per month</sub></span></h2>
+               <h2>Lets Start Retainership with us<span><sup>$</sup>150/<sup>₹</sup>7000<sub>Per month</sub></span></h2>
                <Link href="" className="btn-border">Take an Expert</Link>
             </div>
             <div className="row">
