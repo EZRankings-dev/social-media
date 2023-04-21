@@ -7,6 +7,7 @@ const ContactForm = () => {
   const [inputData, setInputData] = useState({
     name:"",
     email:"",
+    type: 2,
     message:""
   })
   const [submitBtn, setSubmitBtn] = useState({})
@@ -42,7 +43,7 @@ const ContactForm = () => {
       setCloseIcon(true);
 
     }else{
-      axios.post(`https://smca.ezrankings.in/react-backend/contact.php`,inputData,{
+      axios.post(`https://smca.ezrankings.in/react-backend/contacts.php`,inputData,{
         headers: {
         'Content-Type': 'multipart/form-data'
       }

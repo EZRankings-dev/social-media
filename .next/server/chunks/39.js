@@ -27,6 +27,7 @@ const ContactForm = ()=>{
     const [inputData, setInputData] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)({
         name: "",
         email: "",
+        type: 2,
         message: ""
     });
     const [submitBtn, setSubmitBtn] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)({});
@@ -59,7 +60,7 @@ const ContactForm = ()=>{
             setFormStatus("Message can not be blank.");
             setCloseIcon(true);
         } else {
-            axios__WEBPACK_IMPORTED_MODULE_2__["default"].post(`https://smca.ezrankings.in/react-backend/contact.php`, inputData, {
+            axios__WEBPACK_IMPORTED_MODULE_2__["default"].post(`https://smca.ezrankings.in/react-backend/contacts.php`, inputData, {
                 headers: {
                     "Content-Type": "multipart/form-data"
                 }

@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/EcYVY-DzYvwuX0L-0Osar/_buildManifest.js",
-    "static/EcYVY-DzYvwuX0L-0Osar/_ssgManifest.js"
+    "static/F5YDxHGQgt9vYNA8-naHf/_buildManifest.js",
+    "static/F5YDxHGQgt9vYNA8-naHf/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -65,14 +65,14 @@
       "static/chunks/main-4dcb7f9b52833aba.js",
       "static/chunks/154-77a1cccd9dd3f7f7.js",
       "static/chunks/664-8af8765c6fed5950.js",
-      "static/chunks/pages/components/Contact-0262c6e5a845ae66.js"
+      "static/chunks/pages/components/Contact-a03d0b5c85b2e5e2.js"
     ],
     "/components/ContactForm": [
       "static/chunks/webpack-ee7e63bc15b31913.js",
       "static/chunks/framework-2c79e2a64abdb08b.js",
       "static/chunks/main-4dcb7f9b52833aba.js",
       "static/chunks/154-77a1cccd9dd3f7f7.js",
-      "static/chunks/pages/components/ContactForm-6b953d9439e753b9.js"
+      "static/chunks/pages/components/ContactForm-eb323a86bd108c1e.js"
     ],
     "/components/Footer": [
       "static/chunks/webpack-ee7e63bc15b31913.js",
@@ -158,7 +158,7 @@
       "static/chunks/675-b14ea55a5544f65b.js",
       "static/chunks/664-8af8765c6fed5950.js",
       "static/chunks/583-2ecc85385b951af5.js",
-      "static/chunks/pages/contact-618366eadb5faa69.js"
+      "static/chunks/pages/contact-53bc43d2e372113a.js"
     ],
     "/portfolio": [
       "static/chunks/webpack-ee7e63bc15b31913.js",
