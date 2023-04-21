@@ -12,9 +12,9 @@ import Footer from './components/Footer';
       <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
        <title>About - Creative Agency</title>
        <link rel="canonical" href="https://www.socialmediacreativeagency.com/about/" />
-       <link  href="https://smca.ezrankings.in/react-backend/css/style.css" rel="stylesheet"></link>
+       {/* <link  href="https://smca.ezrankings.in/react-backend/css/style.css" rel="stylesheet"></link>
        <link  href="https://smca.ezrankings.in/react-backend/css/responsive.css" rel="stylesheet"></link>
-       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/> */}
        <meta property="og:locale" content="en_US" />
        <meta property="og:type" content="article" />
        <meta property="og:title" content="About - Creative Agency" />
