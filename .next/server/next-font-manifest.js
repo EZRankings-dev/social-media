@@ -1,8 +1,1 @@
-self.__NEXT_FONT_MANIFEST={
-  "pages": {
-    "/": []
-  },
-  "app": {},
-  "appUsingSizeAdjust": false,
-  "pagesUsingSizeAdjust": false
-}
+self.__NEXT_FONT_MANIFEST={pages:{"/components/Home":[],"/components/Portfolio":[],"/components/PortfolioPageSlider":[],"/components/PortfolioSlider":[],"/components/Pricing":[],"/":[],"/portfolio":[],"/pricing":[]},app:{},appUsingSizeAdjust:!1,pagesUsingSizeAdjust:!1};
