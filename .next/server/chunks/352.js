@@ -66,7 +66,7 @@ const Home = ()=>{
                                 children: [
                                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("h1", {
                                         children: [
-                                            "We Love ",
+                                            "We LoveD ",
                                             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("span", {
                                                 children: [
                                                     "St",
