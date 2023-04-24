@@ -1063,7 +1063,7 @@ section.faq-section button.accordion-button.collapsed {
 section.faq-section h2 {
     text-align: center;
     font-size: 50px;
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
     font-weight: 300;
 }
 
@@ -1095,4 +1095,7 @@ button:focus:not(:focus-visible) {
 }
 [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
     cursor: pointer;
+}
+.accordion-body {
+    padding: var(--bs-accordion-body-padding-y) var(--bs-accordion-body-padding-x);
 }

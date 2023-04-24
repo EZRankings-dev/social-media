@@ -1,10 +1,12 @@
 import React from 'react'
 import FooterForm from './FooterForm'
+import Faq from './Faq'
 
 const Footer = () => {
   return (
     <>
     <FooterForm />
+    <Faq />
      <footer>
          <div className="container">
             <div className="row">

@@ -1,12 +1,12 @@
 import React, {useState, useEffect} from 'react'
 import PortfolioSlider from './PortfolioSlider'
-import Faq from './Faq'
+// import Faq from './Faq'
 // import Oshap from '../assets/images/oshap.png'
 import axios from 'axios';
 // import { NavLink } from 'react-router-dom';
 // import {Helmet} from "react-helmet";
 import Link from 'next/link';
-import Image from 'next/image'
+// import Image from 'next/image'
 
 
 const Home = () => {
@@ -89,7 +89,6 @@ const Home = () => {
             </div>
          </div>
       </section>
-      <Faq />
    </div>
   )
 }
