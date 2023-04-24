@@ -251,7 +251,7 @@ section.exp-branding-sec {
 
 .title-header {
     text-align: center;
-    width: 46%;
+    width: 68%;
     margin: 0 auto;
     position: relative;
     padding: 59px 0;
@@ -1032,4 +1032,9 @@ body.contact-page footer {
 section.form-section .form-group.mt-2 {
     display: flex;
     justify-content: end;
+}
+section.faq-section {
+    padding: 70px 0;
+    padding: 60px 0;
+    border-bottom: 1px solid #424242;
 }
