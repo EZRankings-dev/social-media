@@ -1,6 +1,13 @@
 {
   "pages": {
-    "/": []
+    "/components/Home": [],
+    "/components/Portfolio": [],
+    "/components/PortfolioPageSlider": [],
+    "/components/Pricing": [],
+    "/": [],
+    "/components/PortfolioSlider": [],
+    "/pricing": [],
+    "/portfolio": []
   },
   "app": {},
   "appUsingSizeAdjust": false,

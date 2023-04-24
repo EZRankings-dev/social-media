@@ -15,6 +15,8 @@ Primary Use    : SMO
 ====================================================================
 
 ***/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500&display=swap');
+@import url('https://kit-pro.fontawesome.com/releases/v5.15.3/css/pro.min.css');
 * {
     margin: 0px;
     padding: 0px;
@@ -239,7 +241,12 @@ section.our-mission-sec .row .col-md-6 {
 
 section.exp-branding-sec {
     padding: 100px 0;
-}section.exp-branding-sec .title-header h2 span {
+}section.exp-branding-sec .title-header h2 {
+    font-size: 42pt;
+    font-weight: 300;
+    color: #000;
+}
+section.exp-branding-sec .title-header h2 span {
     display: inline-block;
     border-bottom: 3px solid #de222d;
     padding-bottom: 5px;
@@ -341,8 +348,9 @@ section.start-retainership-sec {
 }
 section.start-retainership-sec .title-header h2 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 41px;
-    font-weight: 100;
+    font-size: 44pt;
+    font-weight: 300;
+    color: #000;
 }
 
 section.start-retainership-sec .title-header h2 span {
@@ -382,11 +390,12 @@ a.btn-border {
 }
 
 section.start-retainership-sec .content-wrap p {
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
-    font-size: 30px;
+    font-size: 44pt;
     font-weight: 300;
-    color: #656363;
+    color: #000000;
+    line-height: 47pt;
 }
 
 section.start-retainership-sec .content-wrap p span {
@@ -445,10 +454,14 @@ section.form-section {
     border-bottom: 1px solid #424242;
     border-top: 1px solid #424242;
 }section.form-section h2 {
+    /* text-align: center;
+    font-weight: 300;
+    padding-bottom: 30px;
+    font-size: 40px; */
     text-align: center;
     font-weight: 300;
     padding-bottom: 30px;
-    font-size: 40px;
+    font-size: 44pt;
 }
 section.form-section .form-control {
     background: transparent;
