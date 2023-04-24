@@ -1,12 +1,12 @@
 {
   "pages": {
     "/components/Home": [],
-    "/components/Portfolio": [],
     "/components/PortfolioPageSlider": [],
+    "/components/Portfolio": [],
     "/components/PortfolioSlider": [],
     "/components/Pricing": [],
-    "/": [],
     "/portfolio": [],
+    "/": [],
     "/pricing": []
   },
   "app": {},

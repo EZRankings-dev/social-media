@@ -1038,3 +1038,61 @@ section.faq-section {
     padding: 60px 0;
     border-bottom: 1px solid #424242;
 }
+section.faq-section button.accordion-button.collapsed {
+    background: #db202b;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 9px;
+}
+.accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
+    font-size: 1rem;
+    color: var(--bs-accordion-btn-color);
+    text-align: left;
+    background-color: var(--bs-accordion-btn-bg);
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+    transition: var(--bs-accordion-transition);
+}
+section.faq-section h2 {
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 30px;
+    font-weight: 300;
+}
+
+
+.accordion-item:first-of-type .accordion-button {
+    border-top-left-radius: var(--bs-accordion-inner-border-radius);
+    border-top-right-radius: var(--bs-accordion-inner-border-radius);
+}
+button:focus:not(:focus-visible) {
+    outline: 0;
+}
+.accordion-button:not(.collapsed) {
+    background: #db202b;
+    color: #fff;
+}
+.accordion-button:focus {
+    z-index: 3;
+    border-color: var(--bs-accordion-btn-focus-border-color);
+    outline: 0;
+    box-shadow: var(--bs-accordion-btn-focus-box-shadow);
+}
+.accordion-button:hover {
+    z-index: 2;
+}
+.accordion-button:not(.collapsed) {
+    color: var(--bs-accordion-active-color);
+    background-color: var(--bs-accordion-active-bg);
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+}

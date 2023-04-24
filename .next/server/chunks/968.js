@@ -41,7 +41,7 @@ const Faq = ()=>{
                                                 className: "accordion-header",
                                                 id: "headingOne",
                                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
-                                                    className: "accordion-button",
+                                                    className: "accordion-button collapsed",
                                                     type: "button",
                                                     "data-bs-toggle": "collapse",
                                                     "data-bs-target": "#collapseOne",

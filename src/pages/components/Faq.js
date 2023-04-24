@@ -9,40 +9,40 @@ import React from "react";
                   <h2>Frequently Asked Questions (FAQs)</h2>
                   <div className="accordion" id="accordionExample">
                      <div className="accordion-item">
-                     <h2 className="accordion-header" id="headingOne">
-                     <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                     Q.1 How Many Clients Have You Worked With?
-                     </button>
-                     </h2>
-                     <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                     <div className="accordion-body">
-                     We have helped 500+ projects
-                     </div>
-                     </div>
-                     </div>
-                     <div className="accordion-item">
-                     <h2 className="accordion-header" id="headingTwo">
-                     <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                     Q.2 How Are You Different from Other Social Media Creative Agencies?
-                     </button>
-                     </h2>
-                     <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                     <div className="accordion-body">
-                     We stand out from other social media creative agencies by offering a tailored approach and comprehensive designs for clients based on their needs. The agency takes a personalized approach to understanding each business's unique goals and creates plans based on them.
-                     </div>
-                     </div>
+                        <h2 className="accordion-header" id="headingOne">
+                            <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Q.1 How Many Clients Have You Worked With?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div className="accordion-body">
+                            We have helped 500+ projects
+                            </div>
+                        </div>
                      </div>
                      <div className="accordion-item">
-                     <h2 className="accordion-header" id="headingThree">
-                     <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                     Q.3 What Budgets Do You Typically Work With?
-                     </button>
-                     </h2>
-                     <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                     <div className="accordion-body">
-                     We typically work with a wide range of budgets, from small businesses with limited resources to large corporations with significant marketing budgets. We understand that each business has unique needs and constraints regarding social media marketing—that's why we offer customizable packages tailored to meet each business's specific needs. We usually begin our retainers with a budget of $150/₹7000 per month.      </div>
+                        <h2 className="accordion-header" id="headingTwo">
+                            <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Q.2 How Are You Different from Other Social Media Creative Agencies?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div className="accordion-body">
+                            We stand out from other social media creative agencies by offering a tailored approach and comprehensive designs for clients based on their needs. The agency takes a personalized approach to understanding each business's unique goals and creates plans based on them.
+                            </div>
+                        </div>
                      </div>
-                     </div>
+                     <div className="accordion-item">
+                        <h2 className="accordion-header" id="headingThree">
+                            <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Q.3 What Budgets Do You Typically Work With?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div className="accordion-body">
+                            We typically work with a wide range of budgets, from small businesses with limited resources to large corporations with significant marketing budgets. We understand that each business has unique needs and constraints regarding social media marketing—that's why we offer customizable packages tailored to meet each business's specific needs. We usually begin our retainers with a budget of $150/₹7000 per month.      </div>
+                            </div>
+                        </div>
                      <div className="accordion-item">
                      <h2 className="accordion-header" id="headingFour">
                      <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
