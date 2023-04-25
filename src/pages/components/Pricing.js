@@ -48,7 +48,6 @@ const Pricing = () => {
                <div className="col-md-12">
                   <div className="banner-caption">
                      <h1 ><span >PRICING</span></h1>
-                     <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,</p>
                   </div>
                </div>
             </div>

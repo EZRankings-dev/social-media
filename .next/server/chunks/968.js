@@ -17,6 +17,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const Faq = ()=>{
+    const [isOpenStatus, setIsOpenStatus] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);
     return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("section", {
             className: "faq-section",

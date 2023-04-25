@@ -1,1 +1,1 @@
-self.__NEXT_FONT_MANIFEST={pages:{"/components/Home":[],"/components/Portfolio":[],"/components/PortfolioPageSlider":[],"/components/Pricing":[],"/":[],"/components/PortfolioSlider":[],"/pricing":[],"/portfolio":[]},app:{},appUsingSizeAdjust:!1,pagesUsingSizeAdjust:!1};
+self.__NEXT_FONT_MANIFEST={pages:{"/components/Home":[],"/components/Portfolio":[],"/components/PortfolioPageSlider":[],"/components/PortfolioSlider":[],"/components/Pricing":[],"/":[],"/pricing":[],"/portfolio":[]},app:{},appUsingSizeAdjust:!1,pagesUsingSizeAdjust:!1};
