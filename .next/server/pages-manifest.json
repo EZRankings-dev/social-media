@@ -1,15 +1,15 @@
 {
+  "/_document": "pages/_document.js",
   "/_app": "pages/_app.js",
   "/404": "pages/404.html",
-  "/_document": "pages/_document.js",
   "/about": "pages/about.html",
   "/api/hello": "pages/api/hello.js",
   "/components/About": "pages/components/About.html",
   "/components/ContactForm": "pages/components/ContactForm.html",
-  "/components/Faq": "pages/components/Faq.html",
-  "/components/AboutContent": "pages/components/AboutContent.html",
-  "/components/Footer": "pages/components/Footer.html",
   "/components/Contact": "pages/components/Contact.html",
+  "/components/AboutContent": "pages/components/AboutContent.html",
+  "/components/Faq": "pages/components/Faq.html",
+  "/components/Footer": "pages/components/Footer.html",
   "/components/FooterForm": "pages/components/FooterForm.html",
   "/components/Home": "pages/components/Home.html",
   "/components/Navbar": "pages/components/Navbar.html",
@@ -20,7 +20,7 @@
   "/components/Pricing": "pages/components/Pricing.html",
   "/contact": "pages/contact.html",
   "/": "pages/index.html",
-  "/_error": "pages/_error.js",
+  "/portfolio": "pages/portfolio.html",
   "/pricing": "pages/pricing.html",
-  "/portfolio": "pages/portfolio.html"
+  "/_error": "pages/_error.js"
 }

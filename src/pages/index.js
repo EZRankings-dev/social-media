@@ -10,7 +10,8 @@ import Footer from './components/Footer';
     <>
       <Head>
       <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
-      <title>The Best Social Media Marketing Agency in India - Social Media Creative Agency (SMCA)</title>
+      <title>Full-Service Social Media Marketing Agency in India - Social Media Creative Agency</title>
+      <meta name="keywords" content="social media creative agency, creative social media services, creative agency social media posts, full service creative agency, best creative agency in india, top creative agencies, best social media agency in india, social media management agency, white label social media management, best social media marketing agency" />
       <meta name="description" content="Looking for creative Social Media Services to promote your brand?? SMCA is full-service creative agency based in India, offers white label social media management services for clients. Get top-notch quality social media posts services from the experts." />
       <link rel="canonical" href="https://www.socialmediacreativeagency.com/" />
       <meta property="og:locale" content="en_US" />
@@ -20,6 +21,11 @@ import Footer from './components/Footer';
       <meta property="og:url" content="https://www.socialmediacreativeagency.com/" />
       <meta property="og:site_name" content="Creative Agency" />
       <meta property="article:modified_time" content="2023-02-27T05:38:12+00:00" />
+      <script type="application/ld+json">
+        {
+
+        }
+      </script>
       </Head>
       <Navbar />
       <Home />
