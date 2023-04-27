@@ -27,7 +27,6 @@ const Footer = ()=>{
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
         children: [
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_FooterForm__WEBPACK_IMPORTED_MODULE_2__["default"], {}),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Faq__WEBPACK_IMPORTED_MODULE_3__["default"], {}),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("footer", {
                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                     className: "container",
@@ -71,6 +70,7 @@ const Footer = ()=>{
                                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                                                     href: "https://www.instagram.com/socialmediacreativeagency/",
                                                     target: "_blank",
+                                                    rel: "nofollow",
                                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
                                                         className: "fab fa-instagram"
                                                     })
@@ -80,6 +80,7 @@ const Footer = ()=>{
                                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                                                     href: "https://www.facebook.com/socialmediacreativeagency",
                                                     target: "_blank",
+                                                    rel: "nofollow",
                                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
                                                         className: "fab fa-facebook-square"
                                                     })
@@ -89,6 +90,7 @@ const Footer = ()=>{
                                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                                                     href: "",
                                                     target: "_blank",
+                                                    rel: "nofollow",
                                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
                                                         className: "fab fa-twitter"
                                                     })

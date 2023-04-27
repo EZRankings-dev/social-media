@@ -1,8 +1,35 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import ContactForm  from './ContactForm.js'
+import Faq from './Faq.js'
+import axios from 'axios';
+
 import Link from 'next/link';
 
 const Contact = () => {
+   const [faqData, setFaqData] = useState([]);
+
+   const fetchData = async () => {
+
+      axios.get(`https://smca.ezrankings.in/react-backend/contactData.php`)
+        .then(res => {
+            const data = res.data.faq.map((item, k) => {
+              return {
+                id: item.id,
+                title: item.title,
+                status: k == 0 ? true : false,
+                description: item.description
+              }
+          }
+        )
+       setFaqData(data);
+        // console.log("vikas",imgData);
+      })
+      .catch(err => {
+       })
+   }
+   useEffect(() => {
+     fetchData();
+ }, [])
   return (
     <>
     <div className='contact-page'>
@@ -30,6 +57,7 @@ const Contact = () => {
             </div>
          </div>
       </section>
+      <Faq faqData={faqData} />
       <section className="form-section">
         <div className="container">
         <ContactForm />

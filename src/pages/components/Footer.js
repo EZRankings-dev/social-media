@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <>
     <FooterForm />
-    <Faq />
+    {/* <Faq faqData=""/> */}
      <footer>
          <div className="container">
             <div className="row">
@@ -21,9 +21,9 @@ const Footer = () => {
                <div className="col-md-3 ms-auto">
                   <div className="footer-item">
                      <ul className="social-icon">
-                        <li><a href="https://www.instagram.com/socialmediacreativeagency/" target="_blank"><i className="fab fa-instagram"></i></a></li>
-                        <li><a href="https://www.facebook.com/socialmediacreativeagency" target="_blank"><i className="fab fa-facebook-square"></i></a></li>
-                        <li><a href="" target="_blank"><i className="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/socialmediacreativeagency/" target="_blank" rel="nofollow"><i className="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.facebook.com/socialmediacreativeagency" target="_blank" rel="nofollow"><i className="fab fa-facebook-square"></i></a></li>
+                        <li><a href="" target="_blank" rel="nofollow"><i className="fab fa-twitter"></i></a></li>
                      </ul>
                   </div>
                </div>
