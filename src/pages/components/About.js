@@ -2,10 +2,16 @@ import React, {useState, useEffect} from 'react'
 import AboutContent from './AboutContent'
 import axios from 'axios';
 import Link from 'next/link';
+import Faq from './Faq'
+import PortfolioSlider from './PortfolioSlider'
+import FooterForm from './FooterForm';
 
 const About = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [aboutData, setAboutData] = useState([]);
+  const [imgData, setImgData] = useState([]);
+  const [faqData, setFaqData] = useState([]);
+
   const fetchData = async () => {
 
      axios.get(`https://smca.ezrankings.in/react-backend/about.php`)
@@ -20,6 +26,25 @@ const About = () => {
              }
          }
        )
+       const faqqData = res.data.faq.map((item, k) => {
+         return {
+           id: item.id,
+           title: item.title,
+           status: k == 0 ? true : false,
+           description: item.description
+         }
+     }
+   )
+   const Sldata = res.data.gallery.map((item) => {
+      return {
+        id: item.id,
+        alt: item.alt,
+        image: item.img
+      }
+  }
+)
+      setImgData(Sldata);
+      setFaqData(faqqData);
       setAboutData(data);
      })
      .catch(err => {
@@ -54,6 +79,8 @@ const About = () => {
            </div>
         </section>
         <AboutContent aboutContentData = {aboutData}/>
+        <PortfolioSlider imgData={imgData} />
+
         <section className="start-retainership-sec ">
            <div className="continer">
               <div className="row">
@@ -79,6 +106,9 @@ const About = () => {
               </div>
            </div>
         </section>
+        <FooterForm />
+        <Faq faqData={faqData} />
+
       </>
     )
   }

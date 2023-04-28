@@ -117,12 +117,13 @@ header .navbar-nav a.nav-link:hover {
 
 
 section.banner-section .banner-caption h1 {
-    font-size: 140px;
+    font-size: 119pt;
     color: #000;
     font-weight: 100;
     text-align: center;
     text-transform: uppercase;
-    padding: 100px 0px 10px 0px;
+    padding: 60px 0px 10px 0px;
+    margin: 0;
 }
 
 section.banner-section .banner-caption h1 span {
@@ -423,8 +424,8 @@ section.start-retainership-sec .content-wrap p:after {
 }
 
 section.start-retainership-sec .content-wrap2 h2 {
-    font-size: 110px;
-    font-weight: 100;
+    font-size: 50pt;
+    font-weight: 200; 
 }
 
 section.start-retainership-sec .content-wrap2 a {
@@ -1114,4 +1115,5 @@ button:focus:not(:focus-visible) {
 }
 .thankyou{
     text-align: center;
+    padding: 4rem;;
 }

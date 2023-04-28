@@ -28,8 +28,13 @@ import Footer from './components/Footer';
       </script>
       </Head>
       <Navbar />
-      <section>
+      <section className="start-retainership-sec ">
+           <div className="continer">
+              <div className="row">
+                 <div className="col-md-12">
+                    <div className="content-wrap">
         <h1 className="thankyou">Thank you for submitting.</h1>
+        </div></div></div></div>
       </section>
       <footer>
          <div className="container">

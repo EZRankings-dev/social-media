@@ -2,10 +2,12 @@ import React, {useState, useEffect} from 'react'
 import PortfolioSlider from './PortfolioSlider'
 import PriceChart from './PriceChart'
 import axios from 'axios';
-
+import Faq from './Faq'
+import FooterForm from './FooterForm';
 const Pricing = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [imgData, setImgData] = useState([]);
+  const [faqData, setFaqData] = useState([]);
   const [priceData, setPriceData] = useState([]);
   const fetchData = async () => {
 
@@ -19,6 +21,17 @@ const Pricing = () => {
              }
          }
        )
+       const faqqData = res.data.faq.map((item, k) => {
+         return {
+           id: item.id,
+           title: item.title,
+           status: k == 0 ? true : false,
+           description: item.description
+         }
+     }
+   )
+   // console.log("vikas",imgData);
+
            const pData = res.data.price.map((item) => {
              return {
                // id: item.id,
@@ -30,6 +43,7 @@ const Pricing = () => {
              }
          }
        )
+       setFaqData(faqqData);
        setImgData(data);
        setPriceData(pData);
        // console.log("vikas",imgData);
@@ -55,6 +69,7 @@ const Pricing = () => {
       </section>
 
     <PriceChart chartData={priceData}/>
+    <Faq faqData={faqData} />
     <PortfolioSlider imgData={imgData}/>
 
     <section className="start-retainership-sec ">
@@ -82,6 +97,7 @@ const Pricing = () => {
             </div>
          </div>
       </section>
+    <FooterForm />
     </>
   )
 }

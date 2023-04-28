@@ -5,7 +5,7 @@ import Faq from './Faq'
 const Footer = () => {
   return (
     <>
-    <FooterForm />
+    {/* <FooterForm /> */}
     {/* <Faq faqData=""/> */}
      <footer>
          <div className="container">

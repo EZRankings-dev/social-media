@@ -18,8 +18,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _PortfolioSlider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6425);
 /* harmony import */ var _PriceChart__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(5599);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(9648);
-var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([axios__WEBPACK_IMPORTED_MODULE_4__]);
-axios__WEBPACK_IMPORTED_MODULE_4__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
+/* harmony import */ var _Faq__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(4968);
+/* harmony import */ var _FooterForm__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(1698);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([axios__WEBPACK_IMPORTED_MODULE_4__, _FooterForm__WEBPACK_IMPORTED_MODULE_6__]);
+([axios__WEBPACK_IMPORTED_MODULE_4__, _FooterForm__WEBPACK_IMPORTED_MODULE_6__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);
+
+
 
 
 
@@ -28,6 +32,7 @@ axios__WEBPACK_IMPORTED_MODULE_4__ = (__webpack_async_dependencies__.then ? (awa
 const Pricing = ()=>{
     const [isLoading, setIsLoading] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);
     const [imgData, setImgData] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]);
+    const [faqData, setFaqData] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]);
     const [priceData, setPriceData] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]);
     const fetchData = async ()=>{
         axios__WEBPACK_IMPORTED_MODULE_4__["default"].get(`https://smca.ezrankings.in/react-backend/pricing.php`).then((res)=>{
@@ -38,6 +43,15 @@ const Pricing = ()=>{
                     image: item.img
                 };
             });
+            const faqqData = res.data.faq.map((item, k)=>{
+                return {
+                    id: item.id,
+                    title: item.title,
+                    status: k == 0 ? true : false,
+                    description: item.description
+                };
+            });
+            // console.log("vikas",imgData);
             const pData = res.data.price.map((item)=>{
                 return {
                     // id: item.id,
@@ -48,6 +62,7 @@ const Pricing = ()=>{
                     individual: item.individual
                 };
             });
+            setFaqData(faqqData);
             setImgData(data);
             setPriceData(pData);
         // console.log("vikas",imgData);
@@ -80,6 +95,9 @@ const Pricing = ()=>{
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_PriceChart__WEBPACK_IMPORTED_MODULE_3__["default"], {
                 chartData: priceData
+            }),
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Faq__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                faqData: faqData
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_PortfolioSlider__WEBPACK_IMPORTED_MODULE_2__["default"], {
                 imgData: imgData
@@ -128,7 +146,8 @@ const Pricing = ()=>{
                         })
                     ]
                 })
-            })
+            }),
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_FooterForm__WEBPACK_IMPORTED_MODULE_6__["default"], {})
         ]
     });
 };

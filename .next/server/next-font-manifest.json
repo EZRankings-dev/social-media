@@ -1,9 +1,11 @@
 {
   "pages": {
+    "/about": [],
+    "/components/About": [],
     "/components/Home": [],
+    "/components/PortfolioPageSlider": [],
     "/components/Portfolio": [],
     "/components/PortfolioSlider": [],
-    "/components/PortfolioPageSlider": [],
     "/components/Pricing": [],
     "/": [],
     "/portfolio": [],

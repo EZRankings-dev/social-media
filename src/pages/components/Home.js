@@ -6,6 +6,7 @@ import axios from 'axios';
 // import { NavLink } from 'react-router-dom';
 // import {Helmet} from "react-helmet";
 import Link from 'next/link';
+import FooterForm from './FooterForm';
 // import Image from 'next/image'
 
 
@@ -89,6 +90,7 @@ const Home = () => {
             </div>
          </div>
       </section>
+      <FooterForm />
    </div>
   )
 }

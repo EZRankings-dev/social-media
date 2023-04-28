@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Home from './components/Home';
 import Navbar from './components/Navbar'
 import Footer from './components/Footer';
+import PortfolioPageSlider from './components/PortfolioPageSlider'
 
 // import routes from './routes';
 
@@ -22,9 +23,10 @@ import Footer from './components/Footer';
       <meta property="og:site_name" content="Creative Agency" />
       <meta property="article:modified_time" content="2023-02-27T05:38:12+00:00" />
       <script type="application/ld+json">
-        {
+        
+          <PortfolioPageSlider />
+        
 
-        }
       </script>
       </Head>
       <Navbar />

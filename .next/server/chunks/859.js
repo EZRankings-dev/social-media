@@ -19,8 +19,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(9648);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(1664);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_4__);
-var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([axios__WEBPACK_IMPORTED_MODULE_3__]);
-axios__WEBPACK_IMPORTED_MODULE_3__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
+/* harmony import */ var _Faq__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(4968);
+/* harmony import */ var _PortfolioSlider__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(6425);
+/* harmony import */ var _FooterForm__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(1698);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([axios__WEBPACK_IMPORTED_MODULE_3__, _FooterForm__WEBPACK_IMPORTED_MODULE_7__]);
+([axios__WEBPACK_IMPORTED_MODULE_3__, _FooterForm__WEBPACK_IMPORTED_MODULE_7__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);
+
+
+
 
 
 
@@ -29,6 +35,8 @@ axios__WEBPACK_IMPORTED_MODULE_3__ = (__webpack_async_dependencies__.then ? (awa
 const About = ()=>{
     const [isLoading, setIsLoading] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);
     const [aboutData, setAboutData] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]);
+    const [imgData, setImgData] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]);
+    const [faqData, setFaqData] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]);
     const fetchData = async ()=>{
         axios__WEBPACK_IMPORTED_MODULE_3__["default"].get(`https://smca.ezrankings.in/react-backend/about.php`).then((res)=>{
             const data = res.data.about.map((item)=>{
@@ -40,6 +48,23 @@ const About = ()=>{
                     image: item.img
                 };
             });
+            const faqqData = res.data.faq.map((item, k)=>{
+                return {
+                    id: item.id,
+                    title: item.title,
+                    status: k == 0 ? true : false,
+                    description: item.description
+                };
+            });
+            const Sldata = res.data.gallery.map((item)=>{
+                return {
+                    id: item.id,
+                    alt: item.alt,
+                    image: item.img
+                };
+            });
+            setImgData(Sldata);
+            setFaqData(faqqData);
             setAboutData(data);
         }).catch((err)=>{});
     };
@@ -91,6 +116,9 @@ const About = ()=>{
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_AboutContent__WEBPACK_IMPORTED_MODULE_2__["default"], {
                 aboutContentData: aboutData
             }),
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_PortfolioSlider__WEBPACK_IMPORTED_MODULE_6__["default"], {
+                imgData: imgData
+            }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("section", {
                 className: "start-retainership-sec ",
                 children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
@@ -135,6 +163,10 @@ const About = ()=>{
                         })
                     ]
                 })
+            }),
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_FooterForm__WEBPACK_IMPORTED_MODULE_7__["default"], {}),
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Faq__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                faqData: faqData
             })
         ]
     });
