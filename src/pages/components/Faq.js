@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 
  const Faq = (props) =>{
-    const [hiddenTitleIndex, setHiddenTitleIndex] = useState(null);
+    const [hiddenTitleIndex, setHiddenTitleIndex] = useState(0);
 
     const toggleHiddenTitle = (index) => {
         if (hiddenTitleIndex === index) {

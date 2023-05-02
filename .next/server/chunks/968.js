@@ -17,7 +17,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const Faq = (props)=>{
-    const [hiddenTitleIndex, setHiddenTitleIndex] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(null);
+    const [hiddenTitleIndex, setHiddenTitleIndex] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(0);
     const toggleHiddenTitle = (index)=>{
         if (hiddenTitleIndex === index) {
             setHiddenTitleIndex(null);
