@@ -12,16 +12,16 @@ const PriceChart = (props) => {
                       <tbody>
                           <tr>
                               <td></td>
-                              <td className="redC"><span>Individual</span></td>
-                              <td className="redC"><span>Start Up</span></td>
+                              <td className="redC"><span>Start-Up</span></td>
+                              <td className="redC"><span>Economic</span></td>
                               <td className="redC"><span>Business</span></td>
                             </tr>
                             {props.chartData && props.chartData.length > 0 && props.chartData.map((data,p)=>(
                               <tr key={p}>
                                 <td>{data.title}</td>
-                                <td className={data.colored=="1" ? "fs2":""}>{data.individual}</td>
-                                <td className={data.colored=="1" ? "fs2":""}>{data.start_up}</td>
-                                <td className={data.colored=="1" ? "fs2":""}>{data.business}</td>
+                                <td className={data.colored=="1" ? "fs":""}>{data.individual}</td>
+                                <td className={data.colored=="1" ? "fs":""}>{data.start_up}</td>
+                                <td className={data.colored=="1" ? "fs":""}>{data.business}</td>
                               </tr>
                             ))}
                       </tbody>

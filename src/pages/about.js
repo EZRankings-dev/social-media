@@ -21,7 +21,7 @@ import Footer from './components/Footer';
        <meta property="article:modified_time" content="2023-02-21T11:51:16+00:00" />
        <meta name="twitter:card" content="summary_large_image" />
        <link rel="stylesheet" type="text/css" href="https://kit-pro.fontawesome.com/releases/v5.15.3/css/pro.min.css"></link>
-
+       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500&display=swap"></link>
       </Head>
       <Navbar />
       <About />

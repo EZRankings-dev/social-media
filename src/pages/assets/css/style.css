@@ -15,7 +15,7 @@ Primary Use    : SMO
 ====================================================================
 
 ***/
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500&display=swap'); */
 /* @import url('https://kit-pro.fontawesome.com/releases/v5.15.3/css/pro.min.css'); */
 * {
     margin: 0px;
@@ -261,7 +261,7 @@ section.exp-branding-sec .title-header h2 span {
     text-align: center;
     width: 68%;
     margin: 0 auto;
-    position: relative;
+    /* position: relative; */
     padding: 59px 0;
 }
 
@@ -348,7 +348,7 @@ section.start-retainership-sec {
     overflow: hidden;
 }
 section.start-retainership-sec .title-header h2 {
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
     font-size: 44pt;
     font-weight: 300;
     color: #000;
@@ -360,7 +360,13 @@ section.start-retainership-sec .title-header h2 span {
     font-weight: 100;
     position: relative;
 }
-
+.currency-wrap .dollor-wrap sup {
+    font-size: 37px;
+    font-weight: 400;
+    position: absolute;
+    top: 21%;
+    left: -7%;
+}
 section.start-retainership-sec .title-header h2 span sup {
     font-size: 26px;
     top: 27%;
@@ -452,8 +458,8 @@ section.start-retainership-sec .content-wrap2  a::after {
 
 section.form-section {
     padding: 60px 0;
-    border-bottom: 1px solid #424242;
-    border-top: 1px solid #424242;
+    border-bottom: none !important;
+    border-top: none;
 }section.form-section h2 {
     /* text-align: center;
     font-weight: 300;
@@ -819,7 +825,7 @@ section.pricing-sec .entry-content table.table tr:nth-child(3) {
 
 section.pricing-sec td.redC span {
     background: #db202b;
-    font-size: 30px;
+    font-size: 27px;
     display: inline-block;
     text-align: center;
     color: #fff;
@@ -833,8 +839,9 @@ section.pricing-sec .table>:not(caption)>*>* {
 }
 
 section.pricing-sec td.fs {
-    font-size: 95px !important;
+    font-size: 60px !important;
     padding: 10px;
+    color:#fff !important;
 }
 
 
@@ -893,15 +900,14 @@ section.pricing-sec .entry-content table.table tr {
 }
 
 section.pricing-sec .entry-content table.table tr:nth-child(2) td {
+    /* border-right: 0.3px solid #ffffff4f;
+    padding: inherit;*/
+    text-align: center; 
     border-right: 0.3px solid #ffffff4f;
     padding: inherit;
-    text-align: center;
+    color: #fff !important;
 }
 
-section.pricing-sec .entry-content table.table tr:nth-child(2) td {
-    border-right: 0.3px solid #ffffff4f;
-    padding: inherit;
-}
 
 section.pricing-sec .entry-content table.table tr td {
     border-right: 0.3px solid #ffffff4f;
@@ -928,7 +934,8 @@ section.pricing-sec .entry-content table.table tr:nth-child(1) td {
 }section.pricing-sec .entry-content table.table tr:nth-child(1) td {
     border-right: none!important;
     padding: 0;
-}section.pricing-sec .entry-content table.table tr:last-child {
+}
+section.pricing-sec .entry-content table.table tr:last-child {
     background: #db202b;
 }section.pricing-sec .entry-content table.table tr td:first-child {
     text-align: left;
@@ -947,6 +954,7 @@ section.pricing-sec .entry-content table.table tr:nth-child(2) td:nth-child(1) {
 section.pricing-sec .entry-content table.table tr:nth-child(3) td:nth-child(1) {
    
     font-size: 35px;
+    color: #fff;
 }
 
 body.pricing-page section.start-retainership-sec .content-wrap p:before {
@@ -1048,7 +1056,7 @@ section.form-section .form-group.mt-2 {
     justify-content: end;
 }
 section.faq-section {
-    padding: 70px 0;
+    /* padding: 70px 0; */
     padding: 60px 0;
     border-bottom: 1px solid #424242;
 }
@@ -1124,4 +1132,32 @@ button:focus:not(:focus-visible) {
     color: #000 !important;
     min-height: 55px;
     margin-bottom: 25px;
+}
+.currency-wrap {
+    display: flex;
+    justify-content: center;
+    font-size: 186px;
+    font-weight: 100;
+    gap: 12px;
+}
+.currency-wrap .dollor-wrap {
+    position: relative;
+}
+.currency-wrap .rupee-wrap {
+    position: relative;
+}
+.divider {
+    color: #de222d;
+    font-weight: 100 !important;
+    margin-top: 14px;
+}
+.currency-wrap .rupee-wrap sup {
+    font-size: 37px;
+    font-weight: 400;
+    position: absolute;
+    top: 20%;
+    left: -2%;
+}
+.currency-wrap sub {
+    font-size: 25px;
 }

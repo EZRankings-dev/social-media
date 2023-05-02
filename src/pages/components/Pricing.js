@@ -36,6 +36,7 @@ const Pricing = () => {
              return {
                // id: item.id,
                title: item.title,
+               id: item.id,
                colored: item.colored,
                start_up: item.start_up,
                business: item.business,

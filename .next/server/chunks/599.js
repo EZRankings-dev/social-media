@@ -36,13 +36,13 @@ const PriceChart = (props)=>{
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
                                                 className: "redC",
                                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                                    children: "Individual"
+                                                    children: "Start-Up"
                                                 })
                                             }),
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
                                                 className: "redC",
                                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                                    children: "Start Up"
+                                                    children: "Economic"
                                                 })
                                             }),
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
@@ -59,15 +59,15 @@ const PriceChart = (props)=>{
                                                     children: data.title
                                                 }),
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
-                                                    className: data.colored == "1" ? "fs2" : "",
+                                                    className: data.colored == "1" ? "fs" : "",
                                                     children: data.individual
                                                 }),
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
-                                                    className: data.colored == "1" ? "fs2" : "",
+                                                    className: data.colored == "1" ? "fs" : "",
                                                     children: data.start_up
                                                 }),
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
-                                                    className: data.colored == "1" ? "fs2" : "",
+                                                    className: data.colored == "1" ? "fs" : "",
                                                     children: data.business
                                                 })
                                             ]
