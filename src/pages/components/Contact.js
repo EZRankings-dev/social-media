@@ -57,7 +57,7 @@ const Contact = () => {
             </div>
          </div>
       </section>
-      <section className="form-section">
+      <section className="">
         <div className="container">
 
           <ContactForm />
