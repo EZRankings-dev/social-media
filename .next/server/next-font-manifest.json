@@ -2,10 +2,10 @@
   "pages": {
     "/about": [],
     "/components/About": [],
-    "/components/PortfolioPageSlider": [],
     "/components/Home": [],
-    "/components/PortfolioSlider": [],
     "/components/Portfolio": [],
+    "/components/PortfolioPageSlider": [],
+    "/components/PortfolioSlider": [],
     "/components/Pricing": [],
     "/": [],
     "/portfolio": [],

@@ -44,7 +44,7 @@ const Home = () => {
                <div className="col-md-12">
                   <div className="banner-caption">
                      <h1 >We Love <span >St<img src={"https://smca.ezrankings.in/react-backend/uploads/oshap.png"} className="o-shap" alt=""/>ries</span></h1>
-                     <p>We Love to visualize stories beacuse we love people and they inspire us.</p>
+                     <p>We Love to visualize stories beacuse we love people and they inspire uss.</p>
                   </div>
                </div>
             </div>
