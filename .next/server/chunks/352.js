@@ -82,7 +82,7 @@ const Home = ()=>{
                                         ]
                                     }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                        children: "We Love to visualize stories beacuse we love people and they inspire uss."
+                                        children: "We Love to visualize stories beacuse we love people and they inspire us."
                                     })
                                 ]
                             })

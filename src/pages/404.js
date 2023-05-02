@@ -15,6 +15,8 @@ import Navbar from './components/Navbar'
        <meta property="og:site_name" content="Creative Agency" />
        <meta property="article:modified_time" content="2023-02-21T11:51:16+00:00" />
        <meta name="twitter:card" content="summary_large_image" />
+       <link rel="stylesheet" type="text/css" href="https://kit-pro.fontawesome.com/releases/v5.15.3/css/pro.min.css"></link>
+
       </Head>
       <Navbar />
       <section className="exp-branding-sec">
