@@ -3,14 +3,14 @@
     "/about": [],
     "/components/About": [],
     "/components/Home": [],
-    "/components/PortfolioPageSlider": [],
     "/components/Portfolio": [],
+    "/components/PortfolioPageSlider": [],
     "/components/PortfolioSlider": [],
     "/components/Pricing": [],
     "/": [],
+    "/portfolio": [],
     "/pricing": [],
-    "/thankyou": [],
-    "/portfolio": []
+    "/thankyou": []
   },
   "app": {},
   "appUsingSizeAdjust": false,

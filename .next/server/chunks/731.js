@@ -41,7 +41,7 @@ const Portfolio = ()=>{
     };
     const fetchData = async (page)=>{
         axios__WEBPACK_IMPORTED_MODULE_3__["default"].get(`https://smca.ezrankings.in/react-backend/portData.php?page=${page}`).then((res)=>{
-            const data = res.data.gallery.map((item)=>{
+            const data = res.data.gallery && res.data.gallery.length > 0 && res.data.gallery.map((item)=>{
                 return {
                     id: item.id,
                     alt: item.alt,
@@ -63,8 +63,10 @@ const Portfolio = ()=>{
                     image: item.image
                 };
             });
+            if (faqqData && faqqData.length > 0) {
+                setImgPortData(data);
+            }
             setFaqData(faqqData);
-            setImgPortData(data);
             // setImgPortBlogData([...imgPortBlogData, blogData]);
             if (imgPortBlogData && imgPortBlogData.length > 0) {
                 let newArrayBlog = imgPortBlogData;
