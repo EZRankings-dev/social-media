@@ -18,18 +18,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_image__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6689);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(1853);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_4__);
+
 
 
 
 
 const Navbar = ()=>{
-    const [classs, setActiveClass] = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)({
-        home: "nav-link active",
-        about: "nav-link",
-        price: "nav-link",
-        portfolio: "nav-link",
-        contact: "nav-link talk-let"
-    });
+    const router = (0,next_router__WEBPACK_IMPORTED_MODULE_4__.useRouter)();
     return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("header", {
         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("nav", {
             className: "navbar navbar-expand-lg navbar-light ",
@@ -65,77 +62,42 @@ const Navbar = ()=>{
                             children: [
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                                     className: "nav-item",
-                                    onClick: ()=>setActiveClass({
-                                            home: "nav-link active",
-                                            about: "nav-link",
-                                            price: "nav-link",
-                                            portfolio: "nav-link",
-                                            contact: "nav-link talk-let"
-                                        }),
                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
                                         href: "/",
-                                        className: classs.home,
+                                        className: router.pathname == "/" ? "nav-link active" : "nav-link",
                                         "aria-current": "page",
                                         children: "Home"
                                     })
                                 }),
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                                     className: "nav-item",
-                                    onClick: ()=>setActiveClass({
-                                            home: "nav-link",
-                                            about: "nav-link active",
-                                            price: "nav-link",
-                                            portfolio: "nav-link",
-                                            contact: "nav-link talk-let"
-                                        }),
                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
                                         href: "/about",
-                                        className: classs.about,
+                                        className: router.pathname == "/about" ? "nav-link active" : "nav-link",
                                         children: "About"
                                     })
                                 }),
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                                     className: "nav-item",
-                                    onClick: ()=>setActiveClass({
-                                            home: "nav-link",
-                                            about: "nav-link ",
-                                            price: "nav-link",
-                                            portfolio: "nav-link active",
-                                            contact: "nav-link talk-let"
-                                        }),
                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
                                         href: "/portfolio",
-                                        className: classs.portfolio,
+                                        className: router.pathname == "/portfolio" ? "nav-link active" : "nav-link",
                                         children: "Portfolio"
                                     })
                                 }),
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                                     className: "nav-item",
-                                    onClick: ()=>setActiveClass({
-                                            home: "nav-link",
-                                            about: "nav-link",
-                                            price: "nav-link active",
-                                            portfolio: "nav-link ",
-                                            contact: "nav-link talk-let"
-                                        }),
                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
                                         href: "/pricing",
-                                        className: classs.price,
+                                        className: router.pathname == "/pricing" ? "nav-link active" : "nav-link",
                                         children: "Pricing"
                                     })
                                 }),
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                                     className: "nav-item",
-                                    onClick: ()=>setActiveClass({
-                                            home: "nav-link",
-                                            about: "nav-link",
-                                            price: "nav-link",
-                                            portfolio: "nav-link",
-                                            contact: "nav-link talk-let active"
-                                        }),
                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
                                         href: "/contact",
-                                        className: classs.contact,
+                                        className: router.pathname == "/contact" ? "nav-link talk-let active" : "nav-link talk-let",
                                         children: "Lets Talk"
                                     })
                                 })

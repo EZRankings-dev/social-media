@@ -1,16 +1,10 @@
 import Link from 'next/link';
 import Image from 'next/image'
 import React, {useState} from 'react'
-
+import { useRouter } from "next/router";
  
 const Navbar = () => {
-   const [classs, setActiveClass] = useState({
-      home:"nav-link active",
-      about:"nav-link",
-      price:"nav-link",
-      portfolio:"nav-link",
-      contact:"nav-link talk-let"
-    });
+   const router = useRouter();
   return (
   
       <header>
@@ -22,51 +16,23 @@ const Navbar = () => {
                </button>
                <div className="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-                     <li className="nav-item" onClick={() => setActiveClass({
-                       home:"nav-link active",
-                       about:"nav-link",
-                       price:"nav-link",
-                       portfolio:"nav-link",
-                       contact:"nav-link talk-let"
-
-                     })}>
-                        <Link href="/" className={classs.home} aria-current="page">
+                     <li className="nav-item">
+                        <Link href="/" className={router.pathname == "/" ? "nav-link active" : "nav-link"} aria-current="page">
                            Home
                         </Link>
                      </li>
-                     <li className="nav-item" onClick={() => setActiveClass({
-                       home:"nav-link",
-                       about:"nav-link active",
-                       price:"nav-link",
-                       portfolio:"nav-link",
-                       contact:"nav-link talk-let"
-
-                     })}>
-                      <Link href="/about" className={classs.about}>
+                     <li className="nav-item">
+                      <Link href="/about" className={router.pathname == "/about" ? "nav-link active" : "nav-link"}>
                       About
                      </Link>
                      </li>
-                     <li className="nav-item" onClick={() => setActiveClass({
-                       home:"nav-link",
-                       about:"nav-link ",
-                       price:"nav-link",
-                       portfolio:"nav-link active",
-                       contact:"nav-link talk-let"
-
-                     })}>
-                     <Link href="/portfolio" className={classs.portfolio}>
+                     <li className="nav-item">
+                     <Link href="/portfolio" className={router.pathname == "/portfolio" ? "nav-link active" : "nav-link"}>
                      Portfolio
                      </Link>
                      </li>
-                     <li className="nav-item" onClick={() => setActiveClass({
-                       home:"nav-link",
-                       about:"nav-link",
-                       price:"nav-link active",
-                       portfolio:"nav-link ",
-                       contact:"nav-link talk-let"
-
-                     })}>
-                     <Link href="/pricing" className={classs.price}>
+                     <li className="nav-item">
+                     <Link href="/pricing" className={router.pathname == "/pricing" ? "nav-link active" : "nav-link"}>
                      Pricing
                      </Link>
                      </li>
@@ -75,15 +41,8 @@ const Navbar = () => {
                      Blogs
                      </Link>
                      </li> */}
-                     <li className="nav-item" onClick={() => setActiveClass({
-                       home:"nav-link",
-                       about:"nav-link",
-                       price:"nav-link",
-                       portfolio:"nav-link",
-                       contact:"nav-link talk-let active"
-
-                     })}> 
-                     <Link href="/contact" className={classs.contact}>
+                     <li className="nav-item"> 
+                     <Link href="/contact" className={router.pathname == "/contact" ? "nav-link talk-let active" : "nav-link talk-let"}>
                      Lets Talk
                      </Link>
                      </li>                     
