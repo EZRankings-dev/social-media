@@ -16,7 +16,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6689);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _FooterForm__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1698);
-/* harmony import */ var _Faq__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(4968);
+/* harmony import */ var _Faq__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(7012);
 var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_FooterForm__WEBPACK_IMPORTED_MODULE_2__]);
 _FooterForm__WEBPACK_IMPORTED_MODULE_2__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
 

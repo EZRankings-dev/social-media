@@ -1,23 +1,31 @@
 "use strict";
-exports.id = 968;
-exports.ids = [968];
+exports.id = 12;
+exports.ids = [12];
 exports.modules = {
 
-/***/ 4968:
+/***/ 7012:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+// ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6689);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "default": () => (/* binding */ components_Faq)
+});
+
+// EXTERNAL MODULE: external "react/jsx-runtime"
+var jsx_runtime_ = __webpack_require__(997);
+// EXTERNAL MODULE: external "react"
+var external_react_ = __webpack_require__(6689);
+;// CONCATENATED MODULE: ./src/pages/assets/images/down.png
+/* harmony default export */ const down = ({"src":"/_next/static/media/down.4e078618.png","height":48,"width":48,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAMAAADz0U65AAAAD1BMVEVMaXH///////////////9FpdmZAAAABXRSTlMADBlfXbOzTSQAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAnSURBVHicNYoxEgAwDIIU/f+be20aBliQFm/KLRVBIwfyBrc7/g4HB7wANfqkc/EAAAAASUVORK5CYII=","blurWidth":8,"blurHeight":8});
+;// CONCATENATED MODULE: ./src/pages/components/Faq.js
+
 
 
 const Faq = (props)=>{
-    const [hiddenTitleIndex, setHiddenTitleIndex] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(0);
+    const [hiddenTitleIndex, setHiddenTitleIndex] = (0,external_react_.useState)(0);
     const toggleHiddenTitle = (index)=>{
         if (hiddenTitleIndex === index) {
             setHiddenTitleIndex(null);
@@ -25,30 +33,31 @@ const Faq = (props)=>{
             setHiddenTitleIndex(index);
         }
     };
-    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("section", {
+    return /*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {
+        children: /*#__PURE__*/ jsx_runtime_.jsx("section", {
             className: "faq-section",
-            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+            children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
                 className: "container",
-                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
                     className: "row",
-                    children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                         className: "col-md-12",
                         children: [
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
+                            /*#__PURE__*/ jsx_runtime_.jsx("h2", {
+                                className: "faq-title",
                                 children: "Frequently Asked Questions (FAQs)"
                             }),
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                 className: "accordion",
                                 id: "accordionExample",
-                                children: props.faqData && props.faqData.length > 0 && props.faqData.map((data, i)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                children: props.faqData && props.faqData.length > 0 && props.faqData.map((data, i)=>/*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                         className: "accordion-item",
                                         children: [
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
+                                            /*#__PURE__*/ jsx_runtime_.jsx("h2", {
                                                 className: "accordion-header",
                                                 id: "headingOne" + i,
-                                                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("button", {
-                                                    className: "accordion-button collapsed",
+                                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("button", {
+                                                    className: hiddenTitleIndex === i ? "accordion-button collapsed openDesc" : "accordion-button collapsed",
                                                     type: "button",
                                                     "data-bs-toggle": "collapseOne" + i,
                                                     "data-bs-target": "#collapseOne" + i,
@@ -63,14 +72,14 @@ const Faq = (props)=>{
                                                     ]
                                                 })
                                             }),
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                                 id: "collapseOne" + i,
                                                 className: "",
                                                 "aria-labelledby": "headingOne" + i,
                                                 "data-bs-parent": "#accordionExample",
-                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                                     className: hiddenTitleIndex === i ? "accordion-body" : "",
-                                                    children: hiddenTitleIndex === i && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                    children: hiddenTitleIndex === i && /*#__PURE__*/ jsx_runtime_.jsx("p", {
                                                         dangerouslySetInnerHTML: {
                                                             __html: data.description
                                                         }
@@ -87,7 +96,7 @@ const Faq = (props)=>{
         })
     });
 };
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Faq);
+/* harmony default export */ const components_Faq = (Faq);
 
 
 /***/ })

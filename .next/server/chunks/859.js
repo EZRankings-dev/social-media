@@ -19,7 +19,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(9648);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(1664);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _Faq__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(4968);
+/* harmony import */ var _Faq__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(7012);
 /* harmony import */ var _PortfolioSlider__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(6425);
 /* harmony import */ var _FooterForm__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(1698);
 var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([axios__WEBPACK_IMPORTED_MODULE_3__, _FooterForm__WEBPACK_IMPORTED_MODULE_7__]);
@@ -120,7 +120,7 @@ const About = ()=>{
                 imgData: imgData
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("section", {
-                className: "start-retainership-sec ",
+                className: "start-retainership-sec  srs2",
                 children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                     className: "continer",
                     children: [

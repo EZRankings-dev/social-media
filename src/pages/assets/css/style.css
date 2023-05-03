@@ -153,6 +153,7 @@ section.banner-section .banner-caption {
 ***/
 section.our-mission-sec {
     padding: 50px 0;
+    padding-bottom: 100px;
 }
 .about-us-page .title-header {
    
@@ -241,11 +242,14 @@ section.our-mission-sec .row .col-md-6 {
 /* Service  Css start Here */
 
 section.exp-branding-sec {
-    padding: 100px 0;
-}section.exp-branding-sec .title-header h2 {
+    padding: 35px 0;
+}
+section.exp-branding-sec .title-header h2 {
     font-size: 42pt;
     font-weight: 300;
     color: #000;
+}.start-retainership-sec  .title-header:after {
+    display: none;
 }
 section.exp-branding-sec .title-header h2 span {
     display: inline-block;
@@ -317,12 +321,34 @@ section.exp-branding-sec .title-header h2 span {
     margin: 30px auto;
     width: 25px;
     height: 25px;
-    border-top: 2px solid #fff;
-    border-left: 2px solid #fffbfb;
+    border-top: 2px solid #000000;
+    border-left: 2px solid #000000;
 }
-  
-
-  .slick-slider .slick-next{
+ul.slick-dots {
+    display: none !important;
+}.accordion-button::after {
+    
+    background-image:url(../images/down.png) !important;
+   
+}.slick-slider.slick-slider.slick-initialized {
+    height: 600px !important;
+}
+.slick-slider .slick-prev {
+    left: 48%;
+    position: absolute;
+    top: 93%;
+    transform: rotate(-45deg);
+    display: block;
+    margin: 30px auto;
+    width: 25px;
+    height: 25px;
+    border-top: 2px solid #000000;
+    border-left: 2px solid #000000;
+}.slick-slider .slick-next {
+    right: 48%;
+    position: absolute;
+    top: 93% !important;}
+.slick-slider .slick-next {
     right: 48%;
     position: absolute;
     top: 107%;
@@ -330,8 +356,8 @@ section.exp-branding-sec .title-header h2 span {
     margin: 30px auto;
     width: 25px;
     height: 25px;
-    border-top: 2px solid #fffbfb;
-    border-left: 2px solid #fffbfb;
+    border-top: 2px solid #000000;
+    border-left: 2px solid #000000;
     transform: rotate(135deg);
 }
 
@@ -364,7 +390,7 @@ section.start-retainership-sec .title-header h2 span {
     font-size: 37px;
     font-weight: 400;
     position: absolute;
-    top: 21%;
+    top: 40%;
     left: -7%;
 }
 section.start-retainership-sec .title-header h2 span sup {
@@ -755,9 +781,7 @@ section.banner-section.portfoliopage .banner-caption h1 span {
     font-size: 215px;
     margin-top: -40px;
 }
-.slick-slider.slick-slider.slick-initialized {
-    height: 538px !important;
-}.slick-prev:before, .slick-next:before {
+.slick-prev:before, .slick-next:before {
    
     opacity: 0 !important;
 }
@@ -1086,9 +1110,14 @@ section.faq-section h2 {
     text-align: center;
     font-size: 50px;
     /* padding-bottom: 30px; */
+
     font-weight: 300;
 }
 
+
+.faq-title {
+    padding-bottom: 30px;
+}
 
 .accordion-item:first-of-type .accordion-button {
     border-top-left-radius: var(--bs-accordion-inner-border-radius);
@@ -1155,9 +1184,54 @@ button:focus:not(:focus-visible) {
     font-size: 37px;
     font-weight: 400;
     position: absolute;
-    top: 20%;
+    top: 37%;
     left: -2%;
 }
 .currency-wrap sub {
     font-size: 25px;
+}
+
+section.porfolio-slider {
+    margin-top: 50px;
+}.exp-branding-sec .slick-slide img {
+    display: block;
+    margin-top: 50px;
+}section.start-retainership-sec.srs2 {
+    margin-top: 70px;
+}section.pricing-sec .entry-content table.table tr:nth-child(2) td.fs {
+    font-size: 95px !important;
+}
+
+section.pricing-sec .entry-content table.table tr:nth-child(2) td.fs::first-letter {
+    font-size: 22px;
+    line-height: 0;
+    position: relative;
+    vertical-align: super;
+}
+
+section.pricing-sec .entry-content table.table tr:nth-child(3) td.fs::first-letter {
+    font-size: 22px;
+    line-height: 0;
+    position: relative;
+    vertical-align: super;
+}section.pricing-sec .entry-content table.table tr:nth-child(3) td:nth-child(1) {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    height: 167px;
+}
+
+section.pricing-sec .entry-content table.table tr:last-child td {
+    color: #fff !important;
+}
+
+button.accordion-button.collapsed.openDesc::after {
+    
+    transform: rotate(180deg) !important;
+}.contact-us-email h2 a {
+    font-size: 59px !important;
+    text-align: left !important;
+    font-weight: 100!important;
+    padding: 0 !important;
+    color: #000;
 }

@@ -81,7 +81,7 @@ const About = () => {
         <AboutContent aboutContentData = {aboutData}/>
         <PortfolioSlider imgData={imgData} />
 
-        <section className="start-retainership-sec ">
+        <section className="start-retainership-sec  srs2">
            <div className="continer">
               <div className="row">
                  <div className="col-md-12">
