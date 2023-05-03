@@ -1,10 +1,10 @@
 {
   "pages": {
-    "/components/About": [],
     "/about": [],
+    "/components/About": [],
+    "/components/Portfolio": [],
     "/components/Home": [],
     "/components/PortfolioPageSlider": [],
-    "/components/Portfolio": [],
     "/components/PortfolioSlider": [],
     "/components/Pricing": [],
     "/": [],
