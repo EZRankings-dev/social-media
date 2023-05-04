@@ -1216,7 +1216,7 @@ section.pricing-sec .entry-content table.table tr:nth-child(3) td.fs::first-lett
     vertical-align: super;
 }section.pricing-sec .entry-content table.table tr:nth-child(3) td:nth-child(1) {
     display: flex !important;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     height: 167px;
 }
