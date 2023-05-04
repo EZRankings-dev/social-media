@@ -1,13 +1,13 @@
 {
   "pages": {
-    "/components/About": [],
     "/about": [],
+    "/components/About": [],
     "/components/Home": [],
     "/components/Portfolio": [],
+    "/components/PortfolioPageSlider": [],
     "/components/PortfolioSlider": [],
     "/components/Pricing": [],
     "/": [],
-    "/components/PortfolioPageSlider": [],
     "/portfolio": [],
     "/pricing": [],
     "/thankyou": []

@@ -23,7 +23,20 @@ import Footer from './components/Footer';
       <meta property="article:modified_time" content="2023-02-27T05:38:12+00:00" />
       <link rel="stylesheet" type="text/css" href="https://kit-pro.fontawesome.com/releases/v5.15.3/css/pro.min.css"></link>
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500&display=swap"></link>
+      <script async
+        src="https://www.googletagmanager.com/gtag/js?id=G-4T85M437M3"
+        
+      />
+      <script>
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
 
+          gtag('config', 'G-4T85M437M3');
+        `}
+      </script>
+      <meta name="google-site-verification" content="muKy4GDWt7CbVzZo5Gly_Z6UieYyZ65RlQsB4ts9uKY" />
       </Head>
       <Navbar />
       <section className="start-retainership-sec ">

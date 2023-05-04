@@ -2,8 +2,6 @@ import Head from 'next/head'
 import Home from './components/Home';
 import Navbar from './components/Navbar'
 import Footer from './components/Footer';
-import PortfolioPageSlider from './components/PortfolioPageSlider'
-
 // import routes from './routes';
 
 
@@ -106,6 +104,20 @@ import PortfolioPageSlider from './components/PortfolioPageSlider'
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
+      <script async
+        src="https://www.googletagmanager.com/gtag/js?id=G-4T85M437M3"
+        
+      />
+      <script>
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-4T85M437M3');
+        `}
+      </script>
+      <meta name="google-site-verification" content="muKy4GDWt7CbVzZo5Gly_Z6UieYyZ65RlQsB4ts9uKY" />
       </Head>
       <Navbar />
       <Home />
