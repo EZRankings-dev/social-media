@@ -21,15 +21,17 @@ import Navbar from './components/Navbar'
         src="https://www.googletagmanager.com/gtag/js?id=G-4T85M437M3"
         
       />
-      <script>
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+      <script
+        dangerouslySetInnerHTML={{ __html: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){
+          dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
 
-          gtag('config', 'G-4T85M437M3');
-        `}
-      </script>
+        gtag('config', 'G-4T85M437M3');
+      ` }}
+      />
       <meta name="google-site-verification" content="muKy4GDWt7CbVzZo5Gly_Z6UieYyZ65RlQsB4ts9uKY" />
       </Head>
       <Navbar />
