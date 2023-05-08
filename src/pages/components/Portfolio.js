@@ -144,7 +144,7 @@ const Portfolio = () => {
   </div>
 </section>
 <FooterForm />
-{/* <Faq faqData={faqData} /> */}
+<Faq faqData={faqData} />
    </>
   )
 }
