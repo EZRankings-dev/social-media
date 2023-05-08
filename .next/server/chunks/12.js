@@ -50,12 +50,16 @@ const Faq = (props)=>{
                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                 className: "accordion",
                                 id: "accordionExample",
+                                itemscope: "",
+                                itemprop: "mainEntity",
+                                itemtype: "https://schema.org/Question",
                                 children: props.faqData && props.faqData.length > 0 && props.faqData.map((data, i)=>/*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                         className: "accordion-item",
                                         children: [
                                             /*#__PURE__*/ jsx_runtime_.jsx("h2", {
                                                 className: "accordion-header",
                                                 id: "headingOne" + i,
+                                                itemprop: data.title,
                                                 children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("button", {
                                                     className: hiddenTitleIndex === i ? "accordion-button collapsed openDesc" : "accordion-button collapsed",
                                                     type: "button",
@@ -74,9 +78,11 @@ const Faq = (props)=>{
                                             }),
                                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                                 id: "collapseOne" + i,
-                                                className: "",
                                                 "aria-labelledby": "headingOne" + i,
                                                 "data-bs-parent": "#accordionExample",
+                                                itemscope: "",
+                                                itemprop: data.description,
+                                                itemtype: "https://schema.org/Answer",
                                                 children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                                     className: hiddenTitleIndex === i ? "accordion-body" : "",
                                                     children: hiddenTitleIndex === i && /*#__PURE__*/ jsx_runtime_.jsx("p", {

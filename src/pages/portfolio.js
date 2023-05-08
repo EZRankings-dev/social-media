@@ -5,11 +5,11 @@ import Footer from './components/Footer';
 
 // import routes from './routes';
 
- const Abouts = ()=> {
+ const PortfolioIndex = ()=> {
   return (
     <>
       <Head>
-      <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
     <title>Our Portfolio - Social Media Creative Agency</title>
     <meta name="description" content="Find the list of Social Media projects which has been done by Social Media Creative Agency with good results." />
     <link rel="canonical" href="https://www.socialmediacreativeagency.com/portfolio/" />
@@ -46,4 +46,4 @@ import Footer from './components/Footer';
     </>
   )
 }
-export default Abouts;
+export default PortfolioIndex;

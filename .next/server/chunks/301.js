@@ -227,10 +227,7 @@ const Portfolio = ()=>{
                     ]
                 })
             }),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_FooterForm__WEBPACK_IMPORTED_MODULE_5__["default"], {}),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Faq_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
-                faqData: faqData
-            })
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_FooterForm__WEBPACK_IMPORTED_MODULE_5__["default"], {})
         ]
     });
 };
