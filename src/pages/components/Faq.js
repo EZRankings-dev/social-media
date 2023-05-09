@@ -28,7 +28,7 @@ import FAQarrow from "../assets/images/down.png"
                         </h2>
                         <div id={'collapseOne'+i} aria-labelledby={'headingOne'+i} data-bs-parent="#accordionExample" itemscope="" itemprop={data.description} itemtype="https://schema.org/Answer">
                             <div className={hiddenTitleIndex === i ? 'accordion-body' :''}>
-                            {hiddenTitleIndex === i && <p dangerouslySetInnerHTML={{ __html: data.description}} />}
+                            {hiddenTitleIndex === i && <div dangerouslySetInnerHTML={{ __html: data.description}} />}
                             </div>
                         </div>
                     </div>

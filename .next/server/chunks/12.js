@@ -85,7 +85,7 @@ const Faq = (props)=>{
                                                 itemtype: "https://schema.org/Answer",
                                                 children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                                     className: hiddenTitleIndex === i ? "accordion-body" : "",
-                                                    children: hiddenTitleIndex === i && /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                    children: hiddenTitleIndex === i && /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                                         dangerouslySetInnerHTML: {
                                                             __html: data.description
                                                         }

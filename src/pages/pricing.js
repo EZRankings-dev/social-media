@@ -108,7 +108,7 @@ export default function MyPage({ data }) {
                         </h2>
                         <div id={'collapseOne'+i} aria-labelledby={'headingOne'+i} data-bs-parent="#accordionExample" itemscope="" itemprop={dataF.description} itemtype="https://schema.org/Answer">
                             <div className={hiddenTitleIndex === i ? 'accordion-body' :''}>
-                            {hiddenTitleIndex === i && <p dangerouslySetInnerHTML={{ __html: dataF.description}} />}
+                            {hiddenTitleIndex === i && <div dangerouslySetInnerHTML={{ __html: dataF.description}} />}
                             </div>
                         </div>
                     </div>

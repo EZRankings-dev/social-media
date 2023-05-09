@@ -1,11 +1,60 @@
+import React, {useState, useEffect} from 'react'
 import Head from 'next/head'
 import Portfolio from './components/Portfolio';
+import axios from 'axios';
+
 import Navbar from './components/Navbar'
 import Footer from './components/Footer';
-
+import FooterForm from './components/FooterForm';
+import Slider from "react-slick"
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
 // import routes from './routes';
 
- const PortfolioIndex = ()=> {
+//  const PortfolioIndex = ()=> {
+  export default function PortfolioIndex({ portData }) {
+    const [hiddenTitleIndex, setHiddenTitleIndex] = useState(1);
+    const [currentPage, setCurrentPage] = useState(2);
+    let blogDatta;
+    if(portData && portData.blog && portData.blog.length > 0){
+      blogDatta = portData.blog;
+    }
+    const [postList, setPostList] = useState(blogDatta);
+
+    const toggleHiddenTitle = (index) => {
+        if (hiddenTitleIndex === index) {
+          setHiddenTitleIndex(null);
+        } else {
+          setHiddenTitleIndex(index);
+        }
+      };
+      const settings = {
+
+        autoplay: false,
+        autoplaySpeed: 1000,
+        slidesToShow: 1,
+        dots: true,
+        arrows: true,
+        responsive: [
+       {
+         breakpoint: 768,
+         settings: {
+         slidesToShow: 1,
+         slidesToScroll: 1
+         }
+       }
+      ]
+    } 
+    async function handleNextPage() {
+      const response = await axios.get(`https://smca.ezrankings.in/react-backend/portData.php?page=${currentPage}`);
+      const newPosts = response.data;
+     setPostList((prevPosts) => [...prevPosts, ...response.data.blog]);
+           setCurrentPage(currentPage + 1);
+
+    }
+    // const handleNextPage = () => {
+    //   // setCurrentPage(currentPage + 1);
+    // }    
   return (
     <>
       <Head>
@@ -23,10 +72,7 @@ import Footer from './components/Footer';
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="stylesheet" type="text/css" href="https://kit-pro.fontawesome.com/releases/v5.15.3/css/pro.min.css"></link>
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500&display=swap"></link>
-    <script async
-        src="https://www.googletagmanager.com/gtag/js?id=G-4T85M437M3"
-        
-      />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4T85M437M3" />
       <script
         dangerouslySetInnerHTML={{ __html: `
         window.dataLayer = window.dataLayer || [];
@@ -41,9 +87,124 @@ import Footer from './components/Footer';
       <meta name="google-site-verification" content="muKy4GDWt7CbVzZo5Gly_Z6UieYyZ65RlQsB4ts9uKY" />
       </Head>
       <Navbar />
-      <Portfolio />
+
+      <section className="porfolio-slider">
+        <div className="container">
+            <div className="row">
+                <div className="col-md-9 mx-auto">
+                    <div className="slider-porfolio">
+                    <Slider {...settings} className="slick-slider2">
+                      {portData.gallery && portData.gallery.length > 0 && portData.gallery.map((data, i)=>(
+                        <div className="item" key={i}>
+                          <figure><img src={data.image} alt={data.alt}/>
+                          </figure>
+                        </div>
+                      ))}
+                    </Slider>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section className="portfolio-sec">
+  <div className="container">
+      <div className="row">
+      {postList && postList.map((blogImg, b) =>(
+        <div className="col-md-4" key={b}>
+            <div className="portfolio-card">
+                <figure> <a href={blogImg.image} data-fancybox="gallery" data-caption={blogImg.alt}>
+                    <img src={blogImg.image} alt={blogImg.alt} />
+                    <span className="zoom-img"><i className="fas fa-search-plus"></i></span>
+                  </a>
+                </figure>
+            </div>
+        </div>
+      ))}
+        <div className="col-md-12">
+            <div className="load-more-btn">
+                <a onClick={handleNextPage}>Load More</a>
+            </div>
+        </div>
+      </div>
+  </div>
+</section>
+      <section className="start-retainership-sec ">
+        <div className="continer">
+          <div className="row">
+            <div className="col-md-12">
+              <div className="content-wrap">
+                <p>We believe that every business 
+                is <span>unique and deserves excellent and customized 
+                social media creatives,</span> that's why we take the time to 
+                develop an enduring connection with our clients.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-md-12">
+              <div className="content-wrap2">
+                <h2>Let’s create something 
+                amazing together.
+                </h2>
+                <a href="https://www.socialmediacreativeagency.com/contact-us" class="">Get Started</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <FooterForm />
+        <section className="faq-section">
+         <div className="container">
+            <div className="row">
+               <div className="col-md-12">
+                  <h2 className="faq-title">Frequently Asked Questions (FAQs)</h2>
+                  <div className="accordion" id="accordionExample" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    {portData.faq && portData.faq.length > 0 && portData.faq.map((dataF, i)=>(
+                        <div className="accordion-item" key={i}>
+                        <h2 className="accordion-header" id={'headingOne'+i} itemprop={dataF.title}>
+                            <button className={hiddenTitleIndex === i ? 'accordion-button collapsed openDesc' : 'accordion-button collapsed'} type="button" data-bs-toggle={'collapseOne'+i} data-bs-target={'#collapseOne'+i}  aria-controls={'collapseOne'+i}  onClick={() => toggleHiddenTitle(i)}>
+                            {dataF.status}Q.{i+1} {dataF.title}
+                            </button>
+                        </h2>
+                        <div id={'collapseOne'+i} aria-labelledby={'headingOne'+i} data-bs-parent="#accordionExample" itemscope="" itemprop={dataF.description} itemtype="https://schema.org/Answer">
+                            <div className={hiddenTitleIndex === i ? 'accordion-body' :''}>
+                            {hiddenTitleIndex === i && <div dangerouslySetInnerHTML={{ __html: dataF.description}} />}
+                            </div>
+                        </div>
+                    </div>
+                    ))}
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
       <Footer />
     </>
   )
 }
-export default PortfolioIndex;
+// export default PortfolioIndex;
+
+// export async function getStaticProps() {
+//   let currNo = 1;
+//   const response = await fetch(``);
+//   const portData = await response.json();
+//   const callFunn =()=>{
+//     alert();
+//   }
+//   return {
+//     props: { portData }
+//   };
+// }
+
+export async function getStaticProps(data) {
+  console.log('ggggggg'+data)
+  let currNo = 1;
+  const response = await axios.get(`https://smca.ezrankings.in/react-backend/portData.php?page=${currNo}`);
+  const portData = response.data;
+  return {
+    props: {
+      portData,
+    },
+  };
+}

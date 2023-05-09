@@ -1,7 +1,7 @@
 (() => {
 var exports = {};
 exports.id = 939;
-exports.ids = [939,241,227,482,457,450,219,911,783,611,55,448,383];
+exports.ids = [939,241,227,482,457,450,911,219,383,783,55,611,448];
 exports.modules = {
 
 /***/ 7747:
@@ -266,7 +266,7 @@ function MyPage({ data  }) {
                                                     itemtype: "https://schema.org/Answer",
                                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                                         className: hiddenTitleIndex === i ? "accordion-body" : "",
-                                                        children: hiddenTitleIndex === i && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                        children: hiddenTitleIndex === i && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                                             dangerouslySetInnerHTML: {
                                                                 __html: dataF.description
                                                             }

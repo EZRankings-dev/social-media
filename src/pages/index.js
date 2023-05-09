@@ -1,11 +1,17 @@
+import React, {useState, useEffect} from 'react'
 import Head from 'next/head'
 import Home from './components/Home';
 import Navbar from './components/Navbar'
 import Footer from './components/Footer';
+import Slider from "react-slick"
+import FooterForm from './components/FooterForm';
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
 // import routes from './routes';
+import Link from 'next/link';
 
 
- const Index = ()=> {
+export default function Index({ dataHomes }) {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -82,6 +88,34 @@ import Footer from './components/Footer';
     }]
   }
   ;
+  const [hiddenTitleIndex, setHiddenTitleIndex] = useState(0);
+
+
+const settings = {
+  centerMode: true,
+  autoplay: false,
+  autoplaySpeed: 1000,
+  slidesToShow: 4,
+  dots: true,
+  arrows: true,
+  swipe: true,
+  infinite: true,
+  swipeToSlide: true, responsive: [{
+    breakpoint: 768,
+    settings: {
+    slidesToShow: 1,
+    slidesToScroll: 1
+    }
+  }
+]
+  };
+  const toggleHiddenTitle = (index) => {
+    if (hiddenTitleIndex === index) {
+      setHiddenTitleIndex(null);
+    } else {
+      setHiddenTitleIndex(index);
+    }
+  };
   return (
     <>
       <Head>
@@ -122,9 +156,112 @@ import Footer from './components/Footer';
       <meta name="google-site-verification" content="muKy4GDWt7CbVzZo5Gly_Z6UieYyZ65RlQsB4ts9uKY" />
       </Head>
       <Navbar />
-      <Home />
+      <section className="banner-section">
+         <div className="container">
+            <div className="row">
+               <div className="col-md-12">
+                  <div className="banner-caption">
+                     <h1 >We Love <span >St<img src={"https://smca.ezrankings.in/react-backend/uploads/oshap.png"} className="o-shap" alt=""/>ries</span></h1>
+                     <p>We Love to visualize stories beacuse we love people and they inspire us.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section className="exp-branding-sec">
+         <div className="contianer">
+            <div className="title-header">
+               <h2>We’re an experienced branding agency with more than <span>seven hundred projects </span>
+                  under our belt.
+               </h2>
+            </div>
+         </div>
+         <Slider {...settings} className="slick-slider">
+          {dataHomes.gallery && dataHomes.gallery.length > 0 && dataHomes.gallery.map((galData, i) => (
+                 <div className="item" key={i}>
+                    <figure><img src={galData.img}  alt={galData.alt} />
+                    </figure>
+                 </div>
+                ))}
+        </Slider>
+      </section>
+      <section className="start-retainership-sec ">
+         <div className="continer">
+            <div className="title-header">
+               <h2>Let's Start Retainership with us</h2>
+               <div className="currency-wrap">
+                  <div className="dollor-wrap">
+                     <sup>$</sup>150
+                  </div>
+                  <div className="divider">/</div>
+                  <div className="rupee-wrap">
+                     <sup>₹</sup>7000<sub>Per month</sub>
+                  </div>
+               </div>
+               <Link href="" className="btn-border">Take an Expert</Link>
+            </div>
+            <div className="row">
+               <div className="col-md-12">
+                  <div className="content-wrap">
+                     <p>We believe that every business
+                        is <span>unique and deserves excellent and customized
+                        social media creatives,</span> thats why we take the time to
+                        develop an enduring connection with our clients.
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div className="row">
+               <div className="col-md-12">
+                  <div className="content-wrap2">
+                     <h2>Let's create something
+                        amazing together.
+                     </h2>
+                     <Link href="" className="">Get Started</Link>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <FooterForm />
+      <section className="faq-section">
+         <div className="container">
+            <div className="row">
+               <div className="col-md-12">
+                  <h2 className="faq-title">Frequently Asked Questions (FAQs)</h2>
+                  <div className="accordion" id="accordionExample" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    {dataHomes && dataHomes.faq && dataHomes.faq.length > 0 && dataHomes.faq.map((dataF, i)=>(
+                        <div className="accordion-item" key={i}>
+                        <h2 className="accordion-header" id={'headingOne'+i} itemprop={dataF.title}>
+                            <button className={hiddenTitleIndex === i ? 'accordion-button collapsed openDesc' : 'accordion-button collapsed'} type="button" data-bs-toggle={'collapseOne'+i} data-bs-target={'#collapseOne'+i}  aria-controls={'collapseOne'+i}  onClick={() => toggleHiddenTitle(i)}>
+                            {dataF.status}Q.{i+1} {dataF.title}
+                            </button>
+                        </h2>
+                        <div id={'collapseOne'+i} aria-labelledby={'headingOne'+i} data-bs-parent="#accordionExample" itemscope="" itemprop={dataF.description} itemtype="https://schema.org/Answer">
+                            <div className={hiddenTitleIndex === i ? 'accordion-body' :''}>
+                            {hiddenTitleIndex === i && <div  dangerouslySetInnerHTML={{ __html: dataF.description}} />}
+                            </div>
+                        </div>
+                    </div>
+                    ))}
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+    
       <Footer />
     </>
   )
 }
-export default Index;
+
+
+export async function getStaticProps() {
+  const response = await fetch('https://smca.ezrankings.in/react-backend/homes.php');
+  const dataHomes = await response.json();
+
+  return {
+    props: { dataHomes }
+  };
+}
