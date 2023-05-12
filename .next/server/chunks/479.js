@@ -126,7 +126,7 @@ const Contact = ()=>{
                                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                                                 href: "https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfttvVVhZpCHNdbDnbmGLtwZsZDQRjVCpsBkcfXtwLbNGSGdpfbntHPzZdnknsvvLKSJNq",
                                                 target: "_blank",
-                                                children: "hello@smcr.com"
+                                                children: "info@socialmediacreativeagency.com"
                                             })
                                         })
                                     }),
