@@ -36,11 +36,11 @@ const Navbar = () => {
                      Pricing
                      </Link>
                      </li>
-                     {/* <li className="nav-item"> 
-                     <Link href="/contact" className="nav-link">
+                     <li className="nav-item"> 
+                     <Link href="/blogs" className={router.pathname == "/blogs" ? "nav-link active" : "nav-link"}>
                      Blogs
                      </Link>
-                     </li> */}
+                     </li>
                      <li className="nav-item"> 
                      <Link href="/contact" className={router.pathname == "/contact" ? "nav-link talk-let active" : "nav-link talk-let"}>
                      Lets Talk

@@ -96,6 +96,14 @@ const Navbar = ()=>{
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                                     className: "nav-item",
                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
+                                        href: "/blogs",
+                                        className: router.pathname == "/blogs" ? "nav-link active" : "nav-link",
+                                        children: "Blogs"
+                                    })
+                                }),
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                    className: "nav-item",
+                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
                                         href: "/contact",
                                         className: router.pathname == "/contact" ? "nav-link talk-let active" : "nav-link talk-let",
                                         children: "Lets Talk"
