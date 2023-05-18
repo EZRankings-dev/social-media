@@ -120,40 +120,40 @@ const settings = {
     <>
       <Head>
       <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
-      <title>Full-Service Social Media Marketing Agency in India - Social Media Creative Agency</title>
-      <meta name="keywords" content="social media creative agency, creative social media services, creative agency social media posts, full service creative agency, best creative agency in india, top creative agencies, best social media agency in india, social media management agency, white label social media management, best social media marketing agency" />
-      <meta name="description" content="Looking for creative Social Media Services to promote your brand?? SMCA is full-service creative agency based in India, offers white label social media management services for clients. Get top-notch quality social media posts services from the experts." />
-      <link rel="canonical" href="https://www.socialmediacreativeagency.com/" />
-      <meta property="og:locale" content="en_US" />
-      <meta property="og:type" content="website" />
-      <meta property="og:title" content="The Best Social Media Marketing Agency in India - Social Media Creative Agency (SMCA)" />
-      <meta property="og:description" content="Looking for creative Social Media Services to promote your brand?? SMCA is full-service creative agency based in India, offers white label social media management services for clients. Get top-notch quality social media posts services from the experts." />
-      <meta property="og:url" content="https://www.socialmediacreativeagency.com/" />
-      <meta property="og:site_name" content="Creative Agency" />
-      <meta property="article:modified_time" content="2023-02-27T05:38:12+00:00" />
-      <link rel="stylesheet" type="text/css" href="https://kit-pro.fontawesome.com/releases/v5.15.3/css/pro.min.css"></link>
-      <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500&display=swap"></link>
-      <script
-        key="structured-data"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-      />
-      <script async
-        src="https://www.googletagmanager.com/gtag/js?id=G-4T85M437M3"
-        
-      />
-      <script
-        dangerouslySetInnerHTML={{ __html: `
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){
-          dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+        <title>Our Blogs - Social Media Creative Agency</title>
+        <meta name="description" content="We have the latest updates on Social Media Marketing News. Read here trending or popular news across the world." />
+        <link rel="canonical" href="https://www.socialmediacreativeagency.com/blogs/" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="Our Blogs - Social Media Creative Agency" />
+        <meta property="og:description" content="We have the latest updates on Social Media Marketing News. Read here trending or popular news across the world." />
+        <meta property="og:url" content="https://www.socialmediacreativeagency.com/blogs/" />
+        <meta property="og:site_name" content="Creative Agency" />
+        <meta property="article:modified_time" content="2023-02-27T05:40:13+00:00" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <link rel="stylesheet" type="text/css" href="https://kit-pro.fontawesome.com/releases/v5.15.3/css/pro.min.css"></link>
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500&display=swap"></link>
+        <script
+            key="structured-data"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+        <script async
+            src="https://www.googletagmanager.com/gtag/js?id=G-4T85M437M3"
+            
+        />
+        <script
+            dangerouslySetInnerHTML={{ __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){
+            dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
 
-        gtag('config', 'G-4T85M437M3');
-      ` }}
-      />
-      <meta name="google-site-verification" content="muKy4GDWt7CbVzZo5Gly_Z6UieYyZ65RlQsB4ts9uKY" />
+            gtag('config', 'G-4T85M437M3');
+        ` }}
+        />
+        <meta name="google-site-verification" content="muKy4GDWt7CbVzZo5Gly_Z6UieYyZ65RlQsB4ts9uKY" />
       </Head>
       <Navbar />
       <section className="banner-section">
@@ -184,10 +184,10 @@ const settings = {
                         </div>
                         <div className="blog-one__content">
                             <ul className="list-unstyled blog-one__meta">
-                            <li><Link href=""><i className="far fa-folder-open"></i> Business</Link></li>
+                            <li><Link href="#"><i className="far fa-folder-open"></i> {blogD.category}</Link></li>
                             </ul>
                             <h3 className="blog-one__title">
-                             <Link href={`${blogD.linkUrl}`}>{blogD.title}</Link>
+                             <Link href={`${blogD.linkUrl}`}>{blogD.title.substring(0,68)}</Link>
                             </h3>
                             <div className="blog-one__person">
                                 <div className="blog-one__person-img">
@@ -245,3 +245,4 @@ export async function getStaticProps() {
     props: { dataBlogs }
   };
 }
+

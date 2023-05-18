@@ -2,7 +2,7 @@
 (() => {
 var exports = {};
 exports.id = 55;
-exports.ids = [55,227,241,482,457,450,911,219,383,783,14,611,448];
+exports.ids = [55,227,241,482,457,911,450,219,383,783,14,611,448];
 exports.modules = {
 
 /***/ 4967:
@@ -170,19 +170,15 @@ function Index({ dataBlogs  }) {
                         content: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("title", {
-                        children: "Full-Service Social Media Marketing Agency in India - Social Media Creative Agency"
-                    }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
-                        name: "keywords",
-                        content: "social media creative agency, creative social media services, creative agency social media posts, full service creative agency, best creative agency in india, top creative agencies, best social media agency in india, social media management agency, white label social media management, best social media marketing agency"
+                        children: "Our Blogs - Social Media Creative Agency"
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
                         name: "description",
-                        content: "Looking for creative Social Media Services to promote your brand?? SMCA is full-service creative agency based in India, offers white label social media management services for clients. Get top-notch quality social media posts services from the experts."
+                        content: "We have the latest updates on Social Media Marketing News. Read here trending or popular news across the world."
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("link", {
                         rel: "canonical",
-                        href: "https://www.socialmediacreativeagency.com/"
+                        href: "https://www.socialmediacreativeagency.com/blogs/"
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
                         property: "og:locale",
@@ -190,19 +186,19 @@ function Index({ dataBlogs  }) {
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
                         property: "og:type",
-                        content: "website"
+                        content: "article"
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
                         property: "og:title",
-                        content: "The Best Social Media Marketing Agency in India - Social Media Creative Agency (SMCA)"
+                        content: "Our Blogs - Social Media Creative Agency"
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
                         property: "og:description",
-                        content: "Looking for creative Social Media Services to promote your brand?? SMCA is full-service creative agency based in India, offers white label social media management services for clients. Get top-notch quality social media posts services from the experts."
+                        content: "We have the latest updates on Social Media Marketing News. Read here trending or popular news across the world."
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
                         property: "og:url",
-                        content: "https://www.socialmediacreativeagency.com/"
+                        content: "https://www.socialmediacreativeagency.com/blogs/"
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
                         property: "og:site_name",
@@ -210,7 +206,11 @@ function Index({ dataBlogs  }) {
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
                         property: "article:modified_time",
-                        content: "2023-02-27T05:38:12+00:00"
+                        content: "2023-02-27T05:40:13+00:00"
+                    }),
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
+                        name: "twitter:card",
+                        content: "summary_large_image"
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("link", {
                         rel: "stylesheet",
@@ -235,14 +235,14 @@ function Index({ dataBlogs  }) {
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("script", {
                         dangerouslySetInnerHTML: {
                             __html: `
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){
-          dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){
+            dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
 
-        gtag('config', 'G-4T85M437M3');
-      `
+            gtag('config', 'G-4T85M437M3');
+        `
                         }
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
@@ -328,12 +328,13 @@ function Index({ dataBlogs  }) {
                                                     className: "list-unstyled blog-one__meta",
                                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                                                         children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((next_link__WEBPACK_IMPORTED_MODULE_10___default()), {
-                                                            href: "",
+                                                            href: "#",
                                                             children: [
                                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
                                                                     className: "far fa-folder-open"
                                                                 }),
-                                                                " Business"
+                                                                " ",
+                                                                blogD.category
                                                             ]
                                                         })
                                                     })
@@ -342,7 +343,7 @@ function Index({ dataBlogs  }) {
                                                     className: "blog-one__title",
                                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_10___default()), {
                                                         href: `${blogD.linkUrl}`,
-                                                        children: blogD.title
+                                                        children: blogD.title.substring(0, 68)
                                                     })
                                                 }),
                                                 /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {

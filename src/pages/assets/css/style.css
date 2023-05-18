@@ -1534,4 +1534,20 @@ button.accordion-button.collapsed.openDesc::after {
 .blog-details__tags a:hover {
     background-color: var(--qutiiz-base);
     color: var(--qutiiz-white);
+}.heateor_sss_sharing_ul {
+    display: flex;
+    gap: 11px;
+    justify-content: end !important;
+}
+
+
+
+.heateor_sss_sharing_ul a span {
+    background: #000;
+}.heateor_sss_sharing_ul a:hover span {
+    background: #f44336;
+}
+
+.mr-5{
+    margin-right:5px;
 }
