@@ -161,7 +161,7 @@ const settings = {
             <div className="row">
                <div className="col-md-12">
                   <div className="banner-caption">
-                     <h1 >We Love <span >St<img src={"https://smca.ezrankings.in/react-backend/uploads/oshap.png"} className="o-shap" alt=""/>ries</span></h1>
+                     <h2>We Love <span >St<img src={"https://smca.ezrankings.in/react-backend/uploads/oshap.png"} className="o-shap" alt=""/>ries</span></h2>
                      <p>We Love to visualize stories beacuse we love people and they inspire us.</p>
                   </div>
                </div>
@@ -172,9 +172,9 @@ const settings = {
       <section className="exp-branding-sec">
          <div className="contianer">
             <div className="title-header">
-               <h2>We’re an experienced branding agency with more than <span>seven hundred projects </span>
+               <h1 className='homeH1'>We’re an experienced branding agency with more than <span>seven hundred projects </span>
                   under our belt.
-               </h2>
+               </h1>
             </div>
          </div>
          <Slider {...settings} className="slick-slider">

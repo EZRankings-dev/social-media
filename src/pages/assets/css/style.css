@@ -1551,3 +1551,39 @@ button.accordion-button.collapsed.openDesc::after {
 .mr-5{
     margin-right:5px;
 }
+.homeH1{
+    font-size: 42pt;
+    font-weight: 300;
+    color: #000;
+}
+.menu a:hover
+{
+    color:#DDD;
+}
+.homeH1 span:hover {
+    color: #de222d;
+    position: relative;
+}
+
+.homeH1 h1 span {
+    display: inline-block;
+    padding-bottom: 5px;
+    transition: .4s;
+    position: relative;
+}
+section.banner-section .banner-caption h2 {
+    font-size: 119pt;
+    color: #000;
+    font-weight: 100;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 60px 0px 10px 0px;
+    margin: 0;
+}
+section.banner-section .banner-caption h2 span {
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 240px;
+    margin-top: -40px;
+}
