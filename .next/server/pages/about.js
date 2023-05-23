@@ -2,7 +2,7 @@
 (() => {
 var exports = {};
 exports.id = 521;
-exports.ids = [521,227,241,482,457,911,450,219,383,783,14,611,448];
+exports.ids = [521,227,241,482,911,457,219,450,383,783,611,14,448];
 exports.modules = {
 
 /***/ 843:
@@ -84,11 +84,11 @@ function Abouts({ dataAbout  }) {
                         content: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("title", {
-                        children: "About Us - Creative Agency"
+                        children: "About Us – Social Media Creative Agency"
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
                         name: "description",
-                        content: "We are a passionate team of Social media creative experts who are committed to assisting companies in flourishing digitally. Contact Us today."
+                        content: "We are a passionate team of Social media creative experts who are committed to assisting companies in flourishing digitally. Contact us today."
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("link", {
                         rel: "canonical",
@@ -104,7 +104,11 @@ function Abouts({ dataAbout  }) {
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
                         property: "og:title",
-                        content: "About - Creative Agency"
+                        content: "About Us – Social Media Creative Agency"
+                    }),
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
+                        property: "og:description",
+                        content: "We are a passionate team of Social media creative experts who are committed to assisting companies in flourishing digitally. Contact us today."
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
                         property: "og:url",

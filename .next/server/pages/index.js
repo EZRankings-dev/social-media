@@ -2,7 +2,7 @@
 (() => {
 var exports = {};
 exports.id = 405;
-exports.ids = [405,227,241,482,457,911,450,219,383,783,14,611,448];
+exports.ids = [405,227,241,482,911,457,219,450,383,783,611,14,448];
 exports.modules = {
 
 /***/ 5901:
@@ -170,15 +170,15 @@ function Index({ dataHomes  }) {
                         content: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("title", {
-                        children: "Full-Service Social Media Marketing Agency in India - Social Media Creative Agency"
+                        children: "Full Service Social Media Creative Agency in India - Engaging Social Media Posts Services"
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
                         name: "keywords",
-                        content: "social media creative agency, creative social media services, creative agency social media posts, full service creative agency, best creative agency in india, top creative agencies, best social media agency in india, social media management agency, white label social media management, best social media marketing agency"
+                        content: "social media creative agency, creative agency social media posts, social media posting agency, full service social media agency, full service creative agency, social media agency for small business, creative social media agency, creative social media services"
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
                         name: "description",
-                        content: "Looking for creative Social Media Services to promote your brand?? SMCA is full-service creative agency based in India, offers white label social media management services for clients. Get top-notch quality social media posts services from the experts."
+                        content: "Are you searching full-service social media agency in India? Boost your visibility and engagement with our creative social media services. We provide comprehensive solutions for small and large businesses to increase their ROI."
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("link", {
                         rel: "canonical",
@@ -194,11 +194,11 @@ function Index({ dataHomes  }) {
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
                         property: "og:title",
-                        content: "The Best Social Media Marketing Agency in India - Social Media Creative Agency (SMCA)"
+                        content: "Full Service Social Media Creative Agency in India - Engaging Social Media Posts Services"
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
                         property: "og:description",
-                        content: "Looking for creative Social Media Services to promote your brand?? SMCA is full-service creative agency based in India, offers white label social media management services for clients. Get top-notch quality social media posts services from the experts."
+                        content: "Are you searching full-service social media agency in India? Boost your visibility and engagement with our creative social media services. We provide comprehensive solutions for small and large businesses to increase their ROI."
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
                         property: "og:url",

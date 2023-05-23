@@ -43,12 +43,13 @@ export default function Abouts({ dataAbout }) {
     <>
       <Head>
       <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
-       <title>About Us - Creative Agency</title>
-       <meta name="description" content="We are a passionate team of Social media creative experts who are committed to assisting companies in flourishing digitally. Contact Us today." /> 
+       <title>About Us – Social Media Creative Agency</title>
+       <meta name="description" content="We are a passionate team of Social media creative experts who are committed to assisting companies in flourishing digitally. Contact us today." /> 
        <link rel="canonical" href="https://www.socialmediacreativeagency.com/about/" />
        <meta property="og:locale" content="en_US" />
        <meta property="og:type" content="article" />
-       <meta property="og:title" content="About - Creative Agency" />
+       <meta property="og:title" content="About Us – Social Media Creative Agency" />
+       <meta property="og:description" content="We are a passionate team of Social media creative experts who are committed to assisting companies in flourishing digitally. Contact us today." />
        <meta property="og:url" content="https://www.socialmediacreativeagency.com/about/" />
        <meta property="og:site_name" content="Creative Agency" />
        <meta property="article:modified_time" content="2023-02-21T11:51:16+00:00" />

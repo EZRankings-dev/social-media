@@ -87,7 +87,18 @@ import "slick-carousel/slick/slick-theme.css"
       <meta name="google-site-verification" content="muKy4GDWt7CbVzZo5Gly_Z6UieYyZ65RlQsB4ts9uKY" />
       </Head>
       <Navbar />
-
+      <section className="banner-section portfoliopage">
+         <div className="container">
+            <div className="row">
+               <div className="col-md-12">
+                  <div className="banner-caption">
+                     <h1 ><span >PORTF<img src={"https://smca.ezrankings.in/react-backend/uploads/oshap.png"} className="o-shap" alt=""/>Lio</span></h1>
+                     {/* <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,</p> */}
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
       <section className="porfolio-slider">
         <div className="container">
             <div className="row">
