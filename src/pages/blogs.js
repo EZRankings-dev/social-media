@@ -179,7 +179,7 @@ const settings = {
                             <span className="blog-one__plus"></span>
                             </Link>
                             <div className="blog-one__date">
-                            <p>{blogD.post_date} <br /> {blogD.post_month}</p>
+                            <p>{blogD.post_date} <br /> {blogD.post_month.substring(0,3)}</p>
                             </div>
                         </div>
                         <div className="blog-one__content">

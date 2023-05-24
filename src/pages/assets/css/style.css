@@ -138,11 +138,10 @@ section.banner-section .banner-caption {
     text-align: center;
     position: relative;
 }section.banner-section .banner-caption h1 span img.o-shap {
-    width: 201px;
+    width: 167px;
     display: inline-block;
     margin-top: -21px !important;
 }
-
 
 /* banner Css end Here */
 
@@ -779,7 +778,7 @@ section.banner-section.portfoliopage .banner-caption h1 span {
     display: block;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 215px;
+    font-size: 195px;
     margin-top: -40px;
 }
 .slick-prev:before, .slick-next:before {
@@ -850,7 +849,7 @@ section.pricing-sec .entry-content table.table tr:nth-child(3) {
 
 section.pricing-sec td.redC span {
     background: #db202b;
-    font-size: 30px;
+    font-size: 27px;
     display: inline-block;
     text-align: center;
     color: #fff;
@@ -864,14 +863,14 @@ section.pricing-sec .table>:not(caption)>*>* {
 }
 
 section.pricing-sec td.fs {
-    font-size: 60px !important;
+    font-size: 75px !important;
     padding: 10px;
     color:#fff !important;
 }
 
 
 section.pricing-sec td.fs2 {
-    font-size: 75px !important;
+    font-size: 95px !important;
     padding: 10px;
 }
 
@@ -1587,4 +1586,17 @@ section.banner-section .banner-caption h2 span {
     text-transform: uppercase;
     font-size: 240px;
     margin-top: -40px;
+}
+.blogHome{
+    font-size: 50px;
+    font-weight: 300;
+    text-align: center;
+}
+.homeBlogViewAll{
+    text-align: center;
+    width: 68%;
+    margin: 0 auto;
+    /* position: relative; */
+    padding: 10px 0px 10px 10px;
+    margin-bottom: -15rem;
 }

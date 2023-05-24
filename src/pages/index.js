@@ -225,6 +225,48 @@ const settings = {
          </div>
       </section>
       <FooterForm />
+      <section className="blog-one blog-one__blog-page pt-0">
+        <div className="container">
+            <div className="row">
+            <h2 className="faq-title blogHome">Blogs</h2>
+
+              {dataHomes && dataHomes.blog && dataHomes.blog.length > 0 && dataHomes.blog.map((blogD, b)=>(
+                <div className="col-xl-4 col-lg-4 col-md-6 " key={b}>
+                    <div className="blog-one__single">
+                        <div className="blog-one__img">
+                            <img src={blogD.img} alt={blogD.alt} />
+                            <Link href={`${blogD.linkUrl}`}>
+                            <span className="blog-one__plus"></span>
+                            </Link>
+                            <div className="blog-one__date">
+                            <p>{blogD.post_date} <br /> {blogD.post_month.substring(0,3)}</p>
+                            </div>
+                        </div>
+                        <div className="blog-one__content">
+                            <ul className="list-unstyled blog-one__meta">
+                            <li><Link href="#"><i className="far fa-folder-open"></i> {blogD.category}</Link></li>
+                            </ul>
+                            <h3 className="blog-one__title">
+                             <Link href={`${blogD.linkUrl}`}>{blogD.title.substring(0,68)}</Link>
+                            </h3>
+                            <div className="blog-one__person">
+                                <div className="blog-one__person-img">
+                                  <img src="https://www.socialmediacreativeagency.com/wp-content/uploads/2023/02/logo.png" alt={blogD.author} />
+                                </div>
+                                <div className="blog-one__person-content">
+                                    <p>by {blogD.author}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                ))}   
+                <div className="homeBlogViewAll">
+                  <Link href="/blogs" className="btn-border">Views All</Link>
+              </div>                         
+            </div>
+        </div>
+      </section>
       <section className="faq-section">
          <div className="container">
             <div className="row">
