@@ -229,7 +229,6 @@ const settings = {
         <div className="container">
             <div className="row">
             <h2 className="faq-title blogHome">Blogs</h2>
-
               {dataHomes && dataHomes.blog && dataHomes.blog.length > 0 && dataHomes.blog.map((blogD, b)=>(
                 <div className="col-xl-4 col-lg-4 col-md-6 " key={b}>
                     <div className="blog-one__single">

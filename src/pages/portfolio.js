@@ -165,7 +165,7 @@ import "slick-carousel/slick/slick-theme.css"
         </div>
       </section>
       <FooterForm />
-        <section className="faq-section">
+        <section className="faq-section pt-0">
          <div className="container">
             <div className="row">
                <div className="col-md-12">

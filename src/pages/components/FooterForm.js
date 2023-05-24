@@ -70,7 +70,7 @@ const FooterForm = () => {
   }
   return (
 
-<section className="form-section">
+<section className="form-section pt-0">
 <div className="container">
    <h2>Great ideas always start as conversations.</h2>
    <div className="row">

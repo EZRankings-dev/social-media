@@ -175,7 +175,7 @@ export default function Abouts({ dataAbout }) {
               </div>
            </div>
         </section>
-        <section className="faq-section">
+        <section className="faq-section pt-0">
          <div className="container">
             <div className="row">
                <div className="col-md-12">
