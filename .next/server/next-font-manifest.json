@@ -1,11 +1,11 @@
 {
   "pages": {
+    "/components/Home": [],
     "/components/About": [],
     "/components/Portfolio": [],
-    "/components/Home": [],
-    "/components/PortfolioSlider": [],
     "/components/Pricing": [],
     "/components/PortfolioPageSlider": [],
+    "/components/PortfolioSlider": [],
     "/thankyou": [],
     "/blog/[blogdetail]": [],
     "/blogs": [],
@@ -13,9 +13,9 @@
     "/about": [],
     "/services": [],
     "/portfolio": [],
-    "/pricing": [],
     "/": [],
-    "/test": []
+    "/test": [],
+    "/pricing": []
   },
   "app": {},
   "appUsingSizeAdjust": false,
