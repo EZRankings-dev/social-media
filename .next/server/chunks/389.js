@@ -58,7 +58,7 @@ const Navbar = ()=>{
                                             children: [
                                                 " ",
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
-                                                    class: "fab fa-skype"
+                                                    className: "fab fa-skype"
                                                 }),
                                                 " ",
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
