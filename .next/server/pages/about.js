@@ -2,7 +2,7 @@
 (() => {
 var exports = {};
 exports.id = 521;
-exports.ids = [521,482,227,241,457,450,911,383,783,219,14,611,448];
+exports.ids = [521,227,241,450,383,482,219,911,783,457,611,14,448];
 exports.modules = {
 
 /***/ 843:
@@ -32,8 +32,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var slick_carousel_slick_slick_theme_css__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(slick_carousel_slick_slick_theme_css__WEBPACK_IMPORTED_MODULE_9__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(1664);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(5675);
+/* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(next_image__WEBPACK_IMPORTED_MODULE_11__);
 var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_components_About__WEBPACK_IMPORTED_MODULE_3__, _components_FooterForm__WEBPACK_IMPORTED_MODULE_4__, _components_Footer__WEBPACK_IMPORTED_MODULE_6__]);
 ([_components_About__WEBPACK_IMPORTED_MODULE_3__, _components_FooterForm__WEBPACK_IMPORTED_MODULE_4__, _components_Footer__WEBPACK_IMPORTED_MODULE_6__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);
+
 
 
 
@@ -84,11 +87,11 @@ function Abouts({ dataAbout  }) {
                         content: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("title", {
-                        children: "About Us – Social Media Creative Agency"
+                        children: "About Us - Creative Agency"
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
                         name: "description",
-                        content: "We are a passionate team of Social media creative experts who are committed to assisting companies in flourishing digitally. Contact us today."
+                        content: "We are a passionate team of Social media creative experts who are committed to assisting companies in flourishing digitally. Contact Us today."
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("link", {
                         rel: "canonical",
@@ -104,11 +107,7 @@ function Abouts({ dataAbout  }) {
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
                         property: "og:title",
-                        content: "About Us – Social Media Creative Agency"
-                    }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
-                        property: "og:description",
-                        content: "We are a passionate team of Social media creative experts who are committed to assisting companies in flourishing digitally. Contact us today."
+                        content: "About - Creative Agency"
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
                         property: "og:url",
@@ -169,8 +168,8 @@ function Abouts({ dataAbout  }) {
                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                             className: "col-md-12",
                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                className: "banner-caption",
-                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h1", {
+                                className: "banner-caption about-us-title",
+                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
                                     children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("span", {
                                         children: [
                                             "AB",
@@ -342,7 +341,7 @@ function Abouts({ dataAbout  }) {
                 })
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("section", {
-                className: "faq-section pt-0",
+                className: "faq-section",
                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                     className: "container",
                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {

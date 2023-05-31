@@ -32,6 +32,21 @@ const Footer = ()=>{
                     className: "row",
                     children: [
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                            className: "whatsapp",
+                            bis_skin_checked: "1",
+                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                href: "https://wa.me/+919599389388",
+                                target: "_blank",
+                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                                    src: "https://smca.ezrankings.in/react-backend/uploads/whatsapp.png",
+                                    className: "img-responsive",
+                                    alt: "whatsapp",
+                                    width: "50",
+                                    height: "50"
+                                })
+                            })
+                        }),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                             className: "col-md-3",
                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                 className: "footer-item",

@@ -27,94 +27,170 @@ __webpack_require__.r(__webpack_exports__);
 
 const Navbar = ()=>{
     const router = (0,next_router__WEBPACK_IMPORTED_MODULE_4__.useRouter)();
-    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("header", {
-        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("nav", {
-            className: "navbar navbar-expand-lg navbar-light ",
-            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                className: "container",
-                children: [
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
-                        className: "navbar-brand",
-                        href: "/",
-                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                            src: "https://smca.ezrankings.in/react-backend/uploads/logo.png",
-                            className: "header-logo",
-                            alt: ""
-                        })
-                    }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
-                        className: "navbar-toggler",
-                        type: "button",
-                        "data-bs-toggle": "collapse",
-                        "data-bs-target": "#navbarSupportedContent",
-                        "aria-controls": "navbarSupportedContent",
-                        "aria-expanded": "false",
-                        "aria-label": "Toggle navigation",
-                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                            className: "navbar-toggler-icon"
-                        })
-                    }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                        className: "collapse navbar-collapse",
-                        id: "navbarSupportedContent",
-                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ul", {
-                            className: "navbar-nav ms-auto mb-2 mb-lg-0",
-                            children: [
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                    className: "nav-item",
-                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
-                                        href: "/",
-                                        className: router.pathname == "/" ? "nav-link active" : "nav-link",
-                                        "aria-current": "page",
-                                        children: "Home"
+    const [mobileToggle, setMobileToggle] = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)(false);
+    const [toggleStatus, setToggleStatus] = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)("");
+    const funToggleStatus = ()=>{
+        if (toggleStatus) {
+            setToggleStatus("");
+        } else {
+            setToggleStatus("dropdown-item");
+        }
+    };
+    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("header", {
+        children: [
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                className: "top-header",
+                bis_skin_checked: "1",
+                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                    className: "container",
+                    bis_skin_checked: "1",
+                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                        className: "row",
+                        bis_skin_checked: "1",
+                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                            className: "col-md-12",
+                            bis_skin_checked: "1",
+                            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ul", {
+                                children: [
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("a", {
+                                            href: "skype:84d04ee8fc094c1c",
+                                            children: [
+                                                " ",
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
+                                                    class: "fab fa-skype"
+                                                }),
+                                                " ",
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                    children: "live:.cid.84d04ee8fc094c1c"
+                                                })
+                                            ]
+                                        })
+                                    }),
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("a", {
+                                            href: "tel: (+91-9599389388)",
+                                            children: [
+                                                " ",
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
+                                                    className: "far fa-phone-alt"
+                                                }),
+                                                " ",
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                    children: "(+91-9599389388)"
+                                                })
+                                            ]
+                                        })
+                                    }),
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("a", {
+                                            href: "mailto:info@socialmediacreativeagency.com",
+                                            children: [
+                                                " ",
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
+                                                    className: "fal fa-envelope"
+                                                }),
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                    children: " info@socialmediacreativeagency.com"
+                                                })
+                                            ]
+                                        })
                                     })
-                                }),
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                    className: "nav-item",
-                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
-                                        href: "/about",
-                                        className: router.pathname == "/about" ? "nav-link active" : "nav-link",
-                                        children: "About"
-                                    })
-                                }),
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                    className: "nav-item",
-                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
-                                        href: "/portfolio",
-                                        className: router.pathname == "/portfolio" ? "nav-link active" : "nav-link",
-                                        children: "Portfolio"
-                                    })
-                                }),
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                    className: "nav-item",
-                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
-                                        href: "/pricing",
-                                        className: router.pathname == "/pricing" ? "nav-link active" : "nav-link",
-                                        children: "Pricing"
-                                    })
-                                }),
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                    className: "nav-item",
-                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
-                                        href: "/blogs",
-                                        className: router.pathname == "/blogs" ? "nav-link active" : "nav-link",
-                                        children: "Blogs"
-                                    })
-                                }),
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                    className: "nav-item",
-                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
-                                        href: "/contact",
-                                        className: router.pathname == "/contact" ? "nav-link talk-let active" : "nav-link talk-let",
-                                        children: "Lets Talk"
-                                    })
-                                })
-                            ]
+                                ]
+                            })
                         })
                     })
-                ]
+                })
+            }),
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("nav", {
+                className: "navbar navbar-expand-lg navbar-light ",
+                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                    className: "container",
+                    children: [
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
+                            className: "navbar-brand",
+                            href: "/",
+                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                                src: "https://smca.ezrankings.in/react-backend/uploads/logo.png",
+                                className: "header-logo",
+                                alt: ""
+                            })
+                        }),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
+                            className: "navbar-toggler",
+                            type: "button",
+                            "data-bs-toggle": "collapse",
+                            "data-bs-target": "#navbarSupportedContent",
+                            "aria-controls": "navbarSupportedContent",
+                            "aria-expanded": "false",
+                            "aria-label": "Toggle navigation",
+                            onClick: ()=>setMobileToggle(!mobileToggle),
+                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                className: "navbar-toggler-icon"
+                            })
+                        }),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                            className: `collapse navbar-collapse ${mobileToggle ? "show" : ""}`,
+                            id: "navbarSupportedContent",
+                            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ul", {
+                                className: "navbar-nav ms-auto mb-2 mb-lg-0",
+                                children: [
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                        className: "nav-item",
+                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
+                                            href: "/",
+                                            className: router.pathname == "/" ? "nav-link active" : "nav-link",
+                                            "aria-current": "page",
+                                            children: "Home"
+                                        })
+                                    }),
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                        className: "nav-item",
+                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
+                                            href: "/about",
+                                            className: router.pathname == "/about" ? "nav-link active" : "nav-link",
+                                            children: "About"
+                                        })
+                                    }),
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                        className: "nav-item",
+                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
+                                            href: "/portfolio",
+                                            className: router.pathname == "/portfolio" ? "nav-link active" : "nav-link",
+                                            children: "Portfolio"
+                                        })
+                                    }),
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                        className: "nav-item",
+                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
+                                            href: "/pricing",
+                                            className: router.pathname == "/pricing" ? "nav-link active" : "nav-link",
+                                            children: "Pricing"
+                                        })
+                                    }),
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                        className: "nav-item",
+                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
+                                            href: "/blogs",
+                                            className: router.pathname == "/blogs" ? "nav-link active" : "nav-link",
+                                            children: "Blogs"
+                                        })
+                                    }),
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                        className: "nav-item",
+                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
+                                            href: "/contact",
+                                            className: router.pathname == "/contact" ? "nav-link talk-let active" : "nav-link talk-let",
+                                            children: "Lets Talk"
+                                        })
+                                    })
+                                ]
+                            })
+                        })
+                    ]
+                })
             })
-        })
+        ]
     });
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Navbar);

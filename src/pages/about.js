@@ -8,7 +8,7 @@ import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import Link from 'next/link';
-
+import Image from 'next/image';
 // import routes from './routes';
 
 export default function Abouts({ dataAbout }) {
@@ -43,13 +43,12 @@ export default function Abouts({ dataAbout }) {
     <>
       <Head>
       <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
-       <title>About Us – Social Media Creative Agency</title>
-       <meta name="description" content="We are a passionate team of Social media creative experts who are committed to assisting companies in flourishing digitally. Contact us today." /> 
+       <title>About Us - Creative Agency</title>
+       <meta name="description" content="We are a passionate team of Social media creative experts who are committed to assisting companies in flourishing digitally. Contact Us today." /> 
        <link rel="canonical" href="https://www.socialmediacreativeagency.com/about/" />
        <meta property="og:locale" content="en_US" />
        <meta property="og:type" content="article" />
-       <meta property="og:title" content="About Us – Social Media Creative Agency" />
-       <meta property="og:description" content="We are a passionate team of Social media creative experts who are committed to assisting companies in flourishing digitally. Contact us today." />
+       <meta property="og:title" content="About - Creative Agency" />
        <meta property="og:url" content="https://www.socialmediacreativeagency.com/about/" />
        <meta property="og:site_name" content="Creative Agency" />
        <meta property="article:modified_time" content="2023-02-21T11:51:16+00:00" />
@@ -78,8 +77,8 @@ export default function Abouts({ dataAbout }) {
          <div className="container">
             <div className="row">
                <div className="col-md-12">
-                  <div className="banner-caption">
-                     <h1 ><span >AB<img src={"https://smca.ezrankings.in/react-backend/uploads/oshap.png"} className="o-shap" alt=""/>UT</span></h1>
+                  <div className="banner-caption about-us-title">
+                     <h2 ><span >AB<img src={"https://smca.ezrankings.in/react-backend/uploads/oshap.png"} className="o-shap" alt=""/>UT</span></h2>
                   </div>
                </div>
             </div>
@@ -175,7 +174,7 @@ export default function Abouts({ dataAbout }) {
               </div>
            </div>
         </section>
-        <section className="faq-section pt-0">
+        <section className="faq-section">
          <div className="container">
             <div className="row">
                <div className="col-md-12">

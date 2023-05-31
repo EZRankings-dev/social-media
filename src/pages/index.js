@@ -12,80 +12,36 @@ import Link from 'next/link';
 
 
 export default function Index({ dataHomes }) {
+  const [faqData, setFaqData] = useState([]);
+  const [readMore, setReadMore] = useState(false);
+  const [readMoreClass, setReadMoreClass] = useState('hide');
+  const updateContent=()=>{
+   if(!readMore){
+      setReadMore(true);
+   }else{
+      setReadMore(false);
+   }
+  }
+  const faqqData = dataHomes && dataHomes.faq && dataHomes.faq.length > 0 && dataHomes.faq.map((item, k) => {
+    return {
+      '@type': 'Question',
+      name: item.title,
+      acceptedAnswer :{
+        '@type': 'Answer',
+        description: item.description
+      },
+    }
+  }
+)
+if(faqqData && faqqData.length > 0){
+  //setFaqData(faqqData);
+
+}
+ //console.log('vikas',faqqData);
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": [{
-      "@type": "Question",
-      "name": "How Many Clients Have You Worked With?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We have helped 500+ projects"
-      }
-    },{
-      "@type": "Question",
-      "name": "How Are You Different from Other Social Media Creative Agencies?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We stand out from other social media creative agencies by offering a tailored approach and comprehensive designs for clients based on their needs. The agency takes a personalized approach to understand each business's unique goals and creates plans based on them."
-      }
-    },{
-      "@type": "Question",
-      "name": "What Budgets Do You Typically Work With?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We typically work with a wide range of budgets, from small businesses with limited resources to large corporations with significant marketing budgets. We understand that each business has unique needs and constraints regarding social media marketing—that's why we offer customizable packages tailored to meet each business's specific needs. We usually begin our retainers with a budget of $150/₹7000 per month."
-      }
-    },{
-      "@type": "Question",
-      "name": "How Often Will You Post on Social Media?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Creatives will be posted in accordance with the strategy you choose. We may also create unique plans based on the needs of your creatives."
-      }
-    },{
-      "@type": "Question",
-      "name": "How much time is required for the design to be completed?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It depends upon the type of creative design required. We take 24-48 hours to submit a plan based on the inputs required by the Client"
-      }
-    },{
-      "@type": "Question",
-      "name": "Is the Client involved in the design phase?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Clients can share reference samples they like, and during the design phase, we send the creatives designed to the Client for approval. Iteration 1-2 times will be done per client advice; after that, it will cost additional based on the hours invested."
-      }
-    },{
-      "@type": "Question",
-      "name": "Will the work be affected if you are in another Country?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No, we connect through Skype and Whatsapp and update the Client on progress."
-      }
-    },{
-      "@type": "Question",
-      "name": "Which Format will the creatives be shared in?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The specific Format in which a social media creative agency shares creatives may vary depending on the client's needs and the platforms being used. However, social media creatives can generally be shared in various formats, including images, videos, GIFs, infographics, and more."
-      }
-    },{
-      "@type": "Question",
-      "name": "What Metrics Should I Measure in Social Media?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": ""
-      }
-    },{
-      "@type": "Question",
-      "name": "Why Should I Invest in Social Media Marketing?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": ""
-      }
-    }]
+    "mainEntity": faqqData
   }
   ;
   const [hiddenTitleIndex, setHiddenTitleIndex] = useState(0);
@@ -133,6 +89,8 @@ const settings = {
       <meta property="article:modified_time" content="2023-02-27T05:38:12+00:00" />
       <link rel="stylesheet" type="text/css" href="https://kit-pro.fontawesome.com/releases/v5.15.3/css/pro.min.css"></link>
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500&display=swap"></link>
+      {/* <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" ></script> */}
       <script
         key="structured-data"
         type="application/ld+json"
@@ -266,20 +224,114 @@ const settings = {
             </div>
         </div>
       </section>
+      <section className="form-section grow-your-brand pt-0">
+         <div className="container">
+            <div className="row">
+               <div className="col-md-12">
+               <h2>A Full-Service Social Media Creative Agency in India to Grow Your Brand</h2>
+               <p>Hire our best social media agency for small businesses to grow to big businesses by
+                  using our creatives at affordable costs. We are India&#39;s leading social media creative
+                  agency to help small and big businesses grow their brand to reach an audience easily and
+                  quickly. </p>
+                  <div className={readMore ? 'show': 'hide'}>
+                                    <p>
+
+                                    Social media is growing rapidly, with nearly 5 billion people using it worldwide. India
+                                    becoming the most populated country, has a high potential for marketing through social
+                                    media. We are a full-service social media agency in India to offer comprehensive and
+                                    customized designs for our clients to achieve their business goals. 
+                                    </p>
+                                 <p> As India&#39;s top social media creative agency, we help our clients increase their brand
+                                    exposure and traffic. We offer creative designs at affordable costs with no compromise in
+                                    quality for our clients to develop a loyal following and generate leads. As the best social
+                                    media agency for small businesses, we help our clients to have a strong social media
+                                    presence for their brand to develop business partnerships, minimize marketing costs and
+                                    boost sales. </p>
+                                 
+                                 
+                                 <h3>How Do We Help to Grow the Brand for Our Clients?</h3>
+                                 <p>Branding has become the buzzword for businesses to build relationships with their audience
+                                    to transform them into loyal customers. As the best full-service social media agency in
+                                    India, we can create a brand for our clients to increase their identity and personality. The
+                                    following are the ways we help to grow brands for our clients. </p>
+                                    <ul>
+                                       <li>Choose the right social media network suitable for the brand</li>
+                                       <li>Create visual branding to grab the attention of the audience</li>
+                                       <li>Develop a unique voice for the creatives to be authentic</li>
+
+                                    </ul>
+                                     
+                                    <p>
+                                    To know more about how the top social media creative agency helps to grow your brand,
+                                    call us now.</p>
+                              
+                              
+                                 <h3>Maximizing Reach and Engagement with Effective Social Media Posts &amp; Strategies</h3>
+                                 <p> Maximize reach and engagement with our effective social media posts &amp; strategies to boost
+                                    sales and increase revenue. We are India&#39;s top social media posting agency to offer
+                                    creatives with eye-catching designs and innovative content. Our creative agency&#39;s social
+                                    media posts go viral on many platforms to reach the audience easily and quickly. 
+
+                                    All businesses need to engage in social media posts to reach their audience. And doing it for
+                                    the sake of posting will not help get the likes, shares and comments to increase
+                                    engagement. We offer the best creative agency social media posts on the right platform
+                                    for maximum engagement. The following is how we do it to be India&#39;s top social media
+                                    posting agency. </p>
+                                    <ul>
+   <li>We will understand our client&#39;s audience to offer them relevant and engaging posts.</li>
+   <li>Our expert team create viral content for our clients to post on the right social media platforms.</li>
+</ul>
+                                    
+
+<p>Call our consultant now to know how we can maximize reach and engagement with effective
+                                    social media postings and strategies to expand your business exponentially. 
+
+                                    Why Creative Social Media Services is a Must-Have for Every Business?
+
+                                    With over five billion mobile users worldwide and nearly five billion social media users, all
+                                    businesses need to leverage them to grow to new heights. Unlike trying DIY skills for
+                                    creating personal social media posts, hiring creative social media services for business
+                                    postings is essential. It is because social media is fast becoming the tool to reach and
+                                    engage audiences to grow business to new levels. Especially for small businesses, it is a
+                                    cost-effective way for posting viral content to become a big business fast. 
+
+                                    The following are why our best creative social media services are a must-have for every
+                                    business.</p>
+                                    <ul>
+                                       <li>We help to build a brand by creating viral posts to reach and engage the audience to
+                                                                        transform them into customers.</li>
+                                       <li>We offer a personalized approach to clients to create comprehensive designs per
+                                                                        their needs.</li>
+                                       <li>We work on a wide range of budgets to be best for small to big businesses.</li>
+
+                                       </ul> 
+                 <p>Call our executive now for more reasons why our creative social media services are
+                                    essential for every business.</p>
+
+                                    
+                                    
+                                    
+                  </div>
+
+                  <div className="readmoreBtn text-center"><a  onClick={updateContent} className="btn-border">{!readMore ? 'Read More' :'Read less'}</a></div>
+                  </div>   
+            </div>
+         </div>
+</section>
       <section className="faq-section">
          <div className="container">
             <div className="row">
                <div className="col-md-12">
                   <h2 className="faq-title">Frequently Asked Questions (FAQs)</h2>
-                  <div className="accordion" id="accordionExample" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <div className="accordion" id="accordionExample" itemScope="" itemProp="mainEntity" itemType="https://schema.org/Question">
                     {dataHomes && dataHomes.faq && dataHomes.faq.length > 0 && dataHomes.faq.map((dataF, i)=>(
                         <div className="accordion-item" key={i}>
-                        <h2 className="accordion-header" id={'headingOne'+i} itemprop={dataF.title}>
+                        <h2 className="accordion-header" id={'headingOne'+i} itemProp={dataF.title}>
                             <button className={hiddenTitleIndex === i ? 'accordion-button collapsed openDesc' : 'accordion-button collapsed'} type="button" data-bs-toggle={'collapseOne'+i} data-bs-target={'#collapseOne'+i}  aria-controls={'collapseOne'+i}  onClick={() => toggleHiddenTitle(i)}>
                             {dataF.status}Q.{i+1} {dataF.title}
                             </button>
                         </h2>
-                        <div id={'collapseOne'+i} aria-labelledby={'headingOne'+i} data-bs-parent="#accordionExample" itemscope="" itemprop={dataF.description} itemtype="https://schema.org/Answer">
+                        <div id={'collapseOne'+i} aria-labelledby={'headingOne'+i} data-bs-parent="#accordionExample" itemScope="" itemProp={dataF.description} itemType="https://schema.org/Answer">
                             <div className={hiddenTitleIndex === i ? 'accordion-body' :''}>
                             {hiddenTitleIndex === i && <div  dangerouslySetInnerHTML={{ __html: dataF.description}} />}
                             </div>

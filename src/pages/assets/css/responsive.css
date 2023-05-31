@@ -130,9 +130,53 @@ section.banner-section .banner-caption h1 {
     font-size: 134PX;
     margin-top: -32px;
 }section.banner-section .banner-caption h1 span img.o-shap {
+    height: 126PX;
+    width: 133px;
+}.banner-caption.about-us-title img.o-shap {
+    width: 111px;
+    margin-top: -22px;
+}section.porfolio-slider figure {
+   
+    height: 370px;
+   
+}.porfolio-slider .slick-slider.slick-slider.slick-initialized {
+    height: 430px!important;
+}
+
+.porfolio-slider .col-md-9 {
+    flex: 0 0 auto;
+    width: 100%;
+}section.porfolio-slider .slick-next {
+    right: 25px;}
+
+    section.porfolio-slider .slick-prev {
+       left: 25px !important;}
+section.banner-section .banner-caption h2 {
+    font-size: 90PX;
+   
+}.footer-item ul li {
+    margin: 0;
+}
+.currency-wrap {
+   
+    font-size: 80px;
+    
+}
+
+section.banner-section .banner-caption h2 span {
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 134PX;
+    margin-top: -32px;
+}section.banner-section .banner-caption h2 span img.o-shap {
     height: 114PX;
     
-}.title-header {
+}
+
+
+
+.title-header {
     text-align: center;
     width: 90%;
     margin: 0 auto;
@@ -164,7 +208,7 @@ section.banner-section .banner-caption h1 {
     font-size: 30PX;
 }footer .footer-item ul li a {
     font-size: 25px;
-    color: #fff;
+    color: #000;
     transition: .3s;
 }footer .footer-item ul li {
     font-size: 15px;
@@ -234,9 +278,11 @@ section.banner-section .banner-caption h1 {
 
 @media(max-width: 767px){
 	
-	.currency-wrap sub {
-    font-size: 15px;
-}
+    .currency-wrap sub {
+        font-size: 15px;
+        color: #000;
+        font-weight: bold;
+    }
 .currency-wrap .rupee-wrap sup {
     font-size: 17px;
     font-weight: 400;
@@ -256,13 +302,13 @@ section.banner-section .banner-caption h1 {
     font-weight: 100;
     gap: 12px;
 }
-    section.banner-section .banner-caption h1 {
+    section.banner-section .banner-caption h2 {
         font-size: 50px;
       
-    }section.banner-section .banner-caption h1 span {
+    }section.banner-section .banner-caption h2 span {
         font-size: 76px;
         margin-top: 1px;
-    }section.banner-section .banner-caption h1 span img.o-shap {
+    }section.banner-section .banner-caption h2 span img.o-shap {
         height: 86px;
         display: inline-block;
         margin-top: -8px !important;
@@ -289,11 +335,14 @@ section.banner-section .banner-caption h1 {
         
         top: 80%;
 
+    }.homeH1 {
+        font-size: 20px;
+        
     }
 
     .slick-slider .slick-next {
        
-        top: 80%;}
+        top: 80% !important;}
     .slick-slider .slick-slide:nth-child(odd) {
         margin-top: 65px;
         margin-bottom: 130px;
@@ -351,13 +400,35 @@ section.banner-section .banner-caption h1 {
     }section.form-section h2 {
         text-align: center;
         font-weight: 300;
-        padding-bottom: 30px;
+        padding-bottom: 0px;
         font-size: 25px;
     }section.form-section {
         padding: 20px 0;
         border-bottom: 1px solid #424242;
         border-top: 1px solid #424242;
-    }button.navbar-toggler {
+        padding-top: 50px !important;
+    }
+    section.faq-section h2 {
+        text-align: center;
+        font-size: 30px;
+      
+    }section.faq-section button.accordion-button.collapsed {
+        background: #db202b;
+        color: #fff;
+        font-size: 16px;
+        
+    }
+    section.form-section .form-control {
+        
+        margin-bottom: 10px;
+    }section.grow-your-brand p {
+        color: #333;
+        transition: all 500ms ease;
+        text-transform: capitalize !important;
+        font-size: 15px;
+        text-align: center;
+    }
+    button.navbar-toggler {
         background: #ffffff;
     }header a.navbar-brand img.header-logo {
         width: 80px;
@@ -395,9 +466,71 @@ section.banner-section .banner-caption h1 {
     }.main.portfolio-page section.banner-section .banner-caption h1 span {
         font-size: 60px;
     }section.porfolio-slider .slick-next {
-        right: 0;
-    }   section.porfolio-slider .slick-prev {
-        left: 0!important;} section.porfolio-slider figure {
+        right: 25px !important;
+    }  section.porfolio-slider .slick-prev {
+        left: 25px!important;
+    } section.porfolio-slider {
+        margin-top: 0;
+    }
+    section.banner-section .banner-caption h1 {
+        font-size: 50px;
+    }section.banner-section .banner-caption h1 span {
+      
+        font-size: 74px;
+        
+    }.pricing-table-mobile ul.nav.nav-tabs {
+        margin: 0;
+        gap: 10px;
+    }
+    
+    .pricing-table-mobile ul.nav.nav-tabs li.nav-item a.nav-link.active {
+        background: #db202b;
+        color: #fff;
+    }
+    
+    .pricing-table-mobile ul.nav.nav-tabs li.nav-item a {
+        font-size: 17px;
+        font-weight: bold;
+        color: #000;
+        background: #e5e5e5;
+    }
+    
+    .pricing-table-mobile { display:none}
+    
+    .pricing-table-mobile tr td:nth-child(2) {
+        color: red;
+        /* font-weight: bold; */
+    }.pricing-table-mobile tr td {
+        padding: 14px 0 !important;
+    }
+    .pricing-table-mobile tr {
+        border-bottom: 1px solid #ddd;
+    }.pricing-table-mobile tr td:nth-child(1):after {
+        position: absolute;
+        content: "\f054";
+        font-family: "Font Awesome 5 Pro";
+        right: 35%;
+        color: #aaaaaa;
+    }.pricing-table-mobile tr td:nth-child(2) {
+        color: white;
+        font-weight: bold;
+        background: #db202b;
+        width: 93px;
+        text-align: center;
+    }
+    .pricing-table-mobile {
+        display:block;
+    }.pricing-table-mobile ul li {
+        margin: 0 !important;
+    }section.banner-section .banner-caption h1 span img.o-shap {
+        width: 66px;
+       
+    }.blog-one {
+        position: relative;
+        display: block;
+        padding: 50px 0 0px;
+    }
+    section.porfolio-slider figure {
             overflow: hidden;
             height: 282px;
             object-fit: cover;
@@ -519,13 +652,13 @@ section.banner-section .banner-caption h1 {
 }.slick-slide .item figure img {
     transition: .4s;
     WIDTH: 100%;
-}.page-template-blog section.banner-section .banner-caption h1 span {
+}.page-template-blog section.banner-section .banner-caption h2 span {
     display: block;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 46pt !important;
     margin-top: -50px;
-}.page-template-blog section.banner-section .banner-caption h1 span img.o-shap {
+}.page-template-blog section.banner-section .banner-caption h2 span img.o-shap {
     height: 57px;
     display: inline-block;
     margin-top: -12px !important;
@@ -533,10 +666,10 @@ section.banner-section .banner-caption h1 {
     padding: 70px 0px 0px;
 }
 	
-.page-template-thank-you section.banner-section .banner-caption h1 {
+.page-template-thank-you section.banner-section .banner-caption h2 {
     font-size: 50px;
 }
-.page-template-thank-you section.banner-section .banner-caption h1 span img.o-shap {
+.page-template-thank-you section.banner-section .banner-caption h2 span img.o-shap {
     height: 43px;
     display: inline-block;
     margin-top: -8px !important;
@@ -544,7 +677,7 @@ section.banner-section .banner-caption h1 {
 .pricing-table-mobile { display:block}
 	section.pricing-sec {
     display: none;
-}.page-id-13 section.banner-section .banner-caption h1 {
+}.page-id-13 section.banner-section .banner-caption h2 {
     font-size: 119pt;
     color: #000;
     font-weight: 100;
@@ -557,6 +690,20 @@ section.banner-section .banner-caption h1 {
 }
 .slick-prev {
     left: 43%;
+}.porfolio-slider .slick-slider.slick-slider.slick-initialized {
+    height: 282px!important;
+}section.porfolio-slider button.slick-arrow {
+    top: 38% !important;
+}.slick-slider.slick-slider.slick-initialized {
+    height: 100%!important;
+    position: relative;
+}.top-header ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+}.top-header ul li a span {
+    display: none;
 }
 }
 

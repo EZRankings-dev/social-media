@@ -1,7 +1,7 @@
 (() => {
 var exports = {};
 exports.id = 939;
-exports.ids = [939,482,227,241,457,450,911,383,783,219,14,611,448];
+exports.ids = [939,227,241,450,383,482,219,911,783,457,611,14,448];
 exports.modules = {
 
 /***/ 7747:
@@ -42,6 +42,7 @@ var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_com
 
 function MyPage({ data  }) {
     const [isLoading, setIsLoading] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);
+    const [activeTab, setActiveTab] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)("startup");
     const settings = {
         centerMode: true,
         autoplay: false,
@@ -211,6 +212,140 @@ function MyPage({ data  }) {
                                     ]
                                 })
                             })
+                        })
+                    })
+                })
+            }),
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                className: "pricing-table-mobile",
+                bis_skin_checked: "1",
+                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                    className: "container",
+                    bis_skin_checked: "1",
+                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                        className: "row",
+                        bis_skin_checked: "1",
+                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                            className: "col-md-12",
+                            bis_skin_checked: "1",
+                            children: [
+                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ul", {
+                                    className: "nav nav-tabs",
+                                    role: "tablist",
+                                    children: [
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                            className: "nav-item",
+                                            role: "presentation",
+                                            onClick: ()=>setActiveTab("startup"),
+                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                className: activeTab == "startup" ? "nav-link active" : "nav-link",
+                                                "data-bs-toggle": "tab",
+                                                "aria-selected": "true",
+                                                role: "tab",
+                                                children: "Start-Up"
+                                            })
+                                        }),
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                            className: "nav-item",
+                                            role: "presentation",
+                                            onClick: ()=>setActiveTab("economic"),
+                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                className: activeTab == "economic" ? "nav-link active" : "nav-link",
+                                                "data-bs-toggle": "tab",
+                                                "aria-selected": "false",
+                                                role: "tab",
+                                                tabindex: "-1",
+                                                children: "Economic"
+                                            })
+                                        }),
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                            className: "nav-item",
+                                            role: "presentation",
+                                            onClick: ()=>setActiveTab("business"),
+                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                className: activeTab == "business" ? "nav-link active" : "nav-link",
+                                                "data-bs-toggle": "tab",
+                                                "aria-selected": "false",
+                                                role: "tab",
+                                                tabindex: "-1",
+                                                children: "Business"
+                                            })
+                                        })
+                                    ]
+                                }),
+                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                    className: "tab-content",
+                                    bis_skin_checked: "1",
+                                    children: [
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                            className: activeTab == "startup" ? "tab-pane container active show" : "tab-pane container fade",
+                                            id: "Start-Up",
+                                            bis_skin_checked: "1",
+                                            role: "tabpanel",
+                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("table", {
+                                                className: "table",
+                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("tbody", {
+                                                    children: data.price && data.price.length > 0 && data.price.map((pdata, p)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("tr", {
+                                                            children: [
+                                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
+                                                                    children: pdata.title
+                                                                }),
+                                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
+                                                                    className: pdata.colored == "1" ? "fs2" : "",
+                                                                    children: pdata.individual
+                                                                })
+                                                            ]
+                                                        }, p))
+                                                })
+                                            })
+                                        }),
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                            className: activeTab == "economic" ? "tab-pane container active show" : "tab-pane container fade",
+                                            id: "Economic",
+                                            bis_skin_checked: "1",
+                                            role: "tabpanel",
+                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("table", {
+                                                className: "table",
+                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("tbody", {
+                                                    children: data.price && data.price.length > 0 && data.price.map((pdata, p)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("tr", {
+                                                            children: [
+                                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
+                                                                    children: pdata.title
+                                                                }),
+                                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
+                                                                    className: pdata.colored == "1" ? "fs" : "",
+                                                                    children: pdata.start_up
+                                                                })
+                                                            ]
+                                                        }, p))
+                                                })
+                                            })
+                                        }),
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                            className: activeTab == "business" ? "tab-pane container active show" : "tab-pane container fade",
+                                            id: "Business",
+                                            bis_skin_checked: "1",
+                                            role: "tabpanel",
+                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("table", {
+                                                className: "table",
+                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("tbody", {
+                                                    children: data.price && data.price.length > 0 && data.price.map((pdata, p)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("tr", {
+                                                            children: [
+                                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
+                                                                    children: pdata.title
+                                                                }),
+                                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
+                                                                    className: pdata.colored == "1" ? "fs" : "",
+                                                                    children: pdata.business
+                                                                })
+                                                            ]
+                                                        }, p))
+                                                })
+                                            })
+                                        })
+                                    ]
+                                })
+                            ]
                         })
                     })
                 })

@@ -87,18 +87,7 @@ import "slick-carousel/slick/slick-theme.css"
       <meta name="google-site-verification" content="muKy4GDWt7CbVzZo5Gly_Z6UieYyZ65RlQsB4ts9uKY" />
       </Head>
       <Navbar />
-      <section className="banner-section portfoliopage">
-         <div className="container">
-            <div className="row">
-               <div className="col-md-12">
-                  <div className="banner-caption">
-                     <h1 ><span >PORTF<img src={"https://smca.ezrankings.in/react-backend/uploads/oshap.png"} className="o-shap" alt=""/>Lio</span></h1>
-                     {/* <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,</p> */}
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
+
       <section className="porfolio-slider">
         <div className="container">
             <div className="row">
@@ -165,7 +154,7 @@ import "slick-carousel/slick/slick-theme.css"
         </div>
       </section>
       <FooterForm />
-        <section className="faq-section pt-0">
+        <section className="faq-section">
          <div className="container">
             <div className="row">
                <div className="col-md-12">
@@ -208,7 +197,7 @@ import "slick-carousel/slick/slick-theme.css"
 //   };
 // }
 
-export async function getStaticProps(data) {
+export async function getServerSideProps(data) {
   console.log('ggggggg'+data)
   let currNo = 1;
   const response = await axios.get(`https://smca.ezrankings.in/react-backend/portData.php?page=${currNo}`);

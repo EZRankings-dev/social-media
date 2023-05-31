@@ -2,7 +2,7 @@
 (() => {
 var exports = {};
 exports.id = 405;
-exports.ids = [405,482,227,241,457,450,911,383,783,219,14,611,448];
+exports.ids = [405,227,241,450,383,482,219,911,783,457,611,14,448];
 exports.modules = {
 
 /***/ 5901:
@@ -47,91 +47,34 @@ var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_com
 // import routes from './routes';
 
 function Index({ dataHomes  }) {
+    const [faqData, setFaqData] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]);
+    const [readMore, setReadMore] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);
+    const [readMoreClass, setReadMoreClass] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)("hide");
+    const updateContent = ()=>{
+        if (!readMore) {
+            setReadMore(true);
+        } else {
+            setReadMore(false);
+        }
+    };
+    const faqqData = dataHomes && dataHomes.faq && dataHomes.faq.length > 0 && dataHomes.faq.map((item, k)=>{
+        return {
+            "@type": "Question",
+            name: item.title,
+            acceptedAnswer: {
+                "@type": "Answer",
+                description: item.description
+            }
+        };
+    });
+    if (faqqData && faqqData.length > 0) {
+    //setFaqData(faqqData);
+    }
+    //console.log('vikas',faqqData);
     const structuredData = {
         "@context": "https://schema.org",
         "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "How Many Clients Have You Worked With?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "We have helped 500+ projects"
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "How Are You Different from Other Social Media Creative Agencies?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "We stand out from other social media creative agencies by offering a tailored approach and comprehensive designs for clients based on their needs. The agency takes a personalized approach to understand each business's unique goals and creates plans based on them."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What Budgets Do You Typically Work With?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "We typically work with a wide range of budgets, from small businesses with limited resources to large corporations with significant marketing budgets. We understand that each business has unique needs and constraints regarding social media marketing—that's why we offer customizable packages tailored to meet each business's specific needs. We usually begin our retainers with a budget of $150/₹7000 per month."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "How Often Will You Post on Social Media?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Creatives will be posted in accordance with the strategy you choose. We may also create unique plans based on the needs of your creatives."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "How much time is required for the design to be completed?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "It depends upon the type of creative design required. We take 24-48 hours to submit a plan based on the inputs required by the Client"
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Is the Client involved in the design phase?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Clients can share reference samples they like, and during the design phase, we send the creatives designed to the Client for approval. Iteration 1-2 times will be done per client advice; after that, it will cost additional based on the hours invested."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Will the work be affected if you are in another Country?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "No, we connect through Skype and Whatsapp and update the Client on progress."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Which Format will the creatives be shared in?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "The specific Format in which a social media creative agency shares creatives may vary depending on the client's needs and the platforms being used. However, social media creatives can generally be shared in various formats, including images, videos, GIFs, infographics, and more."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What Metrics Should I Measure in Social Media?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": ""
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Why Should I Invest in Social Media Marketing?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": ""
-                }
-            }
-        ]
+        "mainEntity": faqqData
     };
     const [hiddenTitleIndex, setHiddenTitleIndex] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(0);
     const settings = {
@@ -518,6 +461,102 @@ function Index({ dataHomes  }) {
                 })
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("section", {
+                className: "form-section grow-your-brand pt-0",
+                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                    className: "container",
+                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                        className: "row",
+                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                            className: "col-md-12",
+                            children: [
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
+                                    children: "A Full-Service Social Media Creative Agency in India to Grow Your Brand"
+                                }),
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                    children: "Hire our\xa0best social media agency\xa0for small businesses\xa0to grow to big businesses by using our creatives at affordable costs. We are India's leading\xa0social media creative agency\xa0to help small and big businesses grow their brand to reach an audience easily and quickly.\xa0"
+                                }),
+                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                    className: readMore ? "show" : "hide",
+                                    children: [
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                            children: "Social media is growing rapidly, with nearly 5 billion people using it worldwide. India becoming the most populated country, has a high potential for marketing through social media. We are a\xa0full-service social media agency\xa0in India to offer comprehensive and customized designs for our clients to achieve their business goals.\xa0"
+                                        }),
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                            children: " As India's top\xa0social media creative agency, we help our clients increase their brand exposure and traffic.\xa0We offer creative designs at affordable costs with no compromise in quality for our clients to develop a loyal following and generate leads. As the best\xa0social media agency for small businesses,\xa0we help our clients to have a strong social media presence for their brand to develop business partnerships, minimize marketing costs and boost sales. "
+                                        }),
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h3", {
+                                            children: "How Do We Help to Grow the Brand for Our Clients?"
+                                        }),
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                            children: "Branding has become the buzzword for businesses to build relationships with their audience to transform them into loyal customers.\xa0As the best full-service social media agency in India, we can create a brand for our clients to increase their identity and personality. The following are the ways we help to grow brands for our clients.\xa0"
+                                        }),
+                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ul", {
+                                            children: [
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                                    children: "Choose the right social media network suitable for the brand"
+                                                }),
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                                    children: "Create visual branding to grab the attention of the audience"
+                                                }),
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                                    children: "Develop a unique voice for the creatives to be authentic"
+                                                })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                            children: "To know more about how the top\xa0social media creative agency\xa0helps to grow your brand, call us now."
+                                        }),
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h3", {
+                                            children: "Maximizing Reach and Engagement with Effective Social Media Posts & Strategies"
+                                        }),
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                            children: " Maximize reach and engagement with our effective social media posts & strategies to boost sales and increase revenue. We are India's top\xa0social media posting agency\xa0to offer creatives with eye-catching designs and innovative content.\xa0Our\xa0creative agency's social media posts\xa0go viral on many platforms to reach the audience easily and quickly.\xa0 All businesses need to engage in social media posts to reach their audience.\xa0And doing it for the sake of posting will not help get the likes, shares and comments to increase engagement. We offer the best\xa0creative agency social media posts\xa0on the right platform for maximum engagement. The following is how we do it to be India's top\xa0social media posting agency.\xa0"
+                                        }),
+                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ul", {
+                                            children: [
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                                    children: "We will understand our client's audience to offer them relevant and engaging posts."
+                                                }),
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                                    children: "Our expert team create viral content for our clients to post on the right social media platforms."
+                                                })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                            children: "Call our consultant now to know how we can maximize reach and engagement with effective social media postings and strategies to expand your business exponentially.\xa0 Why Creative Social Media Services is a Must-Have for Every Business? With over five billion mobile users worldwide and nearly five billion social media users, all businesses need to leverage them to grow to new heights. Unlike trying DIY skills for creating personal social media posts, hiring creative social media services for business postings is essential. It is because social media is fast becoming the tool to reach and engage audiences to grow business to new levels. Especially for small businesses, it is a cost-effective way for posting viral content to become a big business fast.\xa0 The following are why our best creative social media services are a must-have for every business."
+                                        }),
+                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ul", {
+                                            children: [
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                                    children: "We help to build a brand by creating viral posts to reach and engage the audience to transform them into customers."
+                                                }),
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                                    children: "We offer a personalized approach to clients to create comprehensive designs per their needs."
+                                                }),
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                                    children: "We work on a wide range of budgets to be best for small to big businesses."
+                                                })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                            children: "Call our executive now for more reasons why our creative social media services are essential for every business."
+                                        })
+                                    ]
+                                }),
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                    className: "readmoreBtn text-center",
+                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                        onClick: updateContent,
+                                        className: "btn-border",
+                                        children: !readMore ? "Read More" : "Read less"
+                                    })
+                                })
+                            ]
+                        })
+                    })
+                })
+            }),
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("section", {
                 className: "faq-section",
                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                     className: "container",
@@ -533,16 +572,16 @@ function Index({ dataHomes  }) {
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                     className: "accordion",
                                     id: "accordionExample",
-                                    itemscope: "",
-                                    itemprop: "mainEntity",
-                                    itemtype: "https://schema.org/Question",
+                                    itemScope: "",
+                                    itemProp: "mainEntity",
+                                    itemType: "https://schema.org/Question",
                                     children: dataHomes && dataHomes.faq && dataHomes.faq.length > 0 && dataHomes.faq.map((dataF, i)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                                             className: "accordion-item",
                                             children: [
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
                                                     className: "accordion-header",
                                                     id: "headingOne" + i,
-                                                    itemprop: dataF.title,
+                                                    itemProp: dataF.title,
                                                     children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("button", {
                                                         className: hiddenTitleIndex === i ? "accordion-button collapsed openDesc" : "accordion-button collapsed",
                                                         type: "button",
@@ -563,9 +602,9 @@ function Index({ dataHomes  }) {
                                                     id: "collapseOne" + i,
                                                     "aria-labelledby": "headingOne" + i,
                                                     "data-bs-parent": "#accordionExample",
-                                                    itemscope: "",
-                                                    itemprop: dataF.description,
-                                                    itemtype: "https://schema.org/Answer",
+                                                    itemScope: "",
+                                                    itemProp: dataF.description,
+                                                    itemType: "https://schema.org/Answer",
                                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                                         className: hiddenTitleIndex === i ? "accordion-body" : "",
                                                         children: hiddenTitleIndex === i && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {

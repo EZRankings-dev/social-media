@@ -2,7 +2,7 @@
 (() => {
 var exports = {};
 exports.id = 371;
-exports.ids = [371,482,227,241,457,450,911,383,783,219,14,611,448];
+exports.ids = [371,227,241,450,383,482,219,911,783,457,611,14,448];
 exports.modules = {
 
 /***/ 9546:
@@ -12,7 +12,7 @@ __webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __we
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ PortfolioIndex),
-/* harmony export */   "getStaticProps": () => (/* binding */ getStaticProps)
+/* harmony export */   "getServerSideProps": () => (/* binding */ getServerSideProps)
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
@@ -175,34 +175,6 @@ function PortfolioIndex({ portData  }) {
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_Navbar__WEBPACK_IMPORTED_MODULE_5__["default"], {}),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("section", {
-                className: "banner-section portfoliopage",
-                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                    className: "container",
-                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                        className: "row",
-                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                            className: "col-md-12",
-                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                className: "banner-caption",
-                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h1", {
-                                    children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("span", {
-                                        children: [
-                                            "PORTF",
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                                src: "https://smca.ezrankings.in/react-backend/uploads/oshap.png",
-                                                className: "o-shap",
-                                                alt: ""
-                                            }),
-                                            "Lio"
-                                        ]
-                                    })
-                                })
-                            })
-                        })
-                    })
-                })
-            }),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("section", {
                 className: "porfolio-slider",
                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                     className: "container",
@@ -326,7 +298,7 @@ function PortfolioIndex({ portData  }) {
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_FooterForm__WEBPACK_IMPORTED_MODULE_7__["default"], {}),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("section", {
-                className: "faq-section pt-0",
+                className: "faq-section",
                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                     className: "container",
                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
@@ -407,7 +379,7 @@ function PortfolioIndex({ portData  }) {
 //     props: { portData }
 //   };
 // }
-async function getStaticProps(data) {
+async function getServerSideProps(data) {
     console.log("ggggggg" + data);
     let currNo = 1;
     const response = await axios__WEBPACK_IMPORTED_MODULE_4__["default"].get(`https://smca.ezrankings.in/react-backend/portData.php?page=${currNo}`);

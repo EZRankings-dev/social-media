@@ -9,6 +9,7 @@ import Head from 'next/head'
 
 export default function MyPage({ data }) {
   const [isLoading, setIsLoading] = useState(false);
+  const [activeTab, setActiveTab] = useState('startup');
   const settings = {
    centerMode: true,
    autoplay: false,
@@ -93,6 +94,66 @@ export default function MyPage({ data }) {
           </div>
       </div>
   </section>
+  <div className="pricing-table-mobile" bis_skin_checked="1">
+   <div className="container" bis_skin_checked="1">
+      <div className="row" bis_skin_checked="1">
+         <div className="col-md-12" bis_skin_checked="1">
+            <ul className="nav nav-tabs" role="tablist">
+               <li className="nav-item" role="presentation" onClick={() => setActiveTab("startup")}>
+               <a className={activeTab =='startup' ? 'nav-link active' : 'nav-link'} data-bs-toggle="tab" aria-selected="true" role="tab">Start-Up</a>
+               </li>
+               <li className="nav-item" role="presentation" onClick={() => setActiveTab("economic")}>
+               <a className={activeTab =='economic' ? 'nav-link active' : 'nav-link'} data-bs-toggle="tab" aria-selected="false" role="tab" tabindex="-1">Economic</a>
+               </li>
+               <li className="nav-item" role="presentation" onClick={() => setActiveTab("business")}>
+               <a className={activeTab =='business' ? 'nav-link active' : 'nav-link'} data-bs-toggle="tab"  aria-selected="false" role="tab" tabindex="-1">Business</a>
+               </li>
+            </ul>
+            <div className="tab-content" bis_skin_checked="1">
+               <div className={activeTab =='startup' ? 'tab-pane container active show' : 'tab-pane container fade'} id="Start-Up" bis_skin_checked="1" role="tabpanel">
+                  <table className="table">
+                     <tbody>
+                     {data.price && data.price.length > 0 && data.price.map((pdata,p)=>(
+                                 <tr key={p}>
+                                 <td>{pdata.title}</td>
+                                 <td className={pdata.colored=="1" ? "fs2":""}>{pdata.individual}</td>
+                                 </tr>
+                              ))}
+                     </tbody>
+                  </table>
+               </div>
+               <div className={activeTab =='economic' ? 'tab-pane container active show' : 'tab-pane container fade'} id="Economic" bis_skin_checked="1" role="tabpanel">
+                  <table className="table">
+                     <tbody>
+                        
+                     {data.price && data.price.length > 0 && data.price.map((pdata,p)=>(
+                                 <tr key={p}>
+                                 <td>{pdata.title}</td>
+                                 <td className={pdata.colored=="1" ? "fs":""}>{pdata.start_up}</td>
+                                 </tr>
+                              ))}
+                     </tbody>
+                  </table>
+               </div>
+               <div className={activeTab =='business' ? 'tab-pane container active show' : 'tab-pane container fade'} id="Business" bis_skin_checked="1" role="tabpanel">
+                  <table className="table">
+                     <tbody>
+                        
+                     {data.price && data.price.length > 0 && data.price.map((pdata,p)=>(
+                                 <tr key={p}>
+                                 <td>{pdata.title}</td>
+                                 <td className={pdata.colored=="1" ? "fs":""}>{pdata.business}</td>
+                                 </tr>
+                              ))}
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+  </div>
+
   <section className="faq-section">
          <div className="container">
             <div className="row">
