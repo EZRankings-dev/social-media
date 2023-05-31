@@ -3,8 +3,6 @@
 module.exports = {
   reactStrictMode: true,
   // distDir: 'build',
-  CI : false,
-
   images:{
     domains:["https://smca.ezrankings.in/"]
   },
