@@ -19,7 +19,28 @@ section.banner-section .banner-caption h1 {
     height: 136px;
     display: inline-block;
     margin-top: -21px !important;
-}section.banner-section .banner-caption p {
+}
+section.banner-section .banner-caption h2 {
+    font-size: 120px;
+   
+}section.banner-section .banner-caption h2 span {
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 163px;
+    margin-top: -22px;
+}section.banner-section .banner-caption h2 span img.o-shap {
+    height: 136px;
+    display: inline-block;
+    margin-top: -21px !important;
+}.currency-wrap {
+   
+    font-size: 125px;
+    
+}
+
+
+section.banner-section .banner-caption p {
     margin-top: -30px !important;
     font-size: 15pt;
 }.title-header {
@@ -31,8 +52,14 @@ section.banner-section .banner-caption h1 {
 }section.exp-branding-sec .title-header h2 {
     font-size: 38px;
     font-weight: 300;
-    color: #fff;
-}section.start-retainership-sec .content-wrap p {
+    color: #000;
+}
+.slick-slider.slick-slider.slick-initialized {
+    margin-bottom: 130px;
+}.slider-porfolio .slick-slider.slick-slider.slick-initialized {
+    margin-bottom: 0px;
+}
+section.start-retainership-sec .content-wrap p {
     width: 90%;
     margin: 0 auto;
     font-size: 35px;
@@ -106,10 +133,20 @@ section.banner-section .banner-caption h1 {
     line-height: 32px;
     text-align: left;
     padding-bottom: 40px;
+} .banner-caption.about-us-title img {
+    width: 136px !important;
 }
 }
 
 @media (min-width: 768px) and (max-width: 992px){
+   
+    .top-header ul li a {
+      
+        font-size: 14px;
+    }.talk-let {
+       
+        margin-top: 15px;
+    }
 	section.banner-section .banner-caption p {
     margin-top: -27px !important;
     font-size: 15pt;
@@ -185,7 +222,7 @@ section.banner-section .banner-caption h2 span {
 }section.exp-branding-sec .title-header h2 {
     font-size: 33PX;
     font-weight: 300;
-    color: #fff;
+    color: #000;
 }section.start-retainership-sec .title-header h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 30PX;
@@ -312,7 +349,12 @@ section.banner-section .banner-caption h2 span {
         height: 86px;
         display: inline-block;
         margin-top: -8px !important;
-    }section.banner-section .banner-caption p {
+    }
+    .banner-caption.about-us-title img.o-shap {
+        width: 73px;
+        height: 68px !important;
+    }
+    section.banner-section .banner-caption p {
         margin-top: -12px !important;
         font-size: 15px;
     }.title-header {
@@ -343,6 +385,9 @@ section.banner-section .banner-caption h2 span {
     .slick-slider .slick-next {
        
         top: 80% !important;}
+
+
+        
     .slick-slider .slick-slide:nth-child(odd) {
         margin-top: 65px;
         margin-bottom: 130px;
@@ -694,16 +739,21 @@ section.banner-section .banner-caption h2 span {
     height: 282px!important;
 }section.porfolio-slider button.slick-arrow {
     top: 38% !important;
-}.slick-slider.slick-slider.slick-initialized {
-    height: 100%!important;
-    position: relative;
 }.top-header ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1px;
+    gap: 15px;
 }.top-header ul li a span {
     display: none;
+}.talk-let {
+       
+    margin-top: 15px;
+}header {
+    border-top: 3px solid #da2128;
+   
+}.slick-slider.slick-slider.slick-initialized {
+    margin-bottom: 10px;
 }
 }
 

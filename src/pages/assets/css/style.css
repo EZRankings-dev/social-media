@@ -243,6 +243,7 @@ section.our-mission-sec .row .col-md-6 {
 
 section.exp-branding-sec {
     padding: 35px 0;
+    
 }
 section.exp-branding-sec .title-header h2 {
     font-size: 42pt;
@@ -332,15 +333,25 @@ ul.slick-dots {
     display: none !important;
 }.accordion-button::after {
     
-    background-image:url(../images/down.png) !important;
+    background-image:url(../images/down.png) !important;}
    
-}.slick-slider.slick-slider.slick-initialized {
+/* .slick-slider.slick-slider.slick-initialized {
     height: 600px !important;
-}
-.slick-slider .slick-prev {
+} */
+
+.slick-slide {
+    height: auto;
+  }
+  .slick-track {
+    display: flex !important;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+  }
+  .slick-slider .slick-prev {
     left: 48%;
     position: absolute;
-    top: 93%;
+    bottom: 0;
     transform: rotate(-45deg);
     display: block;
     margin: 30px auto;
@@ -351,7 +362,7 @@ ul.slick-dots {
 }.slick-slider .slick-next {
     right: 48%;
     position: absolute;
-    top: 93% !important;}
+    bottom: 0% !important;}
 .slick-slider .slick-next {
     right: 48%;
     position: absolute;
@@ -1201,11 +1212,13 @@ section.porfolio-slider {
     display: block;
     margin-top: 50px;
 }section.start-retainership-sec.srs2 {
-    margin-top: 70px;
+    margin-top: 0;
 }section.pricing-sec .entry-content table.table tr:nth-child(2) td.fs {
     font-size: 95px !important;
 }
-
+.slick-slider.slick-slider.slick-initialized {
+    margin-bottom: 130px;
+}
 section.pricing-sec .entry-content table.table tr:nth-child(2) td.fs::first-letter {
     font-size: 22px;
     line-height: 0;
@@ -1731,4 +1744,6 @@ display: none;
 }
 .show{
 display: block;
+}.slider-porfolio .slick-slider.slick-slider.slick-initialized {
+    margin-bottom: 0px;
 }
