@@ -179,6 +179,8 @@ export default function MyPage({ data }) {
             </div>
          </div>
       </section>
+
+      <section className="sliderForPricing">
     <Slider {...settings} className="slick-slider">
           {data.gallery && data.gallery.length > 0 && data.gallery.map((galData, i) => (
                  <div className="item" key={i}>
@@ -186,7 +188,7 @@ export default function MyPage({ data }) {
                     </figure>
                  </div>
                 ))}
-        </Slider>
+        </Slider></section>
         <section className="start-retainership-sec srs2 ">
          <div className="continer">
             <div className="row">

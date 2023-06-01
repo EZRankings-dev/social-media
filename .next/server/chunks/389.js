@@ -62,7 +62,7 @@ const Navbar = ()=>{
                                                 }),
                                                 " ",
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                                    children: "live:.cid.84d04ee8fc094c1c"
+                                                    children: "Contact SMCA"
                                                 })
                                             ]
                                         })

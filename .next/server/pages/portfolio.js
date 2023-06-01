@@ -2,7 +2,7 @@
 (() => {
 var exports = {};
 exports.id = 371;
-exports.ids = [371,241,227,482,457,911,219,383,783,14,450,448,611];
+exports.ids = [371,227,241,482,457,383,450,911,219,783,611,14,448];
 exports.modules = {
 
 /***/ 9546:
@@ -20,10 +20,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(968);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_Portfolio__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(5301);
+/* harmony import */ var _components_Portfolio__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3087);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(9648);
 /* harmony import */ var _components_Navbar__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(5389);
-/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(9040);
+/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(5301);
 /* harmony import */ var _components_FooterForm__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(1698);
 /* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(8096);
 /* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react_slick__WEBPACK_IMPORTED_MODULE_8__);
@@ -31,8 +31,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var slick_carousel_slick_slick_css__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(slick_carousel_slick_slick_css__WEBPACK_IMPORTED_MODULE_9__);
 /* harmony import */ var slick_carousel_slick_slick_theme_css__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(782);
 /* harmony import */ var slick_carousel_slick_slick_theme_css__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(slick_carousel_slick_slick_theme_css__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(1664);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_11__);
 var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_components_Portfolio__WEBPACK_IMPORTED_MODULE_3__, axios__WEBPACK_IMPORTED_MODULE_4__, _components_Footer__WEBPACK_IMPORTED_MODULE_6__, _components_FooterForm__WEBPACK_IMPORTED_MODULE_7__]);
 ([_components_Portfolio__WEBPACK_IMPORTED_MODULE_3__, axios__WEBPACK_IMPORTED_MODULE_4__, _components_Footer__WEBPACK_IMPORTED_MODULE_6__, _components_FooterForm__WEBPACK_IMPORTED_MODULE_7__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);
+
 
 
 
@@ -50,7 +53,7 @@ function PortfolioIndex({ portData  }) {
     const [hiddenTitleIndex, setHiddenTitleIndex] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(1);
     const [currentPage, setCurrentPage] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(2);
     const [startImg, setStartImg] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(0);
-    const [toImg, setToImg] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(3);
+    const [toImg, setToImg] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(9);
     let blogDatta;
     if (portData && portData.blog && portData.blog.length > 0) {
         blogDatta = portData.blog;
@@ -313,9 +316,9 @@ function PortfolioIndex({ portData  }) {
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
                                             children: "Let’s create something amazing together."
                                         }),
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                            href: "https://www.socialmediacreativeagency.com/contact-us",
-                                            class: "",
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_11___default()), {
+                                            href: "/contact",
+                                            className: "",
                                             children: "Get Started"
                                         })
                                     ]

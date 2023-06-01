@@ -9,6 +9,7 @@ import FooterForm from './components/FooterForm';
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
+import Link from 'next/link';
 // import routes from './routes';
 
 //  const PortfolioIndex = ()=> {
@@ -16,7 +17,7 @@ import "slick-carousel/slick/slick-theme.css"
     const [hiddenTitleIndex, setHiddenTitleIndex] = useState(1);
     const [currentPage, setCurrentPage] = useState(2);
     const [startImg, setStartImg] = useState(0);
-    const[toImg, setToImg]= useState(3);
+    const[toImg, setToImg]= useState(9);
     let blogDatta;
     if(portData && portData.blog && portData.blog.length > 0){
       blogDatta = portData.blog;
@@ -163,7 +164,7 @@ import "slick-carousel/slick/slick-theme.css"
                 <h2>Let’s create something 
                 amazing together.
                 </h2>
-                <a href="https://www.socialmediacreativeagency.com/contact-us" class="">Get Started</a>
+                <Link href="/contact" className="">Get Started</Link>
               </div>
             </div>
           </div>
