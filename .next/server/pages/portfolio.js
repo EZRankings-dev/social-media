@@ -2,7 +2,7 @@
 (() => {
 var exports = {};
 exports.id = 371;
-exports.ids = [371,241,482,450,911,219,383,227,783,448,457,14,611];
+exports.ids = [371,227,241,482,457,450,911,219,383,783,14,611,448];
 exports.modules = {
 
 /***/ 9546:
@@ -313,16 +313,16 @@ function PortfolioIndex({ portData  }) {
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                     className: "accordion",
                                     id: "accordionExample",
-                                    itemscope: "",
-                                    itemprop: "mainEntity",
-                                    itemtype: "https://schema.org/Question",
+                                    itemScope: "",
+                                    itemProp: "mainEntity",
+                                    itemType: "https://schema.org/Question",
                                     children: portData.faq && portData.faq.length > 0 && portData.faq.map((dataF, i)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                                             className: "accordion-item",
                                             children: [
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
                                                     className: "accordion-header",
                                                     id: "headingOne" + i,
-                                                    itemprop: dataF.title,
+                                                    itemProp: dataF.title,
                                                     children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("button", {
                                                         className: hiddenTitleIndex === i ? "accordion-button collapsed openDesc" : "accordion-button collapsed",
                                                         type: "button",
@@ -343,9 +343,9 @@ function PortfolioIndex({ portData  }) {
                                                     id: "collapseOne" + i,
                                                     "aria-labelledby": "headingOne" + i,
                                                     "data-bs-parent": "#accordionExample",
-                                                    itemscope: "",
-                                                    itemprop: dataF.description,
-                                                    itemtype: "https://schema.org/Answer",
+                                                    itemScope: "",
+                                                    itemProp: dataF.description,
+                                                    itemType: "https://schema.org/Answer",
                                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                                         className: hiddenTitleIndex === i ? "accordion-body" : "",
                                                         children: hiddenTitleIndex === i && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
