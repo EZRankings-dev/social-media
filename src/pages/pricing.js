@@ -6,6 +6,7 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer';
 import FooterForm from './components/FooterForm'
 import Head from 'next/head'
+import Link from 'next/link'
 
 export default function MyPage({ data }) {
   const [isLoading, setIsLoading] = useState(false);
@@ -208,7 +209,7 @@ export default function MyPage({ data }) {
                      <h2>Lets create something
                         amazing together.
                      </h2>
-                     <a href="" className="">Get Started</a>
+                     <Link href="/conatct" className="">Get Started</Link>
                   </div>
                </div>
             </div>
