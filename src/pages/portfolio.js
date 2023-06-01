@@ -15,6 +15,8 @@ import "slick-carousel/slick/slick-theme.css"
   export default function PortfolioIndex({ portData }) {
     const [hiddenTitleIndex, setHiddenTitleIndex] = useState(1);
     const [currentPage, setCurrentPage] = useState(2);
+    const [startImg, setStartImg] = useState(0);
+    const[toImg, setToImg]= useState(3);
     let blogDatta;
     if(portData && portData.blog && portData.blog.length > 0){
       blogDatta = portData.blog;
@@ -45,16 +47,19 @@ import "slick-carousel/slick/slick-theme.css"
        }
       ]
     } 
-    async function handleNextPage() {
-      const response = await axios.get(`https://smca.ezrankings.in/react-backend/portData.php?page=${currentPage}`);
-      const newPosts = response.data;
-     setPostList((prevPosts) => [...prevPosts, ...response.data.blog]);
-           setCurrentPage(currentPage + 1);
+    // async function handleNextPage() {
+    //   const response = await axios.get(`https://smca.ezrankings.in/react-backend/portData.php?page=${currentPage}`);
+    //   const newPosts = response.data;
+    //  setPostList((prevPosts) => [...prevPosts, ...response.data.blog]);
+    //        setCurrentPage(currentPage + 1);
 
-    }
-    // const handleNextPage = () => {
-    //   // setCurrentPage(currentPage + 1);
-    // }    
+    // }
+    const handleNextPage = () => {
+      // setCurrentPage(currentPage + 1);
+      //setStartImg(toImg);
+      setToImg(toImg+3);
+
+    }    
   return (
     <>
       <Head>
@@ -109,7 +114,7 @@ import "slick-carousel/slick/slick-theme.css"
     <section className="portfolio-sec">
   <div className="container">
       <div className="row">
-      {postList && postList.map((blogImg, b) =>(
+      {postList && postList.slice(startImg,toImg).map((blogImg, b) =>(
         <div className="col-md-4" key={b}>
             <div className="portfolio-card">
                 <figure> <a href={blogImg.image} data-fancybox="gallery" data-caption={blogImg.alt}>
@@ -120,6 +125,17 @@ import "slick-carousel/slick/slick-theme.css"
             </div>
         </div>
       ))}
+      {postList && postList.map((blogImg, b) =>(
+        <div className="col-md-4" key={b}>
+            <div className="portfolio-card hide">
+                <figure> <a href={blogImg.image} data-fancybox="gallery" data-caption={blogImg.alt}>
+                    <img src={blogImg.image} alt={blogImg.alt} />
+                    <span className="zoom-img"><i className="fas fa-search-plus"></i></span>
+                  </a>
+                </figure>
+            </div>
+        </div>
+      ))}      
         <div className="col-md-12">
             <div className="load-more-btn">
                 <a onClick={handleNextPage}>Load More</a>
@@ -167,6 +183,7 @@ import "slick-carousel/slick/slick-theme.css"
                             {dataF.status}Q.{i+1} {dataF.title}
                             </button>
                         </h2>
+                        {/* <p className="hide">vikasGwl</p> */}
                         <div id={'collapseOne'+i} aria-labelledby={'headingOne'+i} data-bs-parent="#accordionExample" itemScope="" itemProp={dataF.description} itemType="https://schema.org/Answer">
                             <div className={hiddenTitleIndex === i ? 'accordion-body' :''}>
                             {hiddenTitleIndex === i && <div dangerouslySetInnerHTML={{ __html: dataF.description}} />}

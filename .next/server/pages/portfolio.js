@@ -2,7 +2,7 @@
 (() => {
 var exports = {};
 exports.id = 371;
-exports.ids = [371,227,241,482,457,450,911,219,383,783,14,611,448];
+exports.ids = [371,241,227,482,457,911,219,383,783,14,450,448,611];
 exports.modules = {
 
 /***/ 9546:
@@ -20,10 +20,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(968);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_Portfolio__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3087);
+/* harmony import */ var _components_Portfolio__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(5301);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(9648);
 /* harmony import */ var _components_Navbar__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(5389);
-/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(5301);
+/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(9040);
 /* harmony import */ var _components_FooterForm__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(1698);
 /* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(8096);
 /* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react_slick__WEBPACK_IMPORTED_MODULE_8__);
@@ -49,6 +49,8 @@ var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_com
 function PortfolioIndex({ portData  }) {
     const [hiddenTitleIndex, setHiddenTitleIndex] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(1);
     const [currentPage, setCurrentPage] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(2);
+    const [startImg, setStartImg] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(0);
+    const [toImg, setToImg] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(3);
     let blogDatta;
     if (portData && portData.blog && portData.blog.length > 0) {
         blogDatta = portData.blog;
@@ -77,18 +79,17 @@ function PortfolioIndex({ portData  }) {
             }
         ]
     };
-    async function handleNextPage() {
-        const response = await axios__WEBPACK_IMPORTED_MODULE_4__["default"].get(`https://smca.ezrankings.in/react-backend/portData.php?page=${currentPage}`);
-        const newPosts = response.data;
-        setPostList((prevPosts)=>[
-                ...prevPosts,
-                ...response.data.blog
-            ]);
-        setCurrentPage(currentPage + 1);
-    }
-    // const handleNextPage = () => {
-    //   // setCurrentPage(currentPage + 1);
-    // }    
+    // async function handleNextPage() {
+    //   const response = await axios.get(`https://smca.ezrankings.in/react-backend/portData.php?page=${currentPage}`);
+    //   const newPosts = response.data;
+    //  setPostList((prevPosts) => [...prevPosts, ...response.data.blog]);
+    //        setCurrentPage(currentPage + 1);
+    // }
+    const handleNextPage = ()=>{
+        // setCurrentPage(currentPage + 1);
+        //setStartImg(toImg);
+        setToImg(toImg + 3);
+    };
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
         children: [
             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((next_head__WEBPACK_IMPORTED_MODULE_2___default()), {
@@ -209,10 +210,38 @@ function PortfolioIndex({ portData  }) {
                     children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                         className: "row",
                         children: [
-                            postList && postList.map((blogImg, b)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                            postList && postList.slice(startImg, toImg).map((blogImg, b)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                     className: "col-md-4",
                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                         className: "portfolio-card",
+                                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("figure", {
+                                            children: [
+                                                " ",
+                                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("a", {
+                                                    href: blogImg.image,
+                                                    "data-fancybox": "gallery",
+                                                    "data-caption": blogImg.alt,
+                                                    children: [
+                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                                                            src: blogImg.image,
+                                                            alt: blogImg.alt
+                                                        }),
+                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                            className: "zoom-img",
+                                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
+                                                                className: "fas fa-search-plus"
+                                                            })
+                                                        })
+                                                    ]
+                                                })
+                                            ]
+                                        })
+                                    })
+                                }, b)),
+                            postList && postList.map((blogImg, b)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                    className: "col-md-4",
+                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                        className: "portfolio-card hide",
                                         children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("figure", {
                                             children: [
                                                 " ",
