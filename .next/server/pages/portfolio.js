@@ -2,7 +2,7 @@
 (() => {
 var exports = {};
 exports.id = 371;
-exports.ids = [371,227,241,482,457,383,450,911,219,783,611,14,448];
+exports.ids = [371,227,482,911,457,450,383,219,241,448,611,783,14];
 exports.modules = {
 
 /***/ 9546:
@@ -33,6 +33,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var slick_carousel_slick_slick_theme_css__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(slick_carousel_slick_slick_theme_css__WEBPACK_IMPORTED_MODULE_10__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(1664);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(9783);
+/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(aos__WEBPACK_IMPORTED_MODULE_12__);
 var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_components_Portfolio__WEBPACK_IMPORTED_MODULE_3__, axios__WEBPACK_IMPORTED_MODULE_4__, _components_Footer__WEBPACK_IMPORTED_MODULE_6__, _components_FooterForm__WEBPACK_IMPORTED_MODULE_7__]);
 ([_components_Portfolio__WEBPACK_IMPORTED_MODULE_3__, axios__WEBPACK_IMPORTED_MODULE_4__, _components_Footer__WEBPACK_IMPORTED_MODULE_6__, _components_FooterForm__WEBPACK_IMPORTED_MODULE_7__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);
 
@@ -47,6 +49,8 @@ var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_com
 
 
 
+
+// import {Elements, StripeProvider} from 'react-stripe-elements';
 // import routes from './routes';
 //  const PortfolioIndex = ()=> {
 function PortfolioIndex({ portData  }) {
@@ -157,6 +161,58 @@ function PortfolioIndex({ portData  }) {
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("script", {
                         async: true,
                         src: "https://www.googletagmanager.com/gtag/js?id=G-4T85M437M3"
+                    }),
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("link", {
+                        rel: "stylesheet",
+                        type: "text/css",
+                        href: "https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+                    }),
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("link", {
+                        rel: "stylesheet",
+                        type: "text/css",
+                        href: "https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css"
+                    }),
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("link", {
+                        rel: "stylesheet",
+                        type: "text/css",
+                        href: "https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.css"
+                    }),
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("script", {
+                        async: true,
+                        src: "https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"
+                    }),
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("script", {
+                        async: true,
+                        src: "https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"
+                    }),
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("script", {
+                        async: true,
+                        src: "https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"
+                    }),
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("script", {
+                        src: "http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js",
+                        type: "text/javascript"
+                    }),
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("script", {
+                        dangerouslySetInnerHTML: {
+                            __html: `
+  
+      $('[data-fancybox="gallery"]').fancybox({
+  buttons: [
+    "slideShow",
+    "thumbs",
+    "zoom",
+    "fullScreen",
+    "share",
+    "close"
+  ],
+  loop: false,
+  protect: true
+});
+
+
+`
+                        }
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("script", {
                         dangerouslySetInnerHTML: {
@@ -425,6 +481,13 @@ async function getServerSideProps(data) {
 
 __webpack_async_result__();
 } catch(e) { __webpack_async_result__(e); } });
+
+/***/ }),
+
+/***/ 9783:
+/***/ ((module) => {
+
+module.exports = require("aos");
 
 /***/ }),
 
