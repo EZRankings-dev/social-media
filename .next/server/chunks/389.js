@@ -77,7 +77,7 @@ const Navbar = ()=>{
                                                 }),
                                                 " ",
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                                    children: "(+91-9599389388)"
+                                                    children: "+91-9599389388"
                                                 })
                                             ]
                                         })

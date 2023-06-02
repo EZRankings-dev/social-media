@@ -8,14 +8,14 @@
     "/components/Pricing": [],
     "/thankyou": [],
     "/blogs": [],
-    "/about": [],
-    "/blog/[blogdetail]": [],
     "/[blogdetail]": [],
+    "/": [],
+    "/about": [],
     "/services": [],
+    "/portfolio": [],
     "/pricing": [],
     "/test": [],
-    "/portfolio": [],
-    "/": []
+    "/blog/[blogdetail]": []
   },
   "app": {},
   "appUsingSizeAdjust": false,

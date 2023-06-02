@@ -135,14 +135,20 @@ const settings = {
                </h1>
             </div>
          </div>
-         <Slider {...settings} className="slick-slider">
-          {dataHomes.gallery && dataHomes.gallery.length > 0 && dataHomes.gallery.map((galData, i) => (
-                 <div className="item" key={i}>
-                    <figure><img src={galData.img}  alt={galData.alt} />
-                    </figure>
-                 </div>
-                ))}
-        </Slider>
+         <div className="row">
+            <div className="col-md-12">
+               <h2 className="sliderTitle">Our Work</h2>
+               <Slider {...settings} className="slick-slider">
+               {dataHomes.gallery && dataHomes.gallery.length > 0 && dataHomes.gallery.map((galData, i) => (
+                     <div className="item" key={i}>
+                        <figure><img src={galData.img}  alt={galData.alt} />
+                        </figure>
+                     </div>
+                     ))}
+               </Slider>
+            </div>
+         </div>
+
       </section>
       <section className="start-retainership-sec ">
          <div className="continer">
@@ -152,9 +158,10 @@ const settings = {
                   <div className="dollor-wrap">
                      <sup>$</sup>150
                   </div>
-                  <div className="divider">/</div>
+                  {/* <div className="divider">/</div> */}
                   <div className="rupee-wrap">
-                     <sup>₹</sup>7000<sub>Per month</sub>
+                     {/* <sup>₹</sup>7000 */}
+                      <sub>Per month</sub>
                   </div>
                </div>
                <Link href="" className="btn-border">Take an Expert</Link>
@@ -317,7 +324,7 @@ const settings = {
                   </div>   
             </div>
          </div>
-</section>
+      </section>
       <section className="faq-section">
          <div className="container">
             <div className="row">

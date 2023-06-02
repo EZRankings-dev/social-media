@@ -182,14 +182,20 @@ export default function MyPage({ data }) {
       </section>
 
       <section className="sliderForPricing">
-    <Slider {...settings} className="slick-slider">
-          {data.gallery && data.gallery.length > 0 && data.gallery.map((galData, i) => (
-                 <div className="item" key={i}>
-                    <figure><img src={galData.img}  alt={galData.alt} />
-                    </figure>
-                 </div>
-                ))}
-        </Slider></section>
+        <div className="row">
+            <div className="col-md-12">
+               <h2 className="sliderTitle">Our Work</h2>
+               <Slider {...settings} className="slick-slider">
+                  {data.gallery && data.gallery.length > 0 && data.gallery.map((galData, i) => (
+                        <div className="item" key={i}>
+                           <figure><img src={galData.img}  alt={galData.alt} />
+                           </figure>
+                        </div>
+                        ))}
+               </Slider>
+            </div>
+         </div>
+        </section>
         <section className="start-retainership-sec srs2 ">
          <div className="continer">
             <div className="row">

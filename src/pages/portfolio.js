@@ -10,10 +10,6 @@ import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import Link from 'next/link';
-import AOS from 'aos';
-// import {Elements, StripeProvider} from 'react-stripe-elements';
-
-
 // import routes from './routes';
 
 //  const PortfolioIndex = ()=> {
@@ -35,7 +31,6 @@ import AOS from 'aos';
           setHiddenTitleIndex(index);
         }
       };
-
       const settings = {
 
         autoplay: false,
@@ -84,33 +79,6 @@ import AOS from 'aos';
     <link rel="stylesheet" type="text/css" href="https://kit-pro.fontawesome.com/releases/v5.15.3/css/pro.min.css"></link>
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500&display=swap"></link>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4T85M437M3" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"></link>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css"></link>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.css"></link>
-    <script async src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" />
-    <script async src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js" />
-    <script async src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-
-    <script
-    
-    dangerouslySetInnerHTML={{ __html: `
-  
-      $('[data-fancybox="gallery"]').fancybox({
-  buttons: [
-    "slideShow",
-    "thumbs",
-    "zoom",
-    "fullScreen",
-    "share",
-    "close"
-  ],
-  loop: false,
-  protect: true
-});
-
-
-`}}/>
       <script
         dangerouslySetInnerHTML={{ __html: `
         window.dataLayer = window.dataLayer || [];
