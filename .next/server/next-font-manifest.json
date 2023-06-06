@@ -8,10 +8,10 @@
     "/components/Pricing": [],
     "/thankyou": [],
     "/blog/[blogdetail]": [],
-    "/[blogdetail]": [],
     "/about": [],
     "/blogs": [],
     "/portfolio": [],
+    "/[blogdetail]": [],
     "/": [],
     "/services": [],
     "/pricing": []
