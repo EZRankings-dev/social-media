@@ -19,10 +19,15 @@ import Link from 'next/link';
     const [startImg, setStartImg] = useState(0);
     const[toImg, setToImg]= useState(9);
     let blogDatta;
+    let blogWDatta;
     if(portData && portData.blog && portData.blog.length > 0){
       blogDatta = portData.blog;
     }
+    if(portData && portData.gallery && portData.gallery.length > 0){
+      blogWDatta = portData.gallery;
+    }
     const [postList, setPostList] = useState(blogDatta);
+    const [postwList, setPostwList] = useState(blogWDatta);
 
     const toggleHiddenTitle = (index) => {
         if (hiddenTitleIndex === index) {
@@ -51,7 +56,7 @@ import Link from 'next/link';
     const Fancybox = {
       
     }
-    console.log('vv',Fancybox);
+   // console.log('vv',Fancybox);
     // async function handleNextPage() {
     //   const response = await axios.get(`https://smca.ezrankings.in/react-backend/portData.php?page=${currentPage}`);
     //   const newPosts = response.data;
@@ -112,7 +117,8 @@ import Link from 'next/link';
                 <div className="col-md-9 mx-auto">
                     <div className="slider-porfolio">
                     <Slider {...settings} className="slick-slider2">
-                      {postList && postList.slice(startImg,toImg).map((data, i)=>(
+                      
+                      {postwList && postwList.slice(startImg,toImg).map((data, i)=>(
                         <div className="item" key={i}>
                           <figure><img src={data.image} alt={data.alt}/>
                           </figure>
