@@ -48,6 +48,10 @@ import Link from 'next/link';
        }
       ]
     } 
+    const Fancybox = {
+      
+    }
+    console.log('vv',Fancybox);
     // async function handleNextPage() {
     //   const response = await axios.get(`https://smca.ezrankings.in/react-backend/portData.php?page=${currentPage}`);
     //   const newPosts = response.data;
@@ -97,15 +101,7 @@ import Link from 'next/link';
     }}
       
       />
-            <script
-        dangerouslySetInnerHTML={{ __html: `
-        Fancybox.bind("[data-fancybox]", {
-          // Your custom options
-      });
-      ` 
-    }}
-      
-      />
+
       <meta name="google-site-verification" content="muKy4GDWt7CbVzZo5Gly_Z6UieYyZ65RlQsB4ts9uKY" />
       </Head>
       <Navbar />
@@ -214,6 +210,15 @@ import Link from 'next/link';
          </div>
       </section>
       <Footer />
+      <script
+        dangerouslySetInnerHTML={{ __html: `
+        Fancybox.bind("[data-fancybox]", {
+          // Your custom options
+      });
+      ` 
+    }}
+      
+      />
     </>
   )
 }

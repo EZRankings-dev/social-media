@@ -2,7 +2,7 @@
 (() => {
 var exports = {};
 exports.id = 371;
-exports.ids = [371,227,482,457,450,911,219,383,241,783,611,14,448];
+exports.ids = [371,241,227,457,482,450,219,911,383,783,14,611,448];
 exports.modules = {
 
 /***/ 9546:
@@ -82,6 +82,8 @@ function PortfolioIndex({ portData  }) {
             }
         ]
     };
+    const Fancybox = {};
+    console.log("vv", Fancybox);
     // async function handleNextPage() {
     //   const response = await axios.get(`https://smca.ezrankings.in/react-backend/portData.php?page=${currentPage}`);
     //   const newPosts = response.data;
@@ -174,15 +176,6 @@ function PortfolioIndex({ portData  }) {
           dataLayer.push(arguments);
         }
         gtag('js', new Date());
-      `
-                        }
-                    }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("script", {
-                        dangerouslySetInnerHTML: {
-                            __html: `
-        Fancybox.bind("[data-fancybox]", {
-          // Your custom options
-      });
       `
                         }
                     }),
@@ -410,7 +403,16 @@ function PortfolioIndex({ portData  }) {
                     })
                 })
             }),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_Footer__WEBPACK_IMPORTED_MODULE_6__["default"], {})
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_Footer__WEBPACK_IMPORTED_MODULE_6__["default"], {}),
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("script", {
+                dangerouslySetInnerHTML: {
+                    __html: `
+        Fancybox.bind("[data-fancybox]", {
+          // Your custom options
+      });
+      `
+                }
+            })
         ]
     });
 }
