@@ -35,7 +35,7 @@ import Link from 'next/link';
 
         autoplay: false,
         autoplaySpeed: 1000,
-        slidesToShow: 1,
+        slidesToShow: 2,
         dots: true,
         arrows: true,
         responsive: [
@@ -112,7 +112,7 @@ import Link from 'next/link';
                 <div className="col-md-9 mx-auto">
                     <div className="slider-porfolio">
                     <Slider {...settings} className="slick-slider2">
-                      {portData.gallery && portData.gallery.length > 0 && portData.gallery.map((data, i)=>(
+                      {postList && postList.slice(startImg,toImg).map((data, i)=>(
                         <div className="item" key={i}>
                           <figure><img src={data.image} alt={data.alt}/>
                           </figure>

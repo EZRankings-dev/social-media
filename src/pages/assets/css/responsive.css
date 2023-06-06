@@ -577,12 +577,22 @@ section.banner-section .banner-caption h2 span {
         padding-bottom: 100px;
     }
     section.porfolio-slider figure {
-            overflow: hidden;
-            height: 282px;
-            object-fit: cover;
-            width: 100%;
-            position: relative;
-        }body.pricing-page section.banner-section .banner-caption h1 span {
+        overflow: hidden;
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+        position: relative;
+    }section.porfolio-slider .slick-prev {
+       
+        border-top: 2px solid #fff;
+        border-left: 2px solid #fff;
+    }section.porfolio-slider .slick-next {
+       
+        border-top: 2px solid #ffffff;
+        border-left: 2px solid #fff;
+        transform: rotate(135deg);
+    }
+    body.pricing-page section.banner-section .banner-caption h1 span {
             font-size: 68px !important;
             z-index: 2;
             letter-spacing: 10px;
@@ -763,7 +773,19 @@ section.banner-section .banner-caption h2 span {
     margin-bottom: 10px;
 }.for-mobile-table {
     display: block;
-}}
+}
+section.porfolio-slider figure:after {
+    content: "";
+    height: 0px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    left: 0;
+    background-image: linear-gradient(#00000096, black);
+}
+
+}
 
 @media(max-width: 480px){
     
