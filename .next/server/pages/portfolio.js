@@ -2,7 +2,7 @@
 (() => {
 var exports = {};
 exports.id = 371;
-exports.ids = [371,227,241,482,457,450,911,219,14,783,611,383,448];
+exports.ids = [371,241,227,482,457,450,911,219,383,783,14,611,448];
 exports.modules = {
 
 /***/ 9546:
@@ -59,11 +59,11 @@ function PortfolioIndex({ portData  }) {
     if (portData && portData.blog && portData.blog.length > 0) {
         blogDatta = portData.blog;
     }
-    if (portData && portData.gallery && portData.gallery.length > 0) {
-        blogWDatta = portData.gallery;
-    }
+    // if(portData && portData.gallery && portData.gallery.length > 0){
+    //   blogWDatta = portData.gallery;
+    // }
     const [postList, setPostList] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(blogDatta);
-    const [postwList, setPostwList] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(blogWDatta);
+    // const [postwList, setPostwList] = useState(blogWDatta);
     const toggleHiddenTitle = (index)=>{
         if (hiddenTitleIndex === index) {
             setHiddenTitleIndex(null);

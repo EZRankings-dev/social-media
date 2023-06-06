@@ -23,11 +23,11 @@ import Link from 'next/link';
     if(portData && portData.blog && portData.blog.length > 0){
       blogDatta = portData.blog;
     }
-    if(portData && portData.gallery && portData.gallery.length > 0){
-      blogWDatta = portData.gallery;
-    }
+    // if(portData && portData.gallery && portData.gallery.length > 0){
+    //   blogWDatta = portData.gallery;
+    // }
     const [postList, setPostList] = useState(blogDatta);
-    const [postwList, setPostwList] = useState(blogWDatta);
+    // const [postwList, setPostwList] = useState(blogWDatta);
 
     const toggleHiddenTitle = (index) => {
         if (hiddenTitleIndex === index) {
