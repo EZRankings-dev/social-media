@@ -2,7 +2,7 @@
 (() => {
 var exports = {};
 exports.id = 371;
-exports.ids = [371,227,241,482,457,450,911,219,611,783,383,14,448];
+exports.ids = [371,227,482,457,450,911,219,383,241,783,611,14,448];
 exports.modules = {
 
 /***/ 9546:
@@ -174,13 +174,15 @@ function PortfolioIndex({ portData  }) {
           dataLayer.push(arguments);
         }
         gtag('js', new Date());
-
-        gtag('config', 'G-4T85M437M3');
+      `
+                        }
+                    }),
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("script", {
+                        dangerouslySetInnerHTML: {
+                            __html: `
         Fancybox.bind("[data-fancybox]", {
           // Your custom options
       });
-
-
       `
                         }
                     }),

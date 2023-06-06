@@ -93,15 +93,16 @@ import Link from 'next/link';
           dataLayer.push(arguments);
         }
         gtag('js', new Date());
-
-        gtag('config', 'G-4T85M437M3');
+      `     
+    }}
+      
+      />
+            <script
+        dangerouslySetInnerHTML={{ __html: `
         Fancybox.bind("[data-fancybox]", {
           // Your custom options
       });
-
-
       ` 
-    
     }}
       
       />
