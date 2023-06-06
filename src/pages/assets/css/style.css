@@ -856,11 +856,11 @@ section.pricing-sec .entry-content table.table tr:nth-child(2) {
     font-size: 30px;
     color: #fff;
 }
-section.pricing-sec .entry-content table.table tr:nth-child(3) {
+/* section.pricing-sec .entry-content table.table tr:nth-child(3) {
  
     font-size: 30px;
     color: #fff;
-}
+} */
 
 section.pricing-sec td.redC span {
     background: #db202b;
@@ -906,24 +906,13 @@ section.pricing-sec .entry-content table.table tr:nth-child(2) td:nth-child(1) {
     height: 167px;
 }
 
-section.pricing-sec .entry-content table.table tr:nth-child(3) td:nth-child(1) {
-    display: flex;
-    align-items: start;
-    justify-content: start;
-    height: 140px;
-    flex-direction: column;
-}section.pricing-sec .entry-content table.table tr:nth-child(3) td:nth-child(1) small {
-    font-size: 20px;
-    line-height: 9px;
-}
+
 
 section.pricing-sec .entry-content table.table tr:nth-child(2) {
     background: #db202b;
 }
 
-section.pricing-sec .entry-content table.table tr:nth-child(3) {
-    background: #db202b;
-}
+
 .table>:not(caption)>*>* {
     border-width: 0;
 }section.pricing-sec .entry-content table.table tr:nth-child(2) {
@@ -990,11 +979,7 @@ section.pricing-sec .entry-content table.table tr:nth-child(2) td:nth-child(1) {
     font-size: 35px;
 }
 
-section.pricing-sec .entry-content table.table tr:nth-child(3) td:nth-child(1) {
-   
-    font-size: 35px;
-    color: #fff;
-}
+
 
 body.pricing-page section.start-retainership-sec .content-wrap p:before {
     content: "";
@@ -1219,7 +1204,7 @@ section.porfolio-slider {
 .slick-slider.slick-slider.slick-initialized {
     margin-bottom: 130px;
 }
-section.pricing-sec .entry-content table.table tr:nth-child(2) td.fs::first-letter {
+/* section.pricing-sec .entry-content table.table tr:nth-child(2) td.fs::first-letter {
     font-size: 22px;
     line-height: 0;
     position: relative;
@@ -1231,17 +1216,11 @@ section.pricing-sec .entry-content table.table tr:nth-child(3) td.fs::first-lett
     line-height: 0;
     position: relative;
     vertical-align: super;
-}section.pricing-sec .entry-content table.table tr:nth-child(3) td:nth-child(1) {
-    display: flex !important;
-    /* align-items: center; */
-    justify-content: center;
-    height: 167px;
-}
+} */
 
 section.pricing-sec .entry-content table.table tr:last-child td {
-    color: #fff !important;
+    color: #000 !important;
 }
-
 button.accordion-button.collapsed.openDesc::after {
     
     transform: rotate(180deg) !important;
@@ -1750,10 +1729,163 @@ display: block;
 
 .sliderForPricing {
     padding: 60px 0;
+    overflow: hidden;
 }
-.sliderTitle{
+.sliderTitle {
     font-size: 50px;
     font-weight: 300;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 0px;
+    padding-bottom: 30px;
+}.col-md-12.for-home-page-slider .sliderTitle {
+    padding-top: 50px;
 }
+.for-mobile-table {
+    display: none;
+}
+
+/*** 
+====================================================================
+ 2 june 2023 pricing page css start here  
+====================================================================
+
+***/
+
+body {
+    font-size: 16px;
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    background: #ffffff;
+}
+section.pricing-sec .entry-content table.table tr td {
+ 
+    padding: 21px;
+    text-align: center;
+    color: #000;
+    font-size: 23px;
+}section.pricing-sec .entry-content table.table tr:nth-child(2) td {
+    font-size: 35px;
+    color: #fff;
+}
+
+.pricing-tab {
+    margin-bottom: 60px;
+}
+
+.pricing-tab button.tablinks.active {
+    background: #db202b;
+    border: 1px solid #db202b !important;
+    color: #fff;
+}
+.pricing-tab button.tablinks {
+    border: 1px solid #db202b;
+    background: #db202b00;
+    padding: 17px 40px;
+    font-size: 20px;
+    border-radius: 12px;
+    color: #000;
+}span.upto {
+    font-size: 36px;
+}
+div#PaidPlan td.fs {
+    font-size: 45px !important;
+    padding-top: 13px;
+}
+div#PaidPlan td.fs sup {
+    font-size: 22px;
+    top: -22px;
+}
+
+div#PaidPlan .entry-content table.table tr:nth-child(2) td:nth-child(1) {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+
+div#EngagementPlan .entry-content table.table tr:last-child {
+    background: #ffffff;
+}
+
+.pricing-sec .tabcontent {
+display: none;
+}section.pricing-sec .entry-content table.table tr td:hover {
+    background: #ffffff1a;
+    color: #000;
+}
+div#CreativesPlan .entry-content table.table tr:last-child {
+    background: #ffffff;
+}
+div#PaidPlan .entry-content table.table tr:last-child {
+    background: #ffffff;
+}section.pricing-sec .entry-content table.table tr td:hover {
+    background: #ffffff1a;
+    color: #000;
+}section.pricing-sec .entry-content table.table tr td:hover {
+    background: #ffffff1a;
+    color: #000;
+}section.pricing-sec  i.fas.fa-check-circle {
+    color: #db202b;
+}div#EngagementPlan sup {
+    top: -54px;
+    right: -2px;
+}section.pricing-sec .entry-content table.table tr td:hover {
+    background: #ffffff1a;
+    color: #000;
+}.pricing-tab {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+section div#EngagementPlan td.redC span {
+    background: #ffffff;
+    font-size: 27px;
+    display: inline-block;
+    text-align: center;
+    color: #000;
+    margin-bottom: -23px !important;
+    width: 100% !important;
+    border-radius: 8px 8px 0px 0px;
+    padding: 10px 30px;
+    border: 1px solid red;
+}td.br-right {
+    border-right: 1px solid #db202b !important;
+}
+/*** 
+====================================================================
+ 2 june 2023 pricing page css end here  
+====================================================================
+
+***/
+
+.mr-bt-20{
+    margin-bottom: 20px;
+}.pricing-table-mobile-tab ul.nav.nav-tabs li.nav-item a.nav-link.active {
+    background: #000000;
+    color: #fff;
+}section.pricing-sec #EngagementPlan .entry-content table.table tr td.fs {
+    position: relative;
+}
+
+/* section.pricing-sec #EngagementPlan .entry-content table.table tr td.fs:before {
+    position: absolute;
+    content: "$";
+    left: 7%;
+    top: 17%;
+    font-size: 23px;
+} */
+
+
+section.pricing-sec #CreativesPlan .entry-content table.table tr td.fs {
+    position: relative;
+}
+
+/* section.pricing-sec #CreativesPlan .entry-content table.table tr td.fs:before {
+    position: absolute;
+    content: "$";
+    left: 5%;
+    top: 25%;
+    font-size: 23px;
+} */

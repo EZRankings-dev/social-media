@@ -2,7 +2,7 @@
 (() => {
 var exports = {};
 exports.id = 405;
-exports.ids = [405,227,457,450,219,383,783,14,611,448,241,482,911];
+exports.ids = [405,241,227,482,457,450,911,219,383,783,14,611,448];
 exports.modules = {
 
 /***/ 5901:
@@ -251,9 +251,9 @@ function Index({ dataHomes  }) {
                         })
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                        className: "row",
+                        className: "",
                         children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                            className: "col-md-12",
+                            className: "col-md-12 for-home-page-slider",
                             children: [
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
                                     className: "sliderTitle",
@@ -261,7 +261,7 @@ function Index({ dataHomes  }) {
                                 }),
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_slick__WEBPACK_IMPORTED_MODULE_6___default()), {
                                     ...settings,
-                                    className: "slick-slider",
+                                    className: "slick-slider ",
                                     children: dataHomes.gallery && dataHomes.gallery.length > 0 && dataHomes.gallery.map((galData, i)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                             className: "item",
                                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("figure", {

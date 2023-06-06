@@ -1,7 +1,7 @@
 (() => {
 var exports = {};
 exports.id = 939;
-exports.ids = [939,227,457,450,219,383,783,14,611,448,241,482,911];
+exports.ids = [939,241,227,482,457,450,911,219,383,783,14,611,448];
 exports.modules = {
 
 /***/ 7747:
@@ -46,6 +46,8 @@ var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_com
 function MyPage({ data  }) {
     const [isLoading, setIsLoading] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);
     const [activeTab, setActiveTab] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)("startup");
+    const [activeMainTab, setMainActiveTab] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)("creativesPlan");
+    const [isPlan, updatePlan] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)("creativesPlan");
     const settings = {
         centerMode: true,
         autoplay: false,
@@ -160,198 +162,692 @@ function MyPage({ data  }) {
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("section", {
                 className: "pricing-sec",
-                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                     className: "container",
-                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                        className: "row",
-                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                            className: "col-md-12 entry-content table-responsive",
-                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("table", {
-                                className: "table",
-                                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("tbody", {
+                    children: [
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                            className: "row",
+                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                className: "col-md-12 text-center",
+                                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                    className: "pricing-tab",
                                     children: [
-                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("tr", {
-                                            children: [
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {}),
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
+                                            className: isPlan == "creativesPlan" ? "tablinks active" : "tablinks",
+                                            onClick: ()=>updatePlan("creativesPlan"),
+                                            children: "Creatives Plan"
+                                        }),
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
+                                            className: isPlan == "paidPlan" ? "tablinks active" : "tablinks",
+                                            onClick: ()=>updatePlan("paidPlan"),
+                                            children: "Paid Plan"
+                                        }),
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
+                                            className: isPlan == "engagementPlan" ? "tablinks active" : "tablinks",
+                                            onClick: ()=>updatePlan("engagementPlan"),
+                                            children: "Engagement Plan"
+                                        })
+                                    ]
+                                })
+                            })
+                        }),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                            className: "row tabcontent",
+                            id: "CreativesPlan",
+                            style: {
+                                display: isPlan == "creativesPlan" ? "block" : "none"
+                            },
+                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                className: "col-md-12 entry-content table-responsive",
+                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("table", {
+                                    className: "table",
+                                    children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("tbody", {
+                                        children: [
+                                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("tr", {
+                                                children: [
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {}),
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
+                                                        className: "redC",
+                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                            children: "Start-up"
+                                                        })
+                                                    }),
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
+                                                        className: "redC",
+                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                            children: "Economic"
+                                                        })
+                                                    }),
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
+                                                        className: "redC",
+                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                            children: "Business"
+                                                        })
+                                                    })
+                                                ]
+                                            }),
+                                            data.price && data.price.length > 0 && data.price.map((pdata, p)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("tr", {
+                                                    children: [
+                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
+                                                            children: pdata.title
+                                                        }),
+                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
+                                                            className: p == 0 ? "fs" : "",
+                                                            dangerouslySetInnerHTML: {
+                                                                __html: pdata.individual
+                                                            }
+                                                        }),
+                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
+                                                            className: p == 0 ? "fs" : "",
+                                                            dangerouslySetInnerHTML: {
+                                                                __html: pdata.start_up
+                                                            }
+                                                        }),
+                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
+                                                            className: p == 0 ? "fs" : "",
+                                                            dangerouslySetInnerHTML: {
+                                                                __html: pdata.business
+                                                            }
+                                                        })
+                                                    ]
+                                                }, p))
+                                        ]
+                                    })
+                                })
+                            })
+                        }),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                            className: "row tabcontent",
+                            id: "PaidPlan",
+                            style: {
+                                display: isPlan == "paidPlan" ? "block" : "none"
+                            },
+                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                className: "col-md-12 entry-content table-responsive",
+                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("table", {
+                                    className: "table",
+                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("tbody", {
+                                        children: data.pricePaid && data.pricePaid.length > 0 && data.pricePaid.map((pdData, p1)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("tr", {
+                                                children: [
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
+                                                        children: pdData.title
+                                                    }),
+                                                    pdData.individual && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
+                                                        className: p1 == 0 ? "redC" :  false || p1 == 1 ? "fs" : "",
+                                                        dangerouslySetInnerHTML: {
+                                                            __html: pdData.individual
+                                                        }
+                                                    }),
+                                                    pdData.start_up && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
+                                                        className: p1 == 0 ? "redC" :  false || p1 == 1 ? "fs" : "",
+                                                        dangerouslySetInnerHTML: {
+                                                            __html: pdData.start_up
+                                                        }
+                                                    }),
+                                                    pdData.business && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
+                                                        className: p1 == 0 ? "redC" :  false || p1 == 1 ? "fs" : "",
+                                                        dangerouslySetInnerHTML: {
+                                                            __html: pdData.business
+                                                        }
+                                                    })
+                                                ]
+                                            }, p1))
+                                    })
+                                })
+                            })
+                        }),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                            className: "row tabcontent",
+                            id: "EngagementPlan",
+                            style: {
+                                display: isPlan == "engagementPlan" ? "block" : "none"
+                            },
+                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                className: "col-md-12 entry-content table-responsive",
+                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("table", {
+                                    className: "table",
+                                    children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("tbody", {
+                                        children: [
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("tr", {
+                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
                                                     className: "redC",
+                                                    colSpan: 4,
                                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("strong", {
+                                                            children: "SOCIAL MEDIA ENGAGEMENT PLAN"
+                                                        })
+                                                    })
+                                                })
+                                            }),
+                                            data.priceEng && data.priceEng.length > 0 && data.priceEng.map((pdata, p2)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("tr", {
+                                                    children: [
+                                                        pdata.id && pdata.id == "19" && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
+                                                            className: "br-right",
+                                                            style: {
+                                                                textAlign: "center"
+                                                            },
+                                                            colSpan: 5,
+                                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("strong", {
+                                                                    children: pdata.title
+                                                                })
+                                                            })
+                                                        }),
+                                                        pdata.id && pdata.id != "19" && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
+                                                            children: pdata.title
+                                                        }),
+                                                        pdata.start_up && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
+                                                            className: p2 == 0 ? "fs" : "",
+                                                            dangerouslySetInnerHTML: {
+                                                                __html: pdata.individual
+                                                            }
+                                                        }),
+                                                        pdata.start_up && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
+                                                            className: p2 == 0 ? "fs" : "",
+                                                            dangerouslySetInnerHTML: {
+                                                                __html: pdata.start_up
+                                                            }
+                                                        }),
+                                                        pdata.business && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
+                                                            className: p2 == 0 ? "fs" : "",
+                                                            dangerouslySetInnerHTML: {
+                                                                __html: pdata.business
+                                                            }
+                                                        })
+                                                    ]
+                                                }, p2))
+                                        ]
+                                    })
+                                })
+                            })
+                        })
+                    ]
+                })
+            }),
+            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                className: "for-mobile-table",
+                children: [
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                        className: "pricing-table-mobile pricing-table-mobile-tab  mr-bt-20",
+                        bis_skin_checked: "1",
+                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                            className: "container",
+                            bis_skin_checked: "1",
+                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                className: "row",
+                                bis_skin_checked: "1",
+                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                    className: "col-md-12",
+                                    bis_skin_checked: "1",
+                                    children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ul", {
+                                        className: "nav nav-tabs",
+                                        role: "tablist",
+                                        children: [
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                                className: "nav-item",
+                                                role: "presentation",
+                                                onClick: ()=>setMainActiveTab("creativesPlan"),
+                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                    className: activeMainTab == "creativesPlan" ? "nav-link active" : "nav-link",
+                                                    "data-bs-toggle": "tab",
+                                                    "aria-selected": "true",
+                                                    role: "tab",
+                                                    children: "Creatives "
+                                                })
+                                            }),
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                                className: "nav-item",
+                                                role: "presentation",
+                                                onClick: ()=>setMainActiveTab("paidPlan"),
+                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                    className: activeMainTab == "paidPlan" ? "nav-link active" : "nav-link",
+                                                    "data-bs-toggle": "tab",
+                                                    "aria-selected": "false",
+                                                    role: "tab",
+                                                    tabIndex: "-1",
+                                                    children: "Paid"
+                                                })
+                                            }),
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                                className: "nav-item",
+                                                role: "presentation",
+                                                onClick: ()=>setMainActiveTab("engagementPlan"),
+                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                    className: activeMainTab == "engagementPlan" ? "nav-link active" : "nav-link",
+                                                    "data-bs-toggle": "tab",
+                                                    "aria-selected": "false",
+                                                    role: "tab",
+                                                    tabIndex: "-1",
+                                                    children: "Engagement"
+                                                })
+                                            })
+                                        ]
+                                    })
+                                })
+                            })
+                        })
+                    }),
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                        className: activeMainTab == "creativesPlan" ? "pricing-table-mobile show" : "pricing-table-mobile hide",
+                        bis_skin_checked: "1",
+                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                            className: "container",
+                            bis_skin_checked: "1",
+                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                className: "row",
+                                bis_skin_checked: "1",
+                                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                    className: "col-md-12",
+                                    bis_skin_checked: "1",
+                                    children: [
+                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ul", {
+                                            className: "nav nav-tabs",
+                                            role: "tablist",
+                                            children: [
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                                    className: "nav-item",
+                                                    role: "presentation",
+                                                    onClick: ()=>setActiveTab("startup"),
+                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                        className: activeTab == "startup" ? "nav-link active" : "nav-link",
+                                                        "data-bs-toggle": "tab",
+                                                        "aria-selected": "true",
+                                                        role: "tab",
                                                         children: "Start-Up"
                                                     })
                                                 }),
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
-                                                    className: "redC",
-                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                                    className: "nav-item",
+                                                    role: "presentation",
+                                                    onClick: ()=>setActiveTab("economic"),
+                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                        className: activeTab == "economic" ? "nav-link active" : "nav-link",
+                                                        "data-bs-toggle": "tab",
+                                                        "aria-selected": "false",
+                                                        role: "tab",
+                                                        tabIndex: "-1",
                                                         children: "Economic"
                                                     })
                                                 }),
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
-                                                    className: "redC",
-                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                                    className: "nav-item",
+                                                    role: "presentation",
+                                                    onClick: ()=>setActiveTab("business"),
+                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                        className: activeTab == "business" ? "nav-link active" : "nav-link",
+                                                        "data-bs-toggle": "tab",
+                                                        "aria-selected": "false",
+                                                        role: "tab",
+                                                        tabIndex: "-1",
                                                         children: "Business"
                                                     })
                                                 })
                                             ]
                                         }),
-                                        data.price && data.price.length > 0 && data.price.map((pdata, p)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("tr", {
-                                                children: [
-                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
-                                                        children: pdata.title
-                                                    }),
-                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
-                                                        className: pdata.colored == "1" ? "fs" : "",
-                                                        children: pdata.individual
-                                                    }),
-                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
-                                                        className: pdata.colored == "1" ? "fs" : "",
-                                                        children: pdata.start_up
-                                                    }),
-                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
-                                                        className: pdata.colored == "1" ? "fs" : "",
-                                                        children: pdata.business
+                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                            className: "tab-content",
+                                            bis_skin_checked: "1",
+                                            children: [
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                    className: activeTab == "startup" ? "tab-pane container active show" : "tab-pane container fade",
+                                                    id: "Start-Up",
+                                                    bis_skin_checked: "1",
+                                                    role: "tabpanel",
+                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("table", {
+                                                        className: "table",
+                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("tbody", {
+                                                            children: data.price && data.price.length > 0 && data.price.map((pdata, p)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("tr", {
+                                                                    children: [
+                                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
+                                                                            children: pdata.title
+                                                                        }),
+                                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
+                                                                            className: p == 0 ? "fs" : "",
+                                                                            dangerouslySetInnerHTML: {
+                                                                                __html: pdata.individual
+                                                                            }
+                                                                        })
+                                                                    ]
+                                                                }, p))
+                                                        })
                                                     })
-                                                ]
-                                            }, p))
+                                                }),
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                    className: activeTab == "economic" ? "tab-pane container active show" : "tab-pane container fade",
+                                                    id: "Economic",
+                                                    bis_skin_checked: "1",
+                                                    role: "tabpanel",
+                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("table", {
+                                                        className: "table",
+                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("tbody", {
+                                                            children: data.price && data.price.length > 0 && data.price.map((pdata, p)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("tr", {
+                                                                    children: [
+                                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
+                                                                            children: pdata.title
+                                                                        }),
+                                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
+                                                                            className: p == 0 ? "fs" : "",
+                                                                            dangerouslySetInnerHTML: {
+                                                                                __html: pdata.start_up
+                                                                            }
+                                                                        })
+                                                                    ]
+                                                                }, p))
+                                                        })
+                                                    })
+                                                }),
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                    className: activeTab == "business" ? "tab-pane container active show" : "tab-pane container fade",
+                                                    id: "Business",
+                                                    bis_skin_checked: "1",
+                                                    role: "tabpanel",
+                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("table", {
+                                                        className: "table",
+                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("tbody", {
+                                                            children: data.price && data.price.length > 0 && data.price.map((pdata, p)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("tr", {
+                                                                    children: [
+                                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
+                                                                            children: pdata.title
+                                                                        }),
+                                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
+                                                                            className: p == 0 ? "fs" : "",
+                                                                            dangerouslySetInnerHTML: {
+                                                                                __html: pdata.business
+                                                                            }
+                                                                        })
+                                                                    ]
+                                                                }, p))
+                                                        })
+                                                    })
+                                                })
+                                            ]
+                                        })
+                                    ]
+                                })
+                            })
+                        })
+                    }),
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                        className: activeMainTab == "paidPlan" ? "pricing-table-mobile show" : "pricing-table-mobile hide",
+                        bis_skin_checked: "1",
+                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                            className: "container",
+                            bis_skin_checked: "1",
+                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                className: "row",
+                                bis_skin_checked: "1",
+                                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                    className: "col-md-12",
+                                    bis_skin_checked: "1",
+                                    children: [
+                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ul", {
+                                            className: "nav nav-tabs",
+                                            role: "tablist",
+                                            children: [
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                                    className: "nav-item",
+                                                    role: "presentation",
+                                                    onClick: ()=>setActiveTab("startup"),
+                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                        className: activeTab == "startup" ? "nav-link active" : "nav-link",
+                                                        "data-bs-toggle": "tab",
+                                                        "aria-selected": "true",
+                                                        role: "tab",
+                                                        children: "Option 1"
+                                                    })
+                                                }),
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                                    className: "nav-item",
+                                                    role: "presentation",
+                                                    onClick: ()=>setActiveTab("economic"),
+                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                        className: activeTab == "economic" ? "nav-link active" : "nav-link",
+                                                        "data-bs-toggle": "tab",
+                                                        "aria-selected": "false",
+                                                        role: "tab",
+                                                        tabIndex: "-1",
+                                                        children: "Option 2"
+                                                    })
+                                                }),
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                                    className: "nav-item",
+                                                    role: "presentation",
+                                                    onClick: ()=>setActiveTab("business"),
+                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                        className: activeTab == "business" ? "nav-link active" : "nav-link",
+                                                        "data-bs-toggle": "tab",
+                                                        "aria-selected": "false",
+                                                        role: "tab",
+                                                        tabIndex: "-1",
+                                                        children: "Option 3"
+                                                    })
+                                                })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                            className: "tab-content",
+                                            bis_skin_checked: "1",
+                                            children: [
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                    className: activeTab == "startup" ? "tab-pane container active show" : "tab-pane container fade",
+                                                    id: "Start-Up",
+                                                    bis_skin_checked: "1",
+                                                    role: "tabpanel",
+                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("table", {
+                                                        className: "table",
+                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("tbody", {
+                                                            children: data.pricePaid && data.pricePaid.length > 0 && data.pricePaid.map((pdata, p)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("tr", {
+                                                                    children: [
+                                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
+                                                                            children: pdata.title
+                                                                        }),
+                                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
+                                                                            className: p == 0 ? "fs" : "",
+                                                                            dangerouslySetInnerHTML: {
+                                                                                __html: pdata.individual
+                                                                            }
+                                                                        })
+                                                                    ]
+                                                                }, p))
+                                                        })
+                                                    })
+                                                }),
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                    className: activeTab == "economic" ? "tab-pane container active show" : "tab-pane container fade",
+                                                    id: "Economic",
+                                                    bis_skin_checked: "1",
+                                                    role: "tabpanel",
+                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("table", {
+                                                        className: "table",
+                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("tbody", {
+                                                            children: data.pricePaid && data.pricePaid.length > 0 && data.pricePaid.map((pdata, p)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("tr", {
+                                                                    children: [
+                                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
+                                                                            children: pdata.title
+                                                                        }),
+                                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
+                                                                            className: p == 0 ? "fs" : "",
+                                                                            dangerouslySetInnerHTML: {
+                                                                                __html: pdata.start_up
+                                                                            }
+                                                                        })
+                                                                    ]
+                                                                }, p))
+                                                        })
+                                                    })
+                                                }),
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                    className: activeTab == "business" ? "tab-pane container active show" : "tab-pane container fade",
+                                                    id: "Business",
+                                                    bis_skin_checked: "1",
+                                                    role: "tabpanel",
+                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("table", {
+                                                        className: "table",
+                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("tbody", {
+                                                            children: data.pricePaid && data.pricePaid.length > 0 && data.pricePaid.map((pdata, p)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("tr", {
+                                                                    children: [
+                                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
+                                                                            children: pdata.title
+                                                                        }),
+                                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
+                                                                            className: p == 0 ? "fs" : "",
+                                                                            dangerouslySetInnerHTML: {
+                                                                                __html: pdata.business
+                                                                            }
+                                                                        })
+                                                                    ]
+                                                                }, p))
+                                                        })
+                                                    })
+                                                })
+                                            ]
+                                        })
+                                    ]
+                                })
+                            })
+                        })
+                    }),
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                        className: activeMainTab == "engagementPlan" ? "pricing-table-mobile show" : "pricing-table-mobile hide",
+                        bis_skin_checked: "1",
+                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                            className: "container",
+                            bis_skin_checked: "1",
+                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                className: "row",
+                                bis_skin_checked: "1",
+                                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                    className: "col-md-12",
+                                    bis_skin_checked: "1",
+                                    children: [
+                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ul", {
+                                            className: "nav nav-tabs",
+                                            role: "tablist",
+                                            children: [
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                                    className: "nav-item",
+                                                    role: "presentation",
+                                                    onClick: ()=>setActiveTab("startup"),
+                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                        className: activeTab == "startup" ? "nav-link active" : "nav-link",
+                                                        "data-bs-toggle": "tab",
+                                                        "aria-selected": "true",
+                                                        role: "tab",
+                                                        children: "Option 1"
+                                                    })
+                                                }),
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                                    className: "nav-item",
+                                                    role: "presentation",
+                                                    onClick: ()=>setActiveTab("economic"),
+                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                        className: activeTab == "economic" ? "nav-link active" : "nav-link",
+                                                        "data-bs-toggle": "tab",
+                                                        "aria-selected": "false",
+                                                        role: "tab",
+                                                        tabIndex: "-1",
+                                                        children: "Option 2"
+                                                    })
+                                                }),
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+                                                    className: "nav-item",
+                                                    role: "presentation",
+                                                    onClick: ()=>setActiveTab("business"),
+                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                        className: activeTab == "business" ? "nav-link active" : "nav-link",
+                                                        "data-bs-toggle": "tab",
+                                                        "aria-selected": "false",
+                                                        role: "tab",
+                                                        tabIndex: "-1",
+                                                        children: "Option 3"
+                                                    })
+                                                })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                            className: "tab-content",
+                                            bis_skin_checked: "1",
+                                            children: [
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                    className: activeTab == "startup" ? "tab-pane container active show" : "tab-pane container fade",
+                                                    id: "Start-Up",
+                                                    bis_skin_checked: "1",
+                                                    role: "tabpanel",
+                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("table", {
+                                                        className: "table",
+                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("tbody", {
+                                                            children: data.priceEng && data.priceEng.length > 0 && data.priceEng.map((pdata, p)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("tr", {
+                                                                    children: [
+                                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
+                                                                            children: pdata.title
+                                                                        }),
+                                                                        pdata.individual && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
+                                                                            className: p == 0 ? "fs" : "",
+                                                                            dangerouslySetInnerHTML: {
+                                                                                __html: pdata.individual
+                                                                            }
+                                                                        })
+                                                                    ]
+                                                                }, p))
+                                                        })
+                                                    })
+                                                }),
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                    className: activeTab == "economic" ? "tab-pane container active show" : "tab-pane container fade",
+                                                    id: "Economic",
+                                                    bis_skin_checked: "1",
+                                                    role: "tabpanel",
+                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("table", {
+                                                        className: "table",
+                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("tbody", {
+                                                            children: data.priceEng && data.priceEng.length > 0 && data.priceEng.map((pdata, p)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("tr", {
+                                                                    children: [
+                                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
+                                                                            children: pdata.title
+                                                                        }),
+                                                                        pdata.start_up && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
+                                                                            className: p == 0 ? "fs" : "",
+                                                                            dangerouslySetInnerHTML: {
+                                                                                __html: pdata.start_up
+                                                                            }
+                                                                        })
+                                                                    ]
+                                                                }, p))
+                                                        })
+                                                    })
+                                                }),
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                    className: activeTab == "business" ? "tab-pane container active show" : "tab-pane container fade",
+                                                    id: "Business",
+                                                    bis_skin_checked: "1",
+                                                    role: "tabpanel",
+                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("table", {
+                                                        className: "table",
+                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("tbody", {
+                                                            children: data.priceEng && data.priceEng.length > 0 && data.priceEng.map((pdata, p)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("tr", {
+                                                                    children: [
+                                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
+                                                                            children: pdata.title
+                                                                        }),
+                                                                        pdata.business && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
+                                                                            className: p == 0 ? "fs" : "",
+                                                                            dangerouslySetInnerHTML: {
+                                                                                __html: pdata.business
+                                                                            }
+                                                                        })
+                                                                    ]
+                                                                }, p))
+                                                        })
+                                                    })
+                                                })
+                                            ]
+                                        })
                                     ]
                                 })
                             })
                         })
                     })
-                })
-            }),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                className: "pricing-table-mobile",
-                bis_skin_checked: "1",
-                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                    className: "container",
-                    bis_skin_checked: "1",
-                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                        className: "row",
-                        bis_skin_checked: "1",
-                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                            className: "col-md-12",
-                            bis_skin_checked: "1",
-                            children: [
-                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ul", {
-                                    className: "nav nav-tabs",
-                                    role: "tablist",
-                                    children: [
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                            className: "nav-item",
-                                            role: "presentation",
-                                            onClick: ()=>setActiveTab("startup"),
-                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                                className: activeTab == "startup" ? "nav-link active" : "nav-link",
-                                                "data-bs-toggle": "tab",
-                                                "aria-selected": "true",
-                                                role: "tab",
-                                                children: "Start-Up"
-                                            })
-                                        }),
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                            className: "nav-item",
-                                            role: "presentation",
-                                            onClick: ()=>setActiveTab("economic"),
-                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                                className: activeTab == "economic" ? "nav-link active" : "nav-link",
-                                                "data-bs-toggle": "tab",
-                                                "aria-selected": "false",
-                                                role: "tab",
-                                                tabIndex: "-1",
-                                                children: "Economic"
-                                            })
-                                        }),
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                            className: "nav-item",
-                                            role: "presentation",
-                                            onClick: ()=>setActiveTab("business"),
-                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                                className: activeTab == "business" ? "nav-link active" : "nav-link",
-                                                "data-bs-toggle": "tab",
-                                                "aria-selected": "false",
-                                                role: "tab",
-                                                tabIndex: "-1",
-                                                children: "Business"
-                                            })
-                                        })
-                                    ]
-                                }),
-                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                    className: "tab-content",
-                                    bis_skin_checked: "1",
-                                    children: [
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                            className: activeTab == "startup" ? "tab-pane container active show" : "tab-pane container fade",
-                                            id: "Start-Up",
-                                            bis_skin_checked: "1",
-                                            role: "tabpanel",
-                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("table", {
-                                                className: "table",
-                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("tbody", {
-                                                    children: data.price && data.price.length > 0 && data.price.map((pdata, p)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("tr", {
-                                                            children: [
-                                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
-                                                                    children: pdata.title
-                                                                }),
-                                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
-                                                                    className: pdata.colored == "1" ? "fs2" : "",
-                                                                    children: pdata.individual
-                                                                })
-                                                            ]
-                                                        }, p))
-                                                })
-                                            })
-                                        }),
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                            className: activeTab == "economic" ? "tab-pane container active show" : "tab-pane container fade",
-                                            id: "Economic",
-                                            bis_skin_checked: "1",
-                                            role: "tabpanel",
-                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("table", {
-                                                className: "table",
-                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("tbody", {
-                                                    children: data.price && data.price.length > 0 && data.price.map((pdata, p)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("tr", {
-                                                            children: [
-                                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
-                                                                    children: pdata.title
-                                                                }),
-                                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
-                                                                    className: pdata.colored == "1" ? "fs" : "",
-                                                                    children: pdata.start_up
-                                                                })
-                                                            ]
-                                                        }, p))
-                                                })
-                                            })
-                                        }),
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                            className: activeTab == "business" ? "tab-pane container active show" : "tab-pane container fade",
-                                            id: "Business",
-                                            bis_skin_checked: "1",
-                                            role: "tabpanel",
-                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("table", {
-                                                className: "table",
-                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("tbody", {
-                                                    children: data.price && data.price.length > 0 && data.price.map((pdata, p)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("tr", {
-                                                            children: [
-                                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
-                                                                    children: pdata.title
-                                                                }),
-                                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
-                                                                    className: pdata.colored == "1" ? "fs" : "",
-                                                                    children: pdata.business
-                                                                })
-                                                            ]
-                                                        }, p))
-                                                })
-                                            })
-                                        })
-                                    ]
-                                })
-                            ]
-                        })
-                    })
-                })
+                ]
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("section", {
                 className: "faq-section",

@@ -135,10 +135,10 @@ const settings = {
                </h1>
             </div>
          </div>
-         <div className="row">
-            <div className="col-md-12">
+         <div className="">
+            <div className="col-md-12 for-home-page-slider">
                <h2 className="sliderTitle">Our Work</h2>
-               <Slider {...settings} className="slick-slider">
+               <Slider {...settings} className="slick-slider ">
                {dataHomes.gallery && dataHomes.gallery.length > 0 && dataHomes.gallery.map((galData, i) => (
                      <div className="item" key={i}>
                         <figure><img src={galData.img}  alt={galData.alt} />
