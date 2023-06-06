@@ -1,7 +1,7 @@
 (() => {
 var exports = {};
 exports.id = 939;
-exports.ids = [939,227,241,482,457,450,911,383,783,219,611,14,448];
+exports.ids = [939,227,241,482,457,450,219,911,383,783,14,611,448];
 exports.modules = {
 
 /***/ 7747:
@@ -977,7 +977,7 @@ function MyPage({ data  }) {
                                             children: "Lets create something amazing together."
                                         }),
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_9___default()), {
-                                            href: "/conatct",
+                                            href: "/contact",
                                             className: "",
                                             children: "Get Started"
                                         })

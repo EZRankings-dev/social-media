@@ -531,7 +531,7 @@ export default function MyPage({ data }) {
                      <h2>Lets create something
                         amazing together.
                      </h2>
-                     <Link href="/conatct" className="">Get Started</Link>
+                     <Link href="/contact" className="">Get Started</Link>
                   </div>
                </div>
             </div>
