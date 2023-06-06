@@ -2,7 +2,7 @@
 (() => {
 var exports = {};
 exports.id = 371;
-exports.ids = [371,227,241,482,457,450,383,911,448,611,219,783,14];
+exports.ids = [371,227,241,482,457,450,911,219,383,783,14,448,611];
 exports.modules = {
 
 /***/ 9546:
@@ -332,7 +332,7 @@ function PortfolioIndex({ portData  }) {
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_11___default()), {
                                             href: "/contact",
                                             className: "",
-                                            children: "Get Started"
+                                            children: "Gcet Started"
                                         })
                                     ]
                                 })

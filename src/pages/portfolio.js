@@ -182,7 +182,7 @@ import Link from 'next/link';
                 <h2>Let’s create something 
                 amazing together.
                 </h2>
-                <Link href="/contact" className="">Get Started</Link>
+                <Link href="/contact" className="">Gcet Started</Link>
               </div>
             </div>
           </div>
