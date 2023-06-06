@@ -2,7 +2,7 @@
 (() => {
 var exports = {};
 exports.id = 371;
-exports.ids = [371,227,482,457,241,450,383,911,219,448,783,611,14];
+exports.ids = [371,227,241,482,450,457,911,219,783,611,383,14,448];
 exports.modules = {
 
 /***/ 9546:
@@ -63,7 +63,7 @@ function PortfolioIndex({ portData  }) {
         blogWDatta = portData.gallery;
     }
     const [postList, setPostList] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(blogDatta);
-    const [postwList, setPostwList] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(blogDatta);
+    const [postwList, setPostwList] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(blogWDatta);
     const toggleHiddenTitle = (index)=>{
         if (hiddenTitleIndex === index) {
             setHiddenTitleIndex(null);
@@ -204,7 +204,7 @@ function PortfolioIndex({ portData  }) {
                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_slick__WEBPACK_IMPORTED_MODULE_8___default()), {
                                     ...settings,
                                     className: "slick-slider2",
-                                    children: postList && postList.slice(startImg, toImg).map((data, i)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                    children: postwList && postwList.slice(startImg, toImg).map((data, i)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                             className: "item",
                                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("figure", {
                                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
