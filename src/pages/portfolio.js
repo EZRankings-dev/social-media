@@ -27,7 +27,7 @@ import Link from 'next/link';
       blogWDatta = portData.gallery;
     }
     const [postList, setPostList] = useState(blogDatta);
-    const [postwList, setPostwList] = useState(blogWDatta);
+    const [postwList, setPostwList] = useState(blogDatta);
 
     const toggleHiddenTitle = (index) => {
         if (hiddenTitleIndex === index) {
@@ -118,7 +118,7 @@ import Link from 'next/link';
                     <div className="slider-porfolio">
                     <Slider {...settings} className="slick-slider2">
                       
-                      {postwList && postwList.slice(startImg,toImg).map((data, i)=>(
+                      {postList && postList.slice(startImg,toImg).map((data, i)=>(
                         <div className="item" key={i}>
                           <figure><img src={data.image} alt={data.alt}/>
                           </figure>
@@ -182,7 +182,7 @@ import Link from 'next/link';
                 <h2>Let’s create something 
                 amazing together.
                 </h2>
-                <Link href="/contact" className="">Gcet Started</Link>
+                <Link href="/contact" className="">Get Started</Link>
               </div>
             </div>
           </div>
