@@ -118,7 +118,7 @@ import Link from 'next/link';
                     <div className="slider-porfolio">
                     <Slider {...settings} className="slick-slider2">
                       
-                      {postwList && postwList.slice(startImg,toImg).map((data, i)=>(
+                      {postList && postList.slice(startImg,toImg).map((data, i)=>(
                         <div className="item" key={i}>
                           <figure><img src={data.image} alt={data.alt}/>
                           </figure>
