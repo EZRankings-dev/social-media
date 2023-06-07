@@ -118,7 +118,7 @@ import Link from 'next/link';
                     <div className="slider-porfolio">
                     <Slider {...settings} className="slick-slider2">
                       
-                      {postList && postList.slice(startImg,toImg).map((data, i)=>(
+                      {portData && portData.gallery && portData.gallery.length > 0 && portData.gallery.map((data, i)=>(
                         <div className="item" key={i}>
                           <figure><img src={data.image} alt={data.alt}/>
                           </figure>
@@ -157,7 +157,7 @@ import Link from 'next/link';
       ))}      
         <div className="col-md-12">
             <div className="load-more-btn">
-                <a onClick={handleNextPage}>Load More</a>
+                <a onClick={handleNextPage}>Load Moree</a>
             </div>
         </div>
       </div>
