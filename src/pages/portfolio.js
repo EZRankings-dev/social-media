@@ -157,7 +157,7 @@ import Link from 'next/link';
       ))}      
         <div className="col-md-12">
             <div className="load-more-btn">
-                <a onClick={handleNextPage}>Load Moree</a>
+                <a onClick={handleNextPage}>Load More</a>
             </div>
         </div>
       </div>
