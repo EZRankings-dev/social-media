@@ -2,7 +2,7 @@
 (() => {
 var exports = {};
 exports.id = 371;
-exports.ids = [371,227,241,482,457,450,911,219,383,783,14,611,448];
+exports.ids = [371,241,227,457,482,450,911,383,219,783,448,611,14];
 exports.modules = {
 
 /***/ 9546:
@@ -204,7 +204,7 @@ function PortfolioIndex({ portData  }) {
                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_slick__WEBPACK_IMPORTED_MODULE_8___default()), {
                                     ...settings,
                                     className: "slick-slider2",
-                                    children: postList && postList.slice(startImg, toImg).map((data, i)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                    children: portData && portData.gallery && portData.gallery.length > 0 && portData.gallery.map((data, i)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                             className: "item",
                                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("figure", {
                                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
