@@ -5,7 +5,8 @@ module.exports = {
   // distDir: 'build',
   images:{
     domains:["https://smca.ezrankings.in/"]
-  },
+    // unoptimized:true
+  }
 };
 
 // module.exports = nextConfig

@@ -1888,3 +1888,39 @@ section.pricing-sec #CreativesPlan .entry-content table.table tr td.fs {
     top: 25%;
     font-size: 23px;
 } */
+
+
+.blog-details ul li {
+    font-size: 16px !important;
+}
+
+.blog-details__content ul li {
+    /* font-size: 20px !important; */
+    padding-bottom: 10px;
+    font-size: 16pt !important;
+    list-style: disc;
+    margin-left: 23px;
+}
+
+.blog-details__content p {
+    /* font-size: 20px !important; */
+    padding-bottom: 10px;
+    font-size: 16pt !important;
+    line-height: 30pt;
+}
+
+blog-details__content  h2 {
+    padding-bottom: 30px !important;
+}
+
+.blog-details__content h2 {
+    margin: 15px 0 !important;
+}
+
+.blog-details__content p strong {
+    font-weight: 600;
+}ul.list-unstyled.blog-details__meta li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}

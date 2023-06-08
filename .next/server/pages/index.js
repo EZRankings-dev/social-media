@@ -2,7 +2,7 @@
 (() => {
 var exports = {};
 exports.id = 405;
-exports.ids = [405,227,241,457,450,911,482,219,383,14,783,611,448];
+exports.ids = [405,227,241,482,457,911,450,783,383,14,611,448,219];
 exports.modules = {
 
 /***/ 5901:
@@ -421,7 +421,7 @@ function Index({ dataHomes  }) {
                                                         className: "blog-one__title",
                                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_10___default()), {
                                                             href: `${blogD.linkUrl}`,
-                                                            children: blogD.title.substring(0, 68)
+                                                            children: blogD.title.substring(0, 65)
                                                         })
                                                     }),
                                                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {

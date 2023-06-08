@@ -187,7 +187,7 @@ const settings = {
                             <li><Link href="#"><i className="far fa-folder-open"></i> {blogD.category}</Link></li>
                             </ul>
                             <h3 className="blog-one__title">
-                             <Link href={`${blogD.linkUrl}`}>{blogD.title.substring(0,68)}</Link>
+                             <Link href={`${blogD.linkUrl}`}>{blogD.title.substring(0,65)}</Link>
                             </h3>
                             <div className="blog-one__person">
                                 <div className="blog-one__person-img">
