@@ -164,7 +164,7 @@ const settings = {
                       <sub>Per month</sub>
                   </div>
                </div>
-               <Link href="" className="btn-border">Take an Expert</Link>
+               <Link href="/contact" className="btn-border">Talk to an Expert</Link>
             </div>
             <div className="row">
                <div className="col-md-12">
@@ -183,7 +183,7 @@ const settings = {
                      <h2>Let's create something
                         amazing together.
                      </h2>
-                     <Link href="" className="">Get Started</Link>
+                     <Link href="/contact" className="">Get Started</Link>
                   </div>
                </div>
             </div>

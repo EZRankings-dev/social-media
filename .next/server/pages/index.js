@@ -2,7 +2,7 @@
 (() => {
 var exports = {};
 exports.id = 405;
-exports.ids = [405,227,241,482,457,911,450,783,383,14,611,448,219];
+exports.ids = [405,227,241,482,457,911,219,450,783,611,383,14,448];
 exports.modules = {
 
 /***/ 5901:
@@ -309,9 +309,9 @@ function Index({ dataHomes  }) {
                                     ]
                                 }),
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_10___default()), {
-                                    href: "",
+                                    href: "/contact",
                                     className: "btn-border",
-                                    children: "Take an Expert"
+                                    children: "Talk to an Expert"
                                 })
                             ]
                         }),
@@ -344,7 +344,7 @@ function Index({ dataHomes  }) {
                                             children: "Let's create something amazing together."
                                         }),
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_10___default()), {
-                                            href: "",
+                                            href: "/contact",
                                             className: "",
                                             children: "Get Started"
                                         })
